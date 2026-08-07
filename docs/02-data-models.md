@@ -50,7 +50,7 @@ export type Beach = z.infer<typeof BeachSchema>
 
 ## Forecast Entry
 
-A single forecast data point for a beach at a moment in time.
+A single forecast data point for a beach at a moment in time. Includes full marine + atmospheric conditions relevant to surfing.
 
 ```typescript
 export const WqiBreakdownSchema = z.object({
@@ -66,22 +66,138 @@ export type WqiBreakdown = z.infer<typeof WqiBreakdownSchema>
 export const ForecastEntrySchema = z.object({
   beachId: z.string(),
   timestamp: z.string().datetime(),
-  swellHeightM: z.number().nonnegative(),
-  swellPeriodS: z.number().positive(),
-  swellDirection: z.string(),
-  windSpeedKts: z.number().nonnegative(),
-  windDirection: z.string(),
+
+  // --- Marine / Swell ---
+  swellHeightM: z.number().nonnegative(),         // Primary swell height (meters)
+  swellPeriodS: z.number().positive(),            // Primary swell period (seconds)
+  swellDirection: z.string(),                     // Primary swell direction (compass)
+  secondarySwellHeightM: z.number().nullable(),   // Secondary swell (if present)
+  secondarySwellPeriodS: z.number().nullable(),
+  secondarySwellDirection: z.string().nullable(),
+  waveHeight: z.number().nonnegative(),           // Combined significant wave height
+  windWaveHeightM: z.number().nonnegative(),      // Wind-generated chop height
+
+  // --- Tide ---
   tideHeightM: z.number(),
   tideState: z.enum(['rising', 'falling', 'high', 'low']),
-  waterTempC: z.number().nullable(),
+  nextHighTide: z.string().datetime().nullable(), // Next high tide timestamp
+  nextLowTide: z.string().datetime().nullable(),  // Next low tide timestamp
+
+  // --- Wind ---
+  windSpeedKts: z.number().nonnegative(),
+  windGustKts: z.number().nonnegative(),          // Gust speed
+  windDirection: z.string(),
+
+  // --- Atmospheric ---
+  airTempC: z.number(),                           // Air temperature
+  precipitation: z.number().nonnegative(),        // Precipitation mm/h
+  cloudCoverPercent: z.number().min(0).max(100),  // Cloud cover %
+  visibility: z.enum(['excellent', 'good', 'moderate', 'poor']),
+  uvIndex: z.number().min(0).max(11),             // UV index (0-11+)
+  sunrise: z.string(),                            // HH:MM local
+  sunset: z.string(),                             // HH:MM local
+
+  // --- Ocean ---
+  waterTempC: z.number().nullable(),              // Sea surface temperature
+  currentSpeedKts: z.number().nullable(),         // Ocean current velocity
+  currentDirection: z.string().nullable(),        // Ocean current direction
+
+  // --- Computed ---
   wqi: z.number().min(0).max(10),
   wqiLabel: z.enum(['Flat', 'Poor', 'Fair', 'Good', 'Very Good', 'Epic']),
   wqiBreakdown: WqiBreakdownSchema,
+  wetsuitRecommendation: WetsuitRecommendationSchema,
   humanSummary: z.string(),
 })
 
 export type ForecastEntry = z.infer<typeof ForecastEntrySchema>
 ```
+
+---
+
+## Wetsuit Recommendation
+
+Based on water temperature, wind chill, and session duration. Provides actionable gear advice.
+
+```typescript
+export const WetsuitRecommendationSchema = z.object({
+  waterTempC: z.number(),
+  windChillFactor: z.enum(['none', 'mild', 'moderate', 'severe']),
+  recommendation: z.string(),          // e.g. "3/2mm fullsuit"
+  thickness: z.string(),               // e.g. "3/2mm"
+  type: z.enum(['boardshorts', 'spring-suit', 'shorty', 'fullsuit', 'hooded-fullsuit']),
+  boots: z.boolean(),
+  gloves: z.boolean(),
+  hood: z.boolean(),
+  notes: z.string().nullable(),        // e.g. "Wind chill makes it feel colder"
+})
+
+export type WetsuitRecommendation = z.infer<typeof WetsuitRecommendationSchema>
+```
+
+### Wetsuit Thickness Chart
+
+| Water Temp (°C) | Water Temp (°F) | Wetsuit Type | Thickness | Boots | Gloves | Hood |
+|-----------------|-----------------|--------------|-----------|-------|--------|------|
+| > 24°C | > 75°F | Boardshorts / Rashguard | — | No | No | No |
+| 21–24°C | 70–75°F | Spring suit / Shorty | 2mm | No | No | No |
+| 18–21°C | 64–70°F | Fullsuit | 3/2mm | No | No | No |
+| 15–18°C | 59–64°F | Fullsuit | 4/3mm | Optional | No | No |
+| 12–15°C | 54–59°F | Fullsuit | 5/4mm | Yes | Optional | Optional |
+| 9–12°C | 48–54°F | Hooded fullsuit | 5/4mm | Yes | Yes | Yes |
+| < 9°C | < 48°F | Hooded fullsuit | 6/5/4mm | Yes | Yes | Yes |
+
+> Wind chill adjustment: If wind speed > 20 kts, shift one category colder. Dawn sessions may also feel 2-3°C colder than reported SST.
+
+---
+
+## Environmental Context
+
+All environmental data that influences surf quality beyond the core swell/wind/tide:
+
+```typescript
+export interface EnvironmentalContext {
+  // Sun & UV
+  uvIndex: number               // 0-11+ (WHO scale)
+  uvRisk: 'low' | 'moderate' | 'high' | 'very-high' | 'extreme'
+  sunrise: string               // HH:MM local
+  sunset: string                // HH:MM local
+  daylightHours: number         // Available surf daylight
+
+  // Weather
+  airTempC: number
+  feelsLikeC: number            // Wind chill adjusted
+  precipitationMmH: number     // Rain intensity
+  cloudCoverPercent: number
+  visibility: 'excellent' | 'good' | 'moderate' | 'poor'
+
+  // Ocean extras
+  waterTempC: number
+  currentSpeedKts: number
+  currentDirection: string
+
+  // Safety implications
+  lightningRisk: boolean        // Thunderstorm nearby
+  fogWarning: boolean           // Low visibility
+  strongCurrentWarning: boolean // Dangerous rip/current
+}
+```
+
+### How each field affects surfing decisions
+
+| Field | Surf Impact | Used in |
+|-------|-------------|---------|
+| `uvIndex` | Sunburn risk → sunscreen reminder, session duration | Tool responses, safety notes |
+| `sunrise` / `sunset` | Available surf window, dawn patrol timing | `best_sessions_today` |
+| `airTempC` + `windSpeedKts` | Wind chill → wetsuit recommendation | `wetsuitRecommendation` |
+| `precipitationMmH` | Heavy rain = poor visibility, choppy surface | WQI consistency factor |
+| `cloudCoverPercent` | Overcast = lower UV, but also less glare | UV risk calculation |
+| `visibility` | Fog = dangerous, can't see sets or other surfers | Safety warnings |
+| `waterTempC` | Wetsuit thickness, session endurance | `wetsuitRecommendation` |
+| `currentSpeedKts` | Paddle difficulty, drift hazard | Skill classification |
+| `currentDirection` | Rip current risk, paddle-out strategy | Safety notes |
+| `lightningRisk` | **No surfing** — exit water immediately | Hard blocker |
+| `secondarySwellHeightM` | Cross-swells = confused sea state | WQI consistency |
 
 ---
 

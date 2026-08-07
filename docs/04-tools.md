@@ -21,6 +21,8 @@ Each tool has a single responsibility and depends on abstractions (repository, p
 | `classify_best_spot_nearby` | Classification | Ranked spots by WQI within radius |
 | `classify_spot_for_skill` | Classification | Skill-level suitability check |
 | `check_swell_alert` | Alert | Future swell detection |
+| `wetsuit_recommendation` | Gear | Wetsuit type/thickness based on water temp + wind chill |
+| `surf_conditions_full` | Environment | Complete conditions: marine, wind, weather, UV, gear, safety |
 
 ---
 
@@ -299,6 +301,160 @@ export function registerAlertTools(server: FastMCP, forecastProvider: ForecastPr
       return forecast.filter(f => f.swellHeightM >= minSwellHeightM)
     }
   )
+}
+```
+
+---
+
+## 6. Environmental & Gear Recommendations
+
+```typescript
+export function registerEnvironmentTools(server: FastMCP, forecastProvider: ForecastProvider): void {
+
+  server.tool(
+    {
+      name: 'wetsuit_recommendation',
+      description: 'Recommend wetsuit type and thickness based on current water temperature, wind chill, and conditions at a beach. Includes boots/gloves/hood advice.',
+      input: z.object({
+        beachId: z.string().describe('Beach identifier'),
+        timestamp: z.string().optional().describe('ISO 8601 timestamp (defaults to now)'),
+        sessionDurationMin: z.number().positive().default(90).describe('Planned session duration in minutes'),
+      }),
+    },
+    async ({ beachId, timestamp, sessionDurationMin }) => {
+      return getWetsuitRecommendation(beachId, timestamp, sessionDurationMin, forecastProvider)
+    }
+  )
+
+  // Returns:
+  // {
+  //   beachId: "coxos-ericeira",
+  //   waterTempC: 16.5,
+  //   airTempC: 19.0,
+  //   windSpeedKts: 12,
+  //   windChillFactor: "mild",
+  //   recommendation: "4/3mm fullsuit",
+  //   thickness: "4/3mm",
+  //   type: "fullsuit",
+  //   boots: false,
+  //   gloves: false,
+  //   hood: false,
+  //   notes: "Wind chill mild — standard fullsuit sufficient. Water warming through summer.",
+  //   uvIndex: 7,
+  //   uvRisk: "high",
+  //   sunscreenReminder: true,
+  //   sunrise: "06:42",
+  //   sunset: "20:38"
+  // }
+
+  server.tool(
+    {
+      name: 'surf_conditions_full',
+      description: 'Get complete environmental conditions for a surf session: marine, wind, weather, UV, visibility, currents, and gear recommendations all in one call.',
+      input: z.object({
+        beachId: z.string().describe('Beach identifier'),
+        timestamp: z.string().optional().describe('ISO 8601 timestamp (defaults to now)'),
+      }),
+    },
+    async ({ beachId, timestamp }) => {
+      return getFullConditions(beachId, timestamp, forecastProvider)
+    }
+  )
+
+  // Returns:
+  // {
+  //   beachId: "supertubos-peniche",
+  //   timestamp: "2026-08-07T08:00:00Z",
+  //   marine: {
+  //     swellHeightM: 1.8,
+  //     swellPeriodS: 14,
+  //     swellDirection: "NW",
+  //     secondarySwell: { heightM: 0.4, periodS: 8, direction: "W" },
+  //     waveHeight: 2.0,
+  //     windWaveHeightM: 0.3,
+  //     tideHeightM: 1.2,
+  //     tideState: "falling",
+  //     nextLowTide: "2026-08-07T10:30:00Z",
+  //     currentSpeedKts: 0.8,
+  //     currentDirection: "S"
+  //   },
+  //   wind: {
+  //     speedKts: 8,
+  //     gustKts: 14,
+  //     direction: "NE",
+  //     quality: "offshore — clean faces"
+  //   },
+  //   weather: {
+  //     airTempC: 22,
+  //     feelsLikeC: 20,
+  //     precipitation: 0,
+  //     cloudCoverPercent: 15,
+  //     visibility: "excellent"
+  //   },
+  //   sun: {
+  //     uvIndex: 8,
+  //     uvRisk: "very-high",
+  //     sunrise: "06:42",
+  //     sunset: "20:38",
+  //     sunscreenReminder: true
+  //   },
+  //   ocean: {
+  //     waterTempC: 17,
+  //     currentSpeedKts: 0.8,
+  //     currentDirection: "S"
+  //   },
+  //   gear: {
+  //     wetsuit: "4/3mm fullsuit",
+  //     boots: false,
+  //     gloves: false,
+  //     hood: false,
+  //     sunscreen: "SPF 50+ recommended (UV 8)"
+  //   },
+  //   safety: {
+  //     lightningRisk: false,
+  //     fogWarning: false,
+  //     strongCurrentWarning: false,
+  //     notes: []
+  //   },
+  //   wqi: 8.2,
+  //   wqiLabel: "Very Good",
+  //   summary: "Pumping overhead NW groundswell, light offshore, dropping tide — epic morning ahead."
+  // }
+}
+```
+
+### Wetsuit Thickness Logic
+
+```typescript
+function recommendWetsuit(
+  waterTempC: number,
+  windSpeedKts: number,
+  airTempC: number,
+  sessionDurationMin: number
+): WetsuitRecommendation {
+
+  // Wind chill adjustment: strong wind = feels colder on exit
+  const windChillFactor = windSpeedKts > 25 ? 'severe'
+    : windSpeedKts > 20 ? 'moderate'
+    : windSpeedKts > 12 ? 'mild'
+    : 'none'
+
+  // Effective temp considers wind chill
+  const effectiveTemp = windChillFactor === 'none' ? waterTempC
+    : windChillFactor === 'mild' ? waterTempC - 1
+    : windChillFactor === 'moderate' ? waterTempC - 2
+    : waterTempC - 3
+
+  // Long sessions (> 2h) shift one category thicker
+  const longSession = sessionDurationMin > 120
+
+  // Determine gear based on effective temp
+  if (effectiveTemp > 24) return { type: 'boardshorts', thickness: '—', ... }
+  if (effectiveTemp > 21) return { type: 'spring-suit', thickness: '2mm', ... }
+  if (effectiveTemp > 18) return { type: 'fullsuit', thickness: '3/2mm', ... }
+  if (effectiveTemp > 15) return { type: 'fullsuit', thickness: '4/3mm', boots: longSession, ... }
+  if (effectiveTemp > 12) return { type: 'fullsuit', thickness: '5/4mm', boots: true, gloves: true, ... }
+  return { type: 'hooded-fullsuit', thickness: '6/5/4mm', boots: true, gloves: true, hood: true, ... }
 }
 ```
 

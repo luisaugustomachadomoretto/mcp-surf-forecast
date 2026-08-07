@@ -263,3 +263,21 @@ function compassToDegrees(dir: string): number {
 4. **Spot-relative scoring** — The same conditions score differently at different spots (a NW swell is perfect for some, useless for others). This is the key insight that makes WQI useful.
 
 5. **Extensible** — Future factors (crowd, water temp, hazards) can be added as new sub-scores with minimal weight redistribution.
+
+---
+
+## Environmental Data Impact on WQI
+
+The enriched forecast data from Open-Meteo influences the WQI sub-scores:
+
+| Environmental Factor | Affects Sub-Score | How |
+|---------------------|-------------------|-----|
+| Heavy rain (> 5mm/h) | Consistency −2 pts | Choppy surface, poor visibility |
+| Secondary swell (cross-swell) | Consistency −1 to −3 pts | Confused sea state, unpredictable sets |
+| Strong currents (> 2 kts) | Not in WQI, but in safety | Flagged in tool responses |
+| Poor visibility (fog) | Not in WQI, but in safety | Hard blocker — unsafe conditions |
+| Lightning risk | Not in WQI, but in safety | **Overrides all** — do not surf |
+| UV index > 8 | Not in WQI | Informational — sunscreen reminder |
+| Wind gusts vs sustained | Wind score | Gusty wind penalizes more than steady wind |
+
+> WQI remains focused on **wave quality**. Environmental/safety factors are surfaced alongside the score in `surf_conditions_full` and tool responses, but don't pollute the core 0–10 scoring. A beach can have WQI 9 but still carry a "strong current warning" — both facts are presented to the user.

@@ -87,6 +87,256 @@ Not just data — intelligence. The server tells you *where to go* based on your
 | `best_sessions_today` | Optimal windows considering tide + wind |
 | `compare_beaches` | Side-by-side forecast comparison |
 | `check_swell_alert` | Upcoming swell notifications |
+| `wetsuit_recommendation` | Gear advice based on water temp + wind chill |
+| `surf_conditions_full` | Complete conditions in one call |
+
+### Tool Sequence Diagrams
+
+#### `wave_quality_index`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as wave_quality_index
+    participant Repo as BeachRepository
+    participant Forecast as ForecastProvider
+    participant WQI as WQI Engine
+
+    Client->>Tool: { beachId, timestamp? }
+    Tool->>Repo: getById(beachId)
+    Repo-->>Tool: Beach (bestSwellDir, bestWindDir, bestTide)
+    Tool->>Forecast: getForecast(beachId)
+    Forecast-->>Tool: ForecastEntry[]
+    Tool->>WQI: calculate(forecast, beachProfile)
+    Note over WQI: swellScore × 0.30<br/>windScore × 0.25<br/>consistency × 0.15<br/>tideAlignment × 0.15<br/>directionMatch × 0.15
+    WQI-->>Tool: { wqi: 7.8, label, breakdown }
+    Tool-->>Client: WQI result + summary
+```
+
+#### `classify_best_spot_nearby`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as classify_best_spot_nearby
+    participant Repo as BeachRepository
+    participant WQI as WQI Engine
+
+    Client->>Tool: { lat, lon, radiusKm, topN, skillLevel?, minWqi }
+    Tool->>Repo: findInRadius({ lat, lon }, radiusKm)
+    Repo-->>Tool: Beach[] with distances
+    opt skillLevel provided
+        Tool->>Tool: filter by skillLevel
+    end
+    loop For each candidate beach
+        Tool->>WQI: calculate(beachId)
+        WQI-->>Tool: { wqi, label, bestWindow }
+    end
+    Tool->>Tool: filter wqi >= minWqi
+    Tool->>Tool: sort by WQI descending
+    Tool->>Tool: take topN
+    Tool-->>Client: Ranked list with WQI + highlights
+```
+
+#### `classify_spot_for_skill`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as classify_spot_for_skill
+    participant Repo as BeachRepository
+    participant WQI as WQI Engine
+
+    Client->>Tool: { beachId, skillLevel }
+    Tool->>Repo: getById(beachId)
+    Repo-->>Tool: Beach (waveType, skillLevel[])
+    Tool->>WQI: calculate(beachId)
+    WQI-->>Tool: { wqi, breakdown, forecast }
+    Tool->>Tool: evaluate(waveSize, power, currents vs skillLevel)
+    alt Safe for level
+        Tool-->>Client: { recommendation: "go", reasons }
+    else Marginal
+        Tool->>Repo: findAlternative(nearby, beginner-friendly)
+        Tool-->>Client: { recommendation: "caution", reasons, alternative }
+    else Dangerous
+        Tool->>Repo: findAlternative(nearby, safer)
+        Tool-->>Client: { recommendation: "avoid", reasons, alternative }
+    end
+```
+
+#### `find_beaches_in_radius`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as find_beaches_in_radius
+    participant Repo as BeachRepository
+    participant Geo as Haversine
+
+    Client->>Tool: { lat, lon, radiusKm, limit }
+    Tool->>Repo: getAll()
+    Repo-->>Tool: Beach[]
+    loop For each beach
+        Tool->>Geo: haversineDistance(input, beach)
+        Geo-->>Tool: distanceKm
+    end
+    Tool->>Tool: filter distance <= radiusKm
+    Tool->>Tool: sort by distance ASC
+    Tool->>Tool: take limit
+    Tool-->>Client: Beach[] with distanceKm
+```
+
+#### `find_beaches_near_city`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as find_beaches_near_city
+    participant Geocode as Nominatim API
+    participant Radius as find_beaches_in_radius
+
+    Client->>Tool: { city, country?, radiusKm, limit }
+    Tool->>Geocode: geocodeCity(city, country)
+    Geocode-->>Tool: { lat, lon }
+    alt Geocoding failed
+        Tool-->>Client: Error: "Could not geocode city"
+    else Success
+        Tool->>Radius: findInRadius(lat, lon, radiusKm, limit)
+        Radius-->>Tool: Beach[] with distances
+        Tool-->>Client: Beach[] with distances
+    end
+```
+
+#### `filter_beaches`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as filter_beaches
+    participant Repo as BeachRepository
+    participant WQI as WQI Engine
+
+    Client->>Tool: { region?, country?, waveType?, skillLevel?, minWqi, maxResults }
+    Tool->>Repo: filter({ region, country, waveType, skillLevel })
+    Repo-->>Tool: Beach[] matching criteria
+    opt minWqi > 0
+        loop For each beach
+            Tool->>WQI: calculate(beachId)
+            WQI-->>Tool: { wqi }
+        end
+        Tool->>Tool: filter wqi >= minWqi
+    end
+    Tool->>Tool: take maxResults
+    Tool-->>Client: Filtered Beach[]
+```
+
+#### `best_sessions_today`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as best_sessions_today
+    participant Repo as BeachRepository
+    participant Forecast as ForecastProvider
+    participant WQI as WQI Engine
+
+    Client->>Tool: { beachId }
+    Tool->>Repo: getById(beachId)
+    Repo-->>Tool: Beach (bestTide, bestWindDir)
+    Tool->>Forecast: getForecast(beachId, days=1)
+    Forecast-->>Tool: ForecastEntry[] (hourly)
+    loop For each hour today (sunrise → sunset)
+        Tool->>WQI: calculate(beachId, hour)
+        WQI-->>Tool: { wqi, tideState, windDirection }
+    end
+    Tool->>Tool: find peak WQI windows
+    Tool->>Tool: group consecutive good hours
+    Tool-->>Client: SessionWindow[] { startTime, endTime, wqi, confidence }
+```
+
+#### `compare_beaches`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as compare_beaches
+    participant Repo as BeachRepository
+    participant WQI as WQI Engine
+    participant Forecast as ForecastProvider
+
+    Client->>Tool: { beachIds[], date? }
+    loop For each beachId
+        Tool->>Repo: getById(beachId)
+        Repo-->>Tool: Beach profile
+        Tool->>WQI: calculate(beachId, date)
+        WQI-->>Tool: { wqi, breakdown }
+        Tool->>Forecast: getForecast(beachId)
+        Forecast-->>Tool: Conditions
+    end
+    Tool->>Tool: build side-by-side comparison
+    Tool-->>Client: Comparison[] { beach, wqi, swell, wind, tide, bestWindow }
+```
+
+#### `check_swell_alert`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as check_swell_alert
+    participant Forecast as ForecastProvider
+
+    Client->>Tool: { beachId, minSwellHeightM, daysAhead }
+    Tool->>Forecast: getForecast(beachId, daysAhead)
+    Forecast-->>Tool: ForecastEntry[] (multi-day)
+    Tool->>Tool: filter swellHeightM >= minSwellHeightM
+    alt Swell found
+        Tool-->>Client: Matching windows[] { timestamp, height, period, direction }
+    else No swell
+        Tool-->>Client: { alert: false, message: "No significant swell in next N days" }
+    end
+```
+
+#### `wetsuit_recommendation`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as wetsuit_recommendation
+    participant Forecast as ForecastProvider
+    participant Calc as Wetsuit Calculator
+
+    Client->>Tool: { beachId, timestamp?, sessionDurationMin }
+    Tool->>Forecast: getForecast(beachId)
+    Forecast-->>Tool: { waterTempC, windSpeedKts, airTempC }
+    Tool->>Calc: recommendWetsuit(waterTemp, windSpeed, airTemp, duration)
+    Note over Calc: Wind chill adjustment<br/>Long session adjustment<br/>Thickness lookup table
+    Calc-->>Tool: { type, thickness, boots, gloves, hood }
+    Tool-->>Client: Full recommendation + UV advice
+```
+
+#### `surf_conditions_full`
+
+```mermaid
+sequenceDiagram
+    participant Client as MCP Client
+    participant Tool as surf_conditions_full
+    participant Repo as BeachRepository
+    participant Forecast as ForecastProvider
+    participant WQI as WQI Engine
+    participant Wetsuit as Wetsuit Calculator
+
+    Client->>Tool: { beachId, timestamp? }
+    Tool->>Repo: getById(beachId)
+    Repo-->>Tool: Beach profile
+    Tool->>Forecast: getForecast(beachId)
+    Forecast-->>Tool: Full forecast (marine + weather + ocean)
+    Tool->>WQI: calculate(beachId, timestamp)
+    WQI-->>Tool: { wqi, label, breakdown }
+    Tool->>Wetsuit: recommendWetsuit(waterTemp, wind, airTemp)
+    Wetsuit-->>Tool: Gear recommendation
+    Tool->>Tool: assess safety (lightning, fog, currents)
+    Tool-->>Client: Complete response { marine, wind, weather, sun, ocean, gear, safety, wqi }
+```
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## System Overview
 
-An MCP server built with **FastMCP TypeScript** (`@prefecthq/fastmcp-ts`) that provides surf forecast data, beach discovery, and session planning tools to LLM clients.
+An MCP server built with **FastMCP** (`fastmcp` npm package v4.x) that provides surf forecast data, beach discovery, and session planning tools to LLM clients.
 
 The server aggregates resources from global surf data providers, exposes tools for location-based beach filtering and wave quality scoring, and offers parameterized prompts for common surf-planning workflows.
 
@@ -117,8 +117,8 @@ class SurflineProvider implements ForecastProvider { ... }  // future
 
 | Component | Choice | Rationale |
 |-----------|--------|-----------|
-| Framework | `@prefecthq/fastmcp-ts` | Official FastMCP TypeScript framework |
-| Runtime | Node.js 22+ | Required by FastMCP TS |
+| Framework | `fastmcp` v4.x | FastMCP TypeScript framework (punkpeye/fastmcp) |
+| Runtime | Node.js 22+ | Required by FastMCP |
 | Language | TypeScript 5.x | Type safety, Zod integration |
 | Schema validation | `zod` | Standard Schema compatible, first-class FastMCP support |
 | Geo math | `haversine` | Lightweight distance calculations |
@@ -160,3 +160,77 @@ prompts → tools → domain (models + WQI engine) → data providers → infras
 ```
 
 Dependencies point inward. Outer layers know about inner layers, never the reverse.
+
+---
+
+## MCP Inspector (Development Tooling)
+
+The FastMCP Inspector is a **development-time component** — it validates the server's MCP contract without requiring a real AI client. It lives outside the production dependency graph.
+
+```
+┌─────────────────────────────────────────────────┐
+│              Development Workflow                 │
+├─────────────────────────────────────────────────┤
+│                                                  │
+│  Developer                                       │
+│     │                                            │
+│     ├──► npm run dev ──► Inspector UI (browser)  │
+│     │                        │                   │
+│     │                        ▼                   │
+│     │              ┌─────────────────┐           │
+│     │              │  MCP Server     │           │
+│     │              │  (hot reload)   │           │
+│     │              └─────────────────┘           │
+│     │                                            │
+│     ├──► npx fastmcp inspect ──► Terminal list   │
+│     │                                            │
+│     └──► npx fastmcp call <tool> ──► JSON output │
+│                                                  │
+└─────────────────────────────────────────────────┘
+```
+
+### Role in Architecture
+
+| Concern | How Inspector helps |
+|---------|-------------------|
+| Contract validation | Confirms all resources, tools, prompts are registered and reachable |
+| Schema correctness | Validates Zod schemas produce the right JSON Schema for MCP clients |
+| Error boundaries | Tests that invalid inputs produce proper MCP error responses |
+| Performance baseline | Shows response time per call — catch regressions early |
+| Hot reload | File-watch mode reloads server on save — instant feedback loop |
+
+The Inspector is bundled inside `fastmcp` — no extra dependency needed. It runs via the `fastmcp` CLI that ships with the package.
+
+---
+
+## npm Dependencies
+
+### Production
+
+| Package | Version | Purpose | Layer |
+|---------|---------|---------|-------|
+| `fastmcp` | `^4.12.7` | MCP server framework + Inspector CLI | Framework |
+| `zod` | `^3.23.0` | Runtime schema validation | Models |
+| `haversine` | `^1.1.1` | Geographic distance calculations | Utils |
+
+### Development
+
+| Package | Version | Purpose | Layer |
+|---------|---------|---------|-------|
+| `typescript` | `^5.5.0` | Language compiler | Build |
+| `vitest` | `^2.0.0` | Test runner | Testing |
+| `@vitest/coverage-v8` | `^2.0.0` | Coverage reporting (LCOV for SonarCloud) | Testing / CI |
+| `@types/node` | `^22.0.0` | Node.js type definitions | Build |
+| `@types/haversine` | `^1.1.0` | Haversine type definitions | Build |
+
+### Install command
+
+```bash
+# Production deps
+npm install fastmcp zod haversine
+
+# Dev deps
+npm install -D typescript vitest @vitest/coverage-v8 @types/node @types/haversine
+```
+
+> **Note**: The `fastmcp` CLI (Inspector, `run`, `call`, `inspect` commands) ships with the `fastmcp` package. No separate install needed.

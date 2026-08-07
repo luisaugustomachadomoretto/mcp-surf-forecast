@@ -15,7 +15,7 @@ mcp-surf-forecast/
 ├── vitest.config.ts
 ├── README.md
 ├── docs/
-│   ├── INDEX.md                  # Documentation index (this system)
+│   ├── INDEX.md
 │   ├── 01-architecture.md
 │   ├── 02-data-models.md
 │   ├── 03-resources.md
@@ -25,56 +25,32 @@ mcp-surf-forecast/
 │   ├── 07-inspector-testing.md
 │   └── 08-project-setup.md      # This file
 ├── src/
-│   ├── server.ts                 # Entry point: wires everything together
+│   ├── server.ts                 # Entry point: composition root
 │   ├── resources/
-│   │   ├── index.ts              # registerResources()
-│   │   ├── providers.ts          # Provider resource handlers
-│   │   ├── beaches.ts            # Beach resource handlers
-│   │   ├── forecasts.ts          # Forecast resource handlers
-│   │   └── cams.ts               # Cam resource handlers
+│   │   └── index.ts              # All resource registrations (static + templated)
 │   ├── tools/
-│   │   ├── index.ts              # registerAllTools()
-│   │   ├── geo.ts                # find_beaches_in_radius, find_beaches_near_city
-│   │   ├── filters.ts            # filter_beaches, best_sessions_today, compare_beaches
-│   │   ├── wqi.ts                # wave_quality_index + WQI engine
-│   │   ├── classify.ts           # classify_best_spot_nearby, classify_spot_for_skill
-│   │   ├── sessions.ts           # Best session window computation
-│   │   └── alerts.ts             # check_swell_alert
+│   │   ├── index.ts              # All tool registrations (11 tools)
+│   │   └── wqi.ts                # WQI scoring engine (pure logic)
 │   ├── prompts/
-│   │   ├── index.ts              # registerAllPrompts()
+│   │   ├── index.ts              # Prompt registration orchestrator
 │   │   ├── trip.ts               # plan_surf_trip
 │   │   ├── report.ts             # daily_surf_report
 │   │   ├── analysis.ts           # analyze_spot
 │   │   └── beginner.ts           # beginner_spot_finder
-│   ├── models/
-│   │   ├── index.ts              # Re-exports all types + schemas
-│   │   ├── beach.ts              # Beach interface + Zod schema
-│   │   ├── forecast.ts           # ForecastEntry + WqiBreakdown schemas
-│   │   └── provider.ts           # Provider schema
-│   ├── providers/
-│   │   ├── index.ts              # Provider factory
-│   │   ├── static-forecast.ts    # MVP: reads from JSON
-│   │   └── static-beach-repo.ts  # MVP: in-memory beach repository
 │   ├── data/
-│   │   ├── beaches.json          # Static beach database (~50-100 entries)
-│   │   └── providers.json        # Provider metadata
+│   │   ├── beaches.json          # Static beach database (20 spots)
+│   │   └── providers.json        # Provider metadata (12 sources)
 │   └── utils/
-│       ├── geo.ts                # Haversine distance, compass conversions
-│       ├── geocode.ts            # Nominatim geocoding (free, no key)
-│       └── math.ts               # clamp, angleBetween, etc.
+│       ├── geo.ts                # Haversine distance calculation
+│       └── math.ts               # clamp, angleBetween, compassToDegrees
 ├── tests/
 │   ├── unit/
-│   │   ├── wqi.test.ts
-│   │   ├── geo.test.ts
-│   │   ├── models.test.ts
-│   │   └── classify.test.ts
-│   ├── integration/
-│   │   ├── helpers.ts            # Test server factory
-│   │   ├── resources.test.ts
-│   │   ├── tools.test.ts
-│   │   └── prompts.test.ts
-│   └── e2e/
-│       └── server.test.ts
+│   │   ├── geo.test.ts           # Math utils tests (passing)
+│   │   └── wqi.test.ts           # WQI engine tests (todo)
+│   └── integration/
+│       ├── resources.test.ts     # Resource tests (todo)
+│       ├── tools.test.ts         # Tool tests (todo)
+│       └── prompts.test.ts       # Prompt registration tests (passing)
 └── .github/
     └── workflows/
         └── ci.yml
@@ -88,9 +64,11 @@ mcp-surf-forecast/
 
 | Package | Version | Purpose |
 |---------|---------|---------|
-| `@prefecthq/fastmcp-ts` | `^1.0.0` | MCP server framework |
+| `fastmcp` | `^4.12.7` | MCP server framework (was punkpeye/fastmcp) |
 | `zod` | `^3.23.0` | Schema validation |
 | `haversine` | `^1.1.1` | Geographic distance calculations |
+
+> **Note**: The `haversine` npm package is listed as a dependency but we implemented our own Haversine in `utils/geo.ts` for zero-dependency geo math. The package can be removed if desired.
 
 ### Development
 
@@ -100,7 +78,7 @@ mcp-surf-forecast/
 | `vitest` | `^2.0.0` | Test runner |
 | `@vitest/coverage-v8` | `^2.0.0` | Coverage reporting (LCOV for SonarCloud) |
 | `@types/node` | `^22.0.0` | Node.js type definitions |
-| `@types/haversine` | `^1.1.0` | Haversine type defs |
+| `@types/haversine` | `^1.1.6` | Haversine type defs |
 
 ---
 
@@ -115,15 +93,14 @@ mcp-surf-forecast/
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "dev": "npx fastmcp dev inspector src/server.ts",
+    "dev": "npx fastmcp dev src/server.ts",
     "start": "npx fastmcp run src/server.ts",
     "start:http": "npx fastmcp run src/server.ts --transport http --port 3000",
-    "inspect": "npx fastmcp inspect --file src/server.ts",
+    "inspect": "npx fastmcp inspect src/server.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "typecheck": "tsc --noEmit",
-    "lint": "tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "engines": {
     "node": ">=22.0.0"

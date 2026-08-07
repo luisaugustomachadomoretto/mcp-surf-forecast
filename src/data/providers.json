@@ -1,0 +1,14 @@
+[
+  { "id": "surfline", "name": "Surfline", "url": "https://www.surfline.com", "region": "Global", "dataTypes": ["forecast", "cams", "reports"], "description": "Premium surf forecast and live cam provider with global coverage" },
+  { "id": "surf-forecast", "name": "Surf-Forecast.com", "url": "https://www.surf-forecast.com", "region": "Global", "dataTypes": ["forecast"], "description": "Multi-day swell models and forecast charts worldwide" },
+  { "id": "magicseaweed", "name": "Magicseaweed", "url": "https://magicseaweed.com", "region": "Global", "dataTypes": ["forecast", "reports"], "description": "Star-rated surf forecasts and community reports" },
+  { "id": "meosurf", "name": "MeoSurf", "url": "https://www.meobeachcam.com", "region": "Europe", "dataTypes": ["cams", "conditions"], "description": "Portuguese beach live cams and surf conditions" },
+  { "id": "windguru", "name": "Windguru", "url": "https://www.windguru.cz", "region": "Global", "dataTypes": ["forecast"], "description": "Detailed wind and swell models for surf and windsurf" },
+  { "id": "waves-com-br", "name": "Waves.com.br", "url": "https://www.waves.com.br", "region": "Brazil", "dataTypes": ["forecast", "reports"], "description": "Brazilian surf forecast and coastal reports" },
+  { "id": "coastalwatch", "name": "Coastalwatch", "url": "https://www.coastalwatch.com", "region": "Australia", "dataTypes": ["forecast", "cams"], "description": "Australian surf cams and forecast reports" },
+  { "id": "swellnet", "name": "Swellnet", "url": "https://www.swellnet.com", "region": "Australia", "dataTypes": ["forecast", "reports"], "description": "Australian swell analysis and surf reporting" },
+  { "id": "surfnewsnetwork", "name": "Surf News Network", "url": "https://surfnewsnetwork.com", "region": "Hawaii", "dataTypes": ["reports", "alerts"], "description": "Hawaiian Islands surf reports and big wave alerts" },
+  { "id": "baliwaves", "name": "Bali Waves", "url": "https://www.baliwaves.com", "region": "Indonesia", "dataTypes": ["forecast", "reports"], "description": "Bali and Indonesian archipelago surf forecasts" },
+  { "id": "wavescape", "name": "Wavescape", "url": "https://wavescape.co.za", "region": "Africa", "dataTypes": ["forecast", "cams"], "description": "South African surf forecast and coastal cams" },
+  { "id": "open-meteo", "name": "Open-Meteo", "url": "https://open-meteo.com", "region": "Global", "dataTypes": ["forecast", "marine", "weather"], "description": "Free open-source marine and weather API — no key required" }
+]

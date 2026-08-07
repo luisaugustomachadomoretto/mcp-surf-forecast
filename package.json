@@ -1,0 +1,43 @@
+{
+  "name": "mcp-surf-forecast",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for surf forecast data, WQI scoring, and beach discovery",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npx fastmcp dev src/server.ts",
+    "start": "npx fastmcp run src/server.ts",
+    "start:http": "npx fastmcp run src/server.ts --transport http --port 3000",
+    "inspect": "npx fastmcp inspect src/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "surf",
+    "forecast",
+    "fastmcp",
+    "wave-quality",
+    "ai",
+    "llm"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "fastmcp": "^4.12.7",
+    "haversine": "^1.1.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/haversine": "^1.1.6",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^2.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

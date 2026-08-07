@@ -6,7 +6,33 @@ Resources are **read-only data endpoints** exposed via MCP URI schemes. They fol
 
 ---
 
-## Provider Registry
+## Data Source APIs (Global Forecast)
+
+These free/freemium APIs provide the raw marine + weather data that powers our forecast entries.
+
+### Primary: Open-Meteo (Free, No API Key)
+
+| API | Data Provided | Update Freq | Resolution |
+|-----|--------------|-------------|------------|
+| [Marine Weather](https://open-meteo.com/en/docs/marine-weather-api) | Wave height, period, direction, SST, currents, tides | 3-hourly | 5–8 km |
+| [Weather Forecast](https://open-meteo.com/en/docs) | Wind, temp, rain, cloud, UV, sunrise/sunset | Hourly | 1–11 km |
+
+Open-Meteo provides **all** the environmental data needed for this project, completely free for non-commercial use, no API key required. It covers:
+
+- **Marine**: Wave height (mean + swell + wind waves), period, direction, SST, ocean currents, tides
+- **Atmospheric**: Wind speed/gust/direction, air temp, precipitation, cloud cover, UV index, visibility
+- **Solar**: Sunrise, sunset, solar radiation
+
+### Secondary: Stormglass (Free tier: 10 requests/day)
+
+| Feature | Value |
+|---------|-------|
+| URL | https://stormglass.io |
+| Free tier | 10 requests/day |
+| Data | Wave, wind, tide, water temp, UV, currents, bathymetry |
+| Advantage | Higher resolution, multiple model sources per request |
+
+### Surf Community Sources
 
 | Region | Provider | URL | Data Type |
 |--------|----------|-----|-----------|
@@ -22,6 +48,36 @@ Resources are **read-only data endpoints** exposed via MCP URI schemes. They fol
 | Indonesia | Bali Surf Report | https://www.baliwaves.com | Bali/Indo forecast |
 | Africa | Wavescape (South Africa) | https://wavescape.co.za | ZA forecast, cams |
 | Africa | Magic Seaweed Africa | https://magicseaweed.com/Africa-Surf-Forecast/2/ | African coast |
+
+### Data Parameter Map
+
+All parameters available from our data sources and how they map to the forecast model:
+
+| Category | Parameter | Source | Unit | Model Field |
+|----------|-----------|--------|------|-------------|
+| **Swell** | Primary swell height | Open-Meteo Marine | m | `swellHeightM` |
+| | Primary swell period | Open-Meteo Marine | s | `swellPeriodS` |
+| | Primary swell direction | Open-Meteo Marine | ° | `swellDirection` |
+| | Secondary swell height | Open-Meteo Marine | m | `secondarySwellHeightM` |
+| | Secondary swell period | Open-Meteo Marine | s | `secondarySwellPeriodS` |
+| | Secondary swell direction | Open-Meteo Marine | ° | `secondarySwellDirection` |
+| | Significant wave height | Open-Meteo Marine | m | `waveHeight` |
+| | Wind wave height | Open-Meteo Marine | m | `windWaveHeightM` |
+| **Tide** | Sea level height (MSL) | Open-Meteo Marine | m | `tideHeightM` |
+| | High/low tide times | Computed from sea level | ISO | `nextHighTide`, `nextLowTide` |
+| **Wind** | Wind speed | Open-Meteo Weather | kts | `windSpeedKts` |
+| | Wind gust | Open-Meteo Weather | kts | `windGustKts` |
+| | Wind direction | Open-Meteo Weather | ° | `windDirection` |
+| **Temperature** | Air temperature | Open-Meteo Weather | °C | `airTempC` |
+| | Sea surface temperature | Open-Meteo Marine | °C | `waterTempC` |
+| **Weather** | Precipitation | Open-Meteo Weather | mm/h | `precipitation` |
+| | Cloud cover | Open-Meteo Weather | % | `cloudCoverPercent` |
+| | Visibility | Open-Meteo Weather | km | `visibility` |
+| **Sun & UV** | UV Index | Open-Meteo Weather | 0-11 | `uvIndex` |
+| | Sunrise | Open-Meteo Weather | HH:MM | `sunrise` |
+| | Sunset | Open-Meteo Weather | HH:MM | `sunset` |
+| **Ocean** | Current velocity | Open-Meteo Marine | kts | `currentSpeedKts` |
+| | Current direction | Open-Meteo Marine | ° | `currentDirection` |
 
 ---
 
