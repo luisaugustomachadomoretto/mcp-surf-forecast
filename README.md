@@ -203,6 +203,102 @@ npm run dev
 
 ---
 
+## 🔍 MCP Inspector
+
+The [FastMCP Inspector](https://github.com/PrefectHQ/fastmcp-ts) is a visual development tool that lets you browse, test, and debug all your MCP components interactively — without needing an AI client connected.
+
+### Launch the Inspector
+
+```bash
+npm run dev
+```
+
+This opens a browser-based UI with hot reload. Every time you save a file, the Inspector reloads your server automatically.
+
+### What you can do in the Inspector
+
+| Feature | How |
+|---------|-----|
+| 📋 Browse all tools, resources & prompts | Listed in the sidebar with schemas |
+| 🧪 Call any tool with custom params | Fill in the form, hit "Run", see the response |
+| 📖 Read any resource by URI | Type `surf://beaches/supertubos-peniche` and see the data |
+| 💬 Render prompts with arguments | Preview exactly what the LLM receives |
+| ❌ Test error handling | Pass invalid params and verify error messages |
+| ⏱️ Check response times | Each call shows execution duration |
+
+### Inspector from the terminal (headless)
+
+If you prefer CLI over UI:
+
+```bash
+# List everything the server exposes
+npx fastmcp inspect --file src/server.ts
+
+# Output:
+# Tools (9):
+#   - wave_quality_index
+#   - classify_best_spot_nearby
+#   - classify_spot_for_skill
+#   - find_beaches_in_radius
+#   - find_beaches_near_city
+#   - filter_beaches
+#   - best_sessions_today
+#   - compare_beaches
+#   - check_swell_alert
+#
+# Resources (6):
+#   - surf://providers
+#   - surf://providers/{providerId}
+#   - surf://beaches
+#   - surf://beaches/{beachId}
+#   - surf://forecast/{beachId}
+#   - surf://cams/{beachId}
+#
+# Prompts (4):
+#   - plan_surf_trip
+#   - daily_surf_report
+#   - analyze_spot
+#   - beginner_spot_finder
+```
+
+### Call tools directly from terminal
+
+```bash
+# Score a beach
+npx fastmcp call wave_quality_index --file src/server.ts beachId=supertubos-peniche
+
+# Find beaches near coordinates
+npx fastmcp call find_beaches_in_radius --file src/server.ts lat=38.7 lon=-9.14 radiusKm=50
+
+# Classify for a beginner
+npx fastmcp call classify_spot_for_skill --file src/server.ts beachId=carcavelos skillLevel=beginner
+
+# Check upcoming swell
+npx fastmcp call check_swell_alert --file src/server.ts beachId=pipeline-oahu minSwellHeightM=3 daysAhead=5
+```
+
+### Run server locally for HTTP clients
+
+```bash
+# Start on port 3000 (default)
+npm run start:http
+
+# Or specify a custom port
+PORT=8080 npx fastmcp run src/server.ts --transport http --port 8080
+```
+
+Then test with curl:
+
+```bash
+# Health check (server is up)
+curl http://localhost:3000
+
+# Or connect a FastMCP client
+npx fastmcp call wave_quality_index --url http://localhost:3000 beachId=coxos-ericeira
+```
+
+---
+
 ## ⚙️ Configuration
 
 ### Environment Variables
