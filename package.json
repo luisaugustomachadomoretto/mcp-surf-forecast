@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "npx fastmcp dev src/server.ts",
+    "dev:inspector": "npx @modelcontextprotocol/inspector npx tsx src/server.ts",
     "start": "npx fastmcp run src/server.ts",
     "start:http": "npx fastmcp run src/server.ts --transport http --port 3000",
     "inspect": "npx fastmcp inspect src/server.ts",
