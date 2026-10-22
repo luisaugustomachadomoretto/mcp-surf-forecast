@@ -552,7 +552,7 @@ export function registerTools(server: FastMCP): void {
           sunscreenReminder: uv >= 3,
           advice: uv >= 6 ? 'SPF 50+, zinc on face, reapply every 90 min' : uv >= 3 ? 'SPF 30+ recommended' : 'Low UV — minimal protection needed',
         },
-        ocean: { waterTempC },
+        ocean: { waterTempC, currentKts: sample.oceanCurrentKts, currentDirectionDeg: sample.oceanCurrentDirectionDeg },
         gear: { wetsuit, sunscreen: uv >= 6 ? 'SPF 50+' : 'SPF 30+' },
         safety: { lightningRisk, fogWarning, strongCurrentWarning, notes: safetyNotes },
         wqi: wqi.wqi, wqiLabel: wqi.label, wqiBreakdown: wqi.breakdown,
