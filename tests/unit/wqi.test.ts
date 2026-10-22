@@ -33,6 +33,10 @@ function hour(overrides: Partial<ForecastHour>): ForecastHour {
     uvIndex: 0,
     cloudCoverPercent: 0,
     precipitationMm: 0,
+    seaLevelM: null,
+    tideState: null,
+    oceanCurrentKts: null,
+    oceanCurrentDirectionDeg: null,
     ...overrides,
   }
 }
@@ -94,6 +98,14 @@ describe('WQI Engine', () => {
     expect(wqiLabel(6.5)).toBe('Good')
     expect(wqiLabel(8.5)).toBe('Very Good')
     expect(wqiLabel(9.5)).toBe('Epic')
+  })
+
+  it('accounts for live tide state', () => {
+    // Spot wants 'high' tide; compare high vs low live state.
+    const highBeach = { ...beach, bestTide: 'high' }
+    const atHigh = calcWqi(highBeach, hour({ swellHeightM: 1.5, swellPeriodS: 12, swellDirectionDeg: 315, tideState: 'high' }))
+    const atLow = calcWqi(highBeach, hour({ swellHeightM: 1.5, swellPeriodS: 12, swellDirectionDeg: 315, tideState: 'low' }))
+    expect(atHigh.breakdown.tideAlignment).toBeGreaterThan(atLow.breakdown.tideAlignment)
   })
 
   it('degrades gracefully with a null sample', () => {
