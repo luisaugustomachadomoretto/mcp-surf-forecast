@@ -48,6 +48,10 @@ export interface Forecast {
   lat: number
   lon: number
   generatedAt: string
+  /** IANA timezone resolved by Open-Meteo for this location (e.g. Europe/Lisbon). */
+  timezone: string
+  /** UTC offset in seconds for the resolved timezone (e.g. 3600 for UTC+1). */
+  utcOffsetSeconds: number
   /** Hourly samples (next ~7 days depending on API). */
   hours: ForecastHour[]
   /** True when data came from the fallback (API unavailable). */
@@ -205,10 +209,25 @@ function fallback(lat: number, lon: number, reason: string): Forecast {
     lat,
     lon,
     generatedAt: new Date().toISOString(),
+    timezone: 'UTC',
+    utcOffsetSeconds: 0,
     hours: [],
     stale: true,
     note: `Live forecast unavailable (${reason}). No hourly data returned.`,
   }
+}
+
+/**
+ * Convert an Open-Meteo "naïve" local timestamp (e.g. "2026-10-23T09:00",
+ * which carries NO timezone) into an absolute epoch-ms instant, using the
+ * location's UTC offset. This is critical: `new Date("2026-10-23T09:00")`
+ * would otherwise be interpreted in the PROCESS timezone (UTC in the
+ * container), silently shifting every time by the local offset.
+ */
+export function localTimeToEpochMs(naiveIso: string, utcOffsetSeconds: number): number {
+  // Treat the naïve string as UTC, then subtract the offset to get the true instant.
+  const asUtc = Date.parse(naiveIso.endsWith('Z') ? naiveIso : `${naiveIso}Z`)
+  return asUtc - utcOffsetSeconds * 1000
 }
 
 /**
@@ -227,10 +246,17 @@ export async function getForecast(lat: number, lon: number): Promise<Forecast> {
     ])
 
     const hours = mergeHourly(marine, weather)
+    // Both endpoints request timezone=auto, so offsets match; prefer marine.
+    const utcOffsetSeconds = Number(
+      marine?.utc_offset_seconds ?? weather?.utc_offset_seconds ?? 0,
+    )
+    const timezone = String(marine?.timezone ?? weather?.timezone ?? 'UTC')
     const value: Forecast = {
       lat,
       lon,
       generatedAt: new Date().toISOString(),
+      timezone,
+      utcOffsetSeconds,
       hours,
       stale: hours.length === 0,
       note: hours.length === 0 ? 'API returned no hourly samples.' : undefined,
@@ -257,8 +283,8 @@ export interface SampledHour {
   outOfRange: boolean
   /** Hours between the requested target and the returned sample (0 if exact-ish). */
   offsetHours: number
-  /** ISO bounds of the available forecast window. */
-  coverage: { from: string; to: string } | null
+  /** Local-time bounds of the available window, plus the timezone they're in. */
+  coverage: { from: string; to: string; timezone: string; utcOffsetSeconds: number } | null
 }
 
 /**
@@ -270,10 +296,11 @@ export function sampleWithRange(forecast: Forecast, target: Date = new Date()): 
     return { sample: null, outOfRange: true, offsetHours: 0, coverage: null }
   }
   const targetMs = target.getTime()
+  const off = forecast.utcOffsetSeconds
   let best = forecast.hours[0]
-  let bestDiff = Math.abs(new Date(best.time).getTime() - targetMs)
+  let bestDiff = Math.abs(localTimeToEpochMs(best.time, off) - targetMs)
   for (const h of forecast.hours) {
-    const diff = Math.abs(new Date(h.time).getTime() - targetMs)
+    const diff = Math.abs(localTimeToEpochMs(h.time, off) - targetMs)
     if (diff < bestDiff) {
       best = h
       bestDiff = diff
@@ -281,14 +308,14 @@ export function sampleWithRange(forecast: Forecast, target: Date = new Date()): 
   }
   const from = forecast.hours[0].time
   const to = forecast.hours[forecast.hours.length - 1].time
-  const fromMs = new Date(from).getTime()
-  const toMs = new Date(to).getTime()
+  const fromMs = localTimeToEpochMs(from, off)
+  const toMs = localTimeToEpochMs(to, off)
   const outOfRange = targetMs < fromMs - 3600_000 || targetMs > toMs + 3600_000
   return {
     sample: best,
     outOfRange,
     offsetHours: Math.round(bestDiff / 3600_000),
-    coverage: { from, to },
+    coverage: { from, to, timezone: forecast.timezone, utcOffsetSeconds: off },
   }
 }
 

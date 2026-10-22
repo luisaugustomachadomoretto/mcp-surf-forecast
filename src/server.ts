@@ -18,7 +18,21 @@ registerTools(server)
 registerResources(server)
 registerPrompts(server)
 
-// Start the server
-server.start({
-  transportType: 'stdio',
-})
+// --- Transport selection (env-driven, defaults to stdio) ---
+// TRANSPORT = "http" | "stdio" (default: stdio)
+// PORT      = HTTP port (default: 3000)
+// HOST      = bind address for HTTP (default: 0.0.0.0, needed inside containers)
+const transport = (process.env.TRANSPORT ?? 'stdio').toLowerCase()
+const port = Number(process.env.PORT ?? 3000)
+const host = process.env.HOST ?? '0.0.0.0'
+
+if (transport === 'http') {
+  server.start({
+    transportType: 'httpStream',
+    httpStream: { host, port, endpoint: '/mcp', cors: true },
+  })
+  // eslint-disable-next-line no-console
+  console.error(`[mcp-surf-forecast] HTTP transport on http://${host}:${port}/mcp`)
+} else {
+  server.start({ transportType: 'stdio' })
+}

@@ -114,3 +114,25 @@ describe('WQI Engine', () => {
     expect(r.label).toBeTruthy()
   })
 })
+
+describe('Timezone-safe timestamp parsing', () => {
+  it('interprets naive local timestamps with the given offset, not the process TZ', async () => {
+    const { localTimeToEpochMs } = await import('../../src/providers/forecast.ts')
+    // 09:00 local at UTC+1 (Europe/Lisbon in summer) == 08:00 UTC.
+    const ms = localTimeToEpochMs('2026-10-23T09:00', 3600)
+    expect(new Date(ms).toISOString()).toBe('2026-10-23T08:00:00.000Z')
+  })
+
+  it('handles negative offsets (e.g. Brazil UTC-3)', async () => {
+    const { localTimeToEpochMs } = await import('../../src/providers/forecast.ts')
+    // 09:00 local at UTC-3 == 12:00 UTC.
+    const ms = localTimeToEpochMs('2026-10-23T09:00', -3 * 3600)
+    expect(new Date(ms).toISOString()).toBe('2026-10-23T12:00:00.000Z')
+  })
+
+  it('is a no-op for UTC (offset 0)', async () => {
+    const { localTimeToEpochMs } = await import('../../src/providers/forecast.ts')
+    const ms = localTimeToEpochMs('2026-10-23T09:00', 0)
+    expect(new Date(ms).toISOString()).toBe('2026-10-23T09:00:00.000Z')
+  })
+})

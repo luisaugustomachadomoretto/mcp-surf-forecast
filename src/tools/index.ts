@@ -3,8 +3,8 @@ import { z } from 'zod'
 import { beaches } from '../providers/beaches.js'
 import { haversineDistance } from '../utils/geo.js'
 import { compassToDegrees } from '../utils/math.js'
-import { calcWqi } from './wqi.js'
-import { getForecast, sampleAt, sampleWithRange } from '../providers/forecast.js'
+import { calcWqi, wqiLabel } from './wqi.js'
+import { getForecast, sampleAt, sampleWithRange, localTimeToEpochMs } from '../providers/forecast.js'
 
 /**
  * Register all MCP tools.
@@ -28,11 +28,14 @@ export function registerTools(server: FastMCP): void {
       return JSON.stringify({
         beachId,
         timestamp: timestamp ?? new Date().toISOString(),
+        sampleLocalTime: picked.sample?.time ?? null,
+        timezone: forecast.timezone,
+        utcOffsetSeconds: forecast.utcOffsetSeconds,
         dataStale: forecast.stale,
         outOfRange: picked.outOfRange,
         coverage: picked.coverage,
         tideState: picked.sample?.tideState ?? null,
-        ...(picked.outOfRange ? { warning: `Requested time is outside the forecast window (${picked.coverage?.from} … ${picked.coverage?.to}); returned nearest available hour (${picked.offsetHours}h off).` } : {}),
+        ...(picked.outOfRange ? { warning: `Requested time is outside the forecast window (${picked.coverage?.from} … ${picked.coverage?.to} ${forecast.timezone}); returned nearest available hour (${picked.offsetHours}h off).` } : {}),
         ...result,
       })
     },
@@ -262,15 +265,19 @@ export function registerTools(server: FastMCP): void {
         })
       }
 
-      const today = new Date().toISOString().split('T')[0]
+      // "Today" in the SPOT's local timezone (not the server/UTC day).
+      const off = forecast.utcOffsetSeconds
+      const localNow = new Date(Date.now() + off * 1000)
+      const today = localNow.toISOString().split('T')[0]
       const nowMs = Date.now()
       // Score each remaining daylight hour (06:00–20:00) today — skip hours
       // that have already passed so the windows are actionable.
       const hourly = forecast.hours
         .filter(h => h.time.startsWith(today))
-        .filter(h => new Date(h.time).getTime() >= nowMs - 3600_000)
+        .filter(h => localTimeToEpochMs(h.time, off) >= nowMs - 3600_000)
         .map(h => {
-          const hr = new Date(h.time).getHours()
+          // Hour is the LOCAL clock hour — read it from the string, not Date().
+          const hr = Number(h.time.slice(11, 13))
           return { time: h.time, hr, wqi: calcWqi(beach, h).wqi }
         })
         .filter(h => h.hr >= 6 && h.hr <= 20)
@@ -298,7 +305,12 @@ export function registerTools(server: FastMCP): void {
       flush()
 
       sessions.sort((a, b) => b.wqi - a.wqi)
-      return JSON.stringify({ beachId, name: beach.name, date: today, dataStale: false, sessions })
+      return JSON.stringify({
+        beachId, name: beach.name, date: today, dataStale: false,
+        timezone: forecast.timezone, utcOffsetSeconds: forecast.utcOffsetSeconds,
+        timeNote: 'Session times are in the spot local timezone.',
+        sessions,
+      })
     },
   })
 
@@ -518,6 +530,10 @@ export function registerTools(server: FastMCP): void {
       return JSON.stringify({
         beachId, name: beach.name,
         timestamp: timestamp ?? new Date().toISOString(),
+        sampleLocalTime: sample.time,
+        timezone: forecast.timezone,
+        utcOffsetSeconds: forecast.utcOffsetSeconds,
+        timeNote: 'timestamp is UTC (absolute); sampleLocalTime and all forecast times are in the spot local timezone.',
         dataStale: false,
         outOfRange: picked.outOfRange,
         coverage: picked.coverage,
@@ -533,7 +549,7 @@ export function registerTools(server: FastMCP): void {
           seaLevelM: sample.seaLevelM,
           note: sample.tideState == null
             ? 'No tide data for this location (Open-Meteo sea-level grid gap).'
-            : 'Relative to global mean sea level — not a nautical chart datum.',
+            : 'Relative to global mean sea level (MSL), not a nautical chart datum. Coastal accuracy is limited (Open-Meteo ~8km grid) and unsuitable for navigation.',
         },
         wind: {
           speedKts: sample.windSpeedKts,
@@ -557,6 +573,89 @@ export function registerTools(server: FastMCP): void {
         safety: { lightningRisk, fogWarning, strongCurrentWarning, notes: safetyNotes },
         wqi: wqi.wqi, wqiLabel: wqi.label, wqiBreakdown: wqi.breakdown,
         summary: wqi.summary,
+      })
+    },
+  })
+
+  // --- Forecast By Day ---
+
+  server.addTool({
+    name: 'forecast_by_day',
+    description: 'Day-by-day surf outlook for the next N days (up to 7): daily WQI peak, best daylight window, swell/wind/tide summary. Use this instead of guessing hour offsets for the weekend.',
+    parameters: z.object({
+      beachId: z.string().describe('Beach identifier'),
+      days: z.number().int().min(1).max(7).default(7).describe('How many days ahead to summarize (1–7)'),
+    }),
+    execute: async ({ beachId, days }) => {
+      const beach = beaches.find(b => b.id === beachId)
+      if (!beach) return JSON.stringify({ error: `Beach not found: ${beachId}` })
+
+      const forecast = await getForecast(beach.lat, beach.lon)
+      if (forecast.stale || !forecast.hours.length) {
+        return JSON.stringify({
+          beachId, name: beach.name, dataStale: true, days: [],
+          message: 'Live forecast unavailable — cannot build daily outlook.',
+        })
+      }
+
+      // Group hours by local date (the ISO time is already local via timezone=auto).
+      const byDate = new Map<string, typeof forecast.hours>()
+      for (const h of forecast.hours) {
+        const date = h.time.slice(0, 10)
+        if (!byDate.has(date)) byDate.set(date, [])
+        byDate.get(date)!.push(h)
+      }
+
+      const nowMs = Date.now()
+      const off = forecast.utcOffsetSeconds
+      const avg = (xs: number[]) => xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null
+      const max = (xs: number[]) => xs.length ? Math.max(...xs) : null
+      const r1 = (n: number | null) => n == null ? null : Math.round(n * 10) / 10
+
+      const out = [...byDate.entries()]
+        .sort(([a], [b]) => a.localeCompare(b))
+        .slice(0, days)
+        .map(([date, hrs]) => {
+          // Score daylight hours; for today, skip hours already passed.
+          // Hour is read from the LOCAL time string; "passed" uses the real instant.
+          const daylight = hrs.filter(h => {
+            const hr = Number(h.time.slice(11, 13))
+            if (hr < 6 || hr > 20) return false
+            return localTimeToEpochMs(h.time, off) >= nowMs - 3600_000
+          })
+          const scored = daylight.map(h => ({ time: h.time, wqi: calcWqi(beach, h).wqi, h }))
+
+          // Best single daylight hour.
+          let best = scored[0]
+          for (const s of scored) if (!best || s.wqi > best.wqi) best = s
+
+          const swellHeights = hrs.map(h => h.swellHeightM).filter((v): v is number => v != null)
+          const winds = hrs.map(h => h.windSpeedKts).filter((v): v is number => v != null)
+          const tideStates = [...new Set(hrs.map(h => h.tideState).filter(Boolean))]
+
+          return {
+            date,
+            dayWqiPeak: best ? r1(best.wqi) : null,
+            dayWqiAvg: r1(avg(scored.map(s => s.wqi))),
+            label: best ? wqiLabel(best.wqi) : 'n/a',
+            bestWindow: best ? best.time.slice(11, 16) : null,
+            swellPeakM: r1(max(swellHeights)),
+            swellAvgM: r1(avg(swellHeights)),
+            windAvgKts: r1(avg(winds)),
+            swellDirectionDeg: best?.h.swellDirectionDeg ?? null,
+            tideStates,
+            daylightHoursScored: scored.length,
+          }
+        })
+
+      return JSON.stringify({
+        beachId, name: beach.name,
+        dataStale: false,
+        timezone: forecast.timezone,
+        utcOffsetSeconds: forecast.utcOffsetSeconds,
+        timeNote: 'All dates/times are in the spot local timezone.',
+        coverage: { from: forecast.hours[0].time, to: forecast.hours[forecast.hours.length - 1].time },
+        days: out,
       })
     },
   })
