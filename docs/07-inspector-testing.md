@@ -221,7 +221,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Full history for SonarCloud blame data
+          fetch-depth: 0  # Full history for code-quality blame data
 
       - uses: actions/setup-node@v4
         with:
@@ -235,67 +235,60 @@ jobs:
 
 ### Code Quality & Static Analysis
 
-We integrate **SonarCloud** (free for open-source on GitHub) for continuous code quality, security scanning, and coverage tracking. Alternatives are listed below if the repo is private or SonarCloud doesn't fit.
+We integrate **Qodana** (JetBrains' static analysis platform, free community linter) for continuous code quality and security scanning. It runs in its own workflow and posts results as PR comments and inline annotations.
 
 ```yaml
-# .github/workflows/sonar.yml
-name: SonarCloud
+# .github/workflows/qodana.yml
+name: Qodana
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
     types: [opened, synchronize, reopened]
 
 jobs:
-  sonar:
+  qodana:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      checks: write
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - run: npm ci
-      - run: npx vitest run --coverage --reporter=lcov   # Generate LCOV for Sonar
-
-      - uses: SonarSource/sonarcloud-github-action@v3
+      - name: 'Qodana Scan'
+        uses: JetBrains/qodana-action@v2025.3
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+        with:
+          pr-mode: false
+          use-caches: true
+          post-pr-comment: true
+          use-annotations: true
+          upload-result: false
+          push-fixes: 'none'
 ```
 
-#### sonar-project.properties
+#### qodana.yaml
 
-```properties
-sonar.projectKey=mcp-surf-forecast
-sonar.organization=<your-github-org>
-
-sonar.sources=src
-sonar.tests=tests
-sonar.javascript.lcov.reportPaths=coverage/lcov.info
-
-# Exclusions
-sonar.exclusions=src/data/**,dist/**
-sonar.test.exclusions=tests/**
-
-# Quality Gate thresholds (enforced by SonarCloud defaults)
-# - No new bugs
-# - No new vulnerabilities
-# - No new security hotspots
-# - New code coverage >= 80%
-# - Duplicated lines on new code < 3%
+```yaml
+version: "1.0"
+profile:
+  name: qodana.starter
+linter: jetbrains/qodana-jvm-community:2025.3
 ```
 
 ### Alternative Free Code Quality Tools
 
-If SonarCloud isn't suitable (e.g., private repo without paid plan), these are solid free alternatives that integrate with GitHub Actions:
+If Qodana isn't suitable, these are solid free alternatives that integrate with GitHub Actions:
 
 | Tool | Free Tier | Strengths | GitHub Action |
 |------|-----------|-----------|---------------|
-| **SonarCloud** | Unlimited for public repos | Full SAST, coverage, duplication, security hotspots | `SonarSource/sonarcloud-github-action@v3` |
+| **Qodana** | Community linter free | JetBrains inspections, PR comments, annotations | `JetBrains/qodana-action@v2025.3` |
 | **Codacy** | Free for open-source | Code quality + security, 49 languages, auto-PR comments | `codacy/codacy-analysis-cli-action@v4` |
 | **DeepSource** | Free for public repos | Auto-fix suggestions, performance issues, anti-patterns | `deepsourcelabs/test-coverage-action@v1` |
 | **CodeClimate** | Free for open-source | Maintainability, duplication, test coverage tracking | `paambaati/codeclimate-action@v6` |
@@ -304,10 +297,10 @@ If SonarCloud isn't suitable (e.g., private repo without paid plan), these are s
 #### Recommendation
 
 For this project:
-1. **SonarCloud** (primary) — Full quality gate: bugs, vulnerabilities, coverage, duplication
+1. **Qodana** (primary) — JetBrains inspections for bugs, code smells, and vulnerabilities
 2. **Semgrep** (complementary) — Lightweight security scanning with TypeScript-specific rules
 
-Both are free for open-source and run in under 2 minutes.
+Both are free for open-source and run in under a few minutes.
 
 ### Full CI with Quality Gates
 
@@ -342,13 +335,6 @@ jobs:
       - name: Inspect MCP server
         run: npx fastmcp inspect src/server.ts
 
-      # SonarCloud analysis
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v3
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       # Security scanning (lightweight, fast)
       - name: Semgrep Security Scan
         uses: semgrep/semgrep-action@v1
@@ -358,6 +344,8 @@ jobs:
           SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
 ```
 
+> Code quality analysis runs separately via Qodana — see [`.github/workflows/qodana.yml`](#code-quality--static-analysis).
+
 ### Quality Gate Criteria
 
 The CI **blocks merge** if any of these fail:
@@ -366,11 +354,9 @@ The CI **blocks merge** if any of these fail:
 |-------|------|-----------|
 | Type safety | `tsc --noEmit` | Zero errors |
 | Tests pass | `vitest` | All green |
-| Coverage | SonarCloud | ≥ 80% on new code |
-| No new bugs | SonarCloud | 0 |
-| No vulnerabilities | SonarCloud / Semgrep | 0 |
-| No security hotspots | SonarCloud | 0 unreviewed |
-| Duplication | SonarCloud | < 3% on new code |
+| Code quality | Qodana | No new critical/high problems |
+| No vulnerabilities | Qodana / Semgrep | 0 |
+| Duplication | Qodana | No new duplicated blocks |
 | MCP compliance | `fastmcp inspect` | Exit code 0 |
 
 ---
