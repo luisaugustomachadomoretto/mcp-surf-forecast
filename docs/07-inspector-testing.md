@@ -340,7 +340,7 @@ jobs:
 
       # MCP compliance
       - name: Inspect MCP server
-        run: npx fastmcp inspect --file src/server.ts
+        run: npx fastmcp inspect src/server.ts
 
       # SonarCloud analysis
       - name: SonarCloud Scan
