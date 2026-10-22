@@ -568,7 +568,7 @@ npx fastmcp call wave_quality_index --url http://localhost:3000 beachId=coxos-er
 version: "1.0"
 profile:
   name: qodana.starter
-linter: jetbrains/qodana-jvm-community:2025.3
+linter: jetbrains/qodana-js:2025.3
 ```
 
 ### Data Configuration
