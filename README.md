@@ -425,6 +425,87 @@ docker compose --profile dev logs -f inspector | grep -i token
 > and never expose ports 6274/6277 publicly — the backend can spawn processes.
 ```
 
+### Run with Docker
+
+The multi-stage `Dockerfile` ships two targets: a lean **production** image
+(compiled `dist/`, prod deps only, non-root) and a **dev** image that bundles
+the sources and the MCP Inspector.
+
+**Production (HTTP server on port 3000):**
+
+```bash
+# docker compose (recommended)
+docker compose up -d surf-forecast
+# → MCP HTTP endpoint at http://localhost:3000/mcp
+
+# or plain docker
+docker build --target runtime -t mcp-surf-forecast:latest .
+docker run --rm -p 3000:3000 mcp-surf-forecast:latest
+```
+
+**Development (MCP Inspector UI):**
+
+```bash
+# docker compose — the inspector lives behind the "dev" profile
+docker compose --profile dev up inspector
+# → Inspector UI at http://localhost:6274 (sandbox/proxy on 6277)
+
+# or plain docker
+docker build --target dev -t mcp-surf-forecast:dev .
+docker run --rm -p 6274:6274 -p 6277:6277 mcp-surf-forecast:dev
+```
+
+The Inspector backend keeps its auth token enabled. On startup it prints a
+pre-authenticated URL with the session token to the container logs — copy that
+into your browser:
+
+```bash
+docker compose --profile dev logs -f inspector | grep -i token
+```
+
+> ⚠️ The dev image binds to all interfaces (`DANGEROUSLY_BIND_ALL_INTERFACES`)
+> so the UI is reachable through the published ports. Keep the auth token **on**
+> and never expose ports 6274/6277 publicly — the backend can spawn processes.
+
+### Deploy to the cloud (Fly.io)
+
+The repo ships a `fly.toml` and a `deploy` job in the CI workflow that pushes
+the production `runtime` image to [Fly.io](https://fly.io) on every push to
+`main` (after tests and the security scan pass). Your MCP server becomes
+available at a public HTTPS endpoint: `https://<your-app>.fly.dev/mcp`.
+
+**One-time setup:**
+
+```bash
+# 1. Install flyctl and sign in
+#    https://fly.io/docs/flyctl/install/
+fly auth login
+
+# 2. Create the app (keep the generated fly.toml / reuse the one in the repo).
+#    Pick a unique name and set it as `app` in fly.toml.
+fly launch --no-deploy
+
+# 3. Create a deploy token
+fly tokens create deploy -x 999999h
+
+# 4. In GitHub → Settings → Secrets and variables → Actions,
+#    add a secret named FLY_API_TOKEN with the token value.
+```
+
+After that, every push to `main` auto-deploys. To deploy manually:
+
+```bash
+fly deploy --remote-only   # builds the Dockerfile's `runtime` target
+```
+
+The app is configured to scale to zero when idle (`min_machines_running = 0`)
+to stay within the free allowance, and wakes on the next request.
+
+> ⚠️ The deployed `/mcp` endpoint is **public and unauthenticated** by default.
+> For a read-only surf-data server the risk is low, but add a bearer token
+> before exposing anything sensitive. Only the `runtime` target is deployed —
+> never the dev/inspector image.
+
 ### Connect your AI client
 
 **Claude Desktop** — add to your `mcp.json`:
@@ -604,6 +685,7 @@ npx fastmcp call wave_quality_index --url http://localhost:3000 beachId=coxos-er
 | `NOMINATIM_USER_AGENT` | No | `mcp-surf-forecast` | User-Agent for geocoding requests |
 | `QODANA_TOKEN` | CI only | — | Qodana Cloud authentication token |
 | `SEMGREP_APP_TOKEN` | CI only | — | Semgrep security scanning token |
+| `FLY_API_TOKEN` | CI only | — | Fly.io deploy token (GitHub Actions auto-deploy) |
 
 ### qodana.yaml
 
