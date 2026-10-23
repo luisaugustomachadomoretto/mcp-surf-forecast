@@ -1,14 +1,19 @@
 # Fly.io configuration for the MCP Surf Forecast server.
 # Builds the production "runtime" target from the Dockerfile and serves the
 # Streamable HTTP MCP endpoint at https://<app>.fly.dev/mcp on port 3000.
+# fly.toml app configuration file generated for mcp-surf-forecast on 2026-10-23T01:24:19Z
 #
 # One-time setup (locally, once):
 #   fly launch --no-deploy        # creates the app; keep this fly.toml
 #   fly tokens create deploy -x 999999h   # store output as FLY_API_TOKEN secret
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 # Change `app` to the unique name you chose during `fly launch`.
 app = "mcp-surf-forecast"
 primary_region = "mad"  # Madrid — close to the EU surf spots; adjust as needed.
+
+app = 'mcp-surf-forecast'
+primary_region = 'ams'
 
 [build]
   dockerfile = "Dockerfile"
@@ -22,7 +27,7 @@ primary_region = "mad"  # Madrid — close to the EU surf spots; adjust as neede
   LOG_LEVEL = "info"
 
 [http_service]
-  internal_port = 3000
+  internal_port = 8080
   force_https = true
   # Scale to zero when idle to stay within the free allowance, and wake on
   # the next request.
