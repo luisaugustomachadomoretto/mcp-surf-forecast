@@ -25,7 +25,10 @@ primary_region = 'ams'
   LOG_LEVEL = "info"
 
 [http_service]
-  internal_port = 8080
+  # Must match the port the app listens on (PORT=3000 / HOST=0.0.0.0).
+  # fly launch defaults this to 8080 — keep it at 3000 or the proxy
+  # health-checks the wrong port and public traffic never routes.
+  internal_port = 3000
   force_https = true
   # Scale to zero when idle to stay within the free allowance, and wake on
   # the next request.
