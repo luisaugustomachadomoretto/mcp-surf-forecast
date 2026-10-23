@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCP Surf Forecast — AI-powered surf intelligence</title>
+  <meta name="description" content="An MCP server that gives LLMs real-time surf intelligence: wave quality scoring, beach discovery, session planning, and forecast analysis across global data sources." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="MCP Surf Forecast" />
+  <meta property="og:description" content="The AI-powered surf companion that knows every break on the planet." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --deep: #042a3d;
+      --ocean: #0a4d68;
+      --wave: #088395;
+      --foam: #05bfdb;
+      --sky: #a1eafb;
+      --sand: #f6f1e7;
+      --ink: #0b2027;
+      --muted: #5b7884;
+      --card: #ffffff;
+      --shadow: 0 10px 40px rgba(4, 42, 61, 0.12);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background: var(--sand);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container { width: min(1120px, 92vw); margin: 0 auto; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(160deg, var(--deep) 0%, var(--ocean) 45%, var(--wave) 100%);
+      color: #fff;
+      padding: 6rem 0 9rem;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.6rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero h1 .accent { color: var(--sky); }
+
+    .hero p.lead {
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      max-width: 44ch;
+      margin: 0 auto 2.4rem;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .btn-primary { background: var(--foam); color: var(--deep); box-shadow: 0 8px 24px rgba(5, 191, 219, 0.4); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(5, 191, 219, 0.55); }
+
+    .btn-ghost { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); color: #fff; }
+    .btn-ghost:hover { background: rgba(255, 255, 255, 0.2); transform: translateY(-2px); }
+
+    /* status pill */
+    .status {
+      margin-top: 2.6rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(0, 0, 0, 0.18);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+    }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #3ddc84; box-shadow: 0 0 0 0 rgba(61, 220, 132, 0.7); animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0.6); }
+      70% { box-shadow: 0 0 0 10px rgba(61, 220, 132, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0); }
+    }
+    .status code { font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; color: var(--sky); }
+
+    /* animated wave divider */
+    .waves { position: absolute; bottom: -1px; left: 0; width: 100%; height: 120px; }
+
+    /* ---------- Stats ---------- */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: -5rem auto 0;
+      position: relative;
+      z-index: 3;
+    }
+    .stat {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.6rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .stat .num { font-size: 2.2rem; font-weight: 800; color: var(--ocean); line-height: 1; }
+    .stat .label { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
+
+    /* ---------- Sections ---------- */
+    section.block { padding: 5rem 0; }
+    .section-head { text-align: center; max-width: 60ch; margin: 0 auto 3rem; }
+    .section-head h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -0.02em; }
+    .section-head p { color: var(--muted); margin-top: 0.8rem; font-size: 1.05rem; }
+
+    .grid { display: grid; gap: 1.2rem; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .feature {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.8rem;
+      box-shadow: 0 4px 20px rgba(4, 42, 61, 0.07);
+      border: 1px solid rgba(8, 131, 149, 0.08);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .feature:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .feature .icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+    .feature h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
+    .feature p { color: var(--muted); font-size: 0.96rem; }
+
+    /* WQI table */
+    .wqi-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .wqi-table th, .wqi-table td { padding: 0.9rem 1.2rem; text-align: left; border-bottom: 1px solid #eef3f4; }
+    .wqi-table th { background: var(--ocean); color: #fff; font-weight: 600; font-size: 0.9rem; }
+    .wqi-table tr:last-child td { border-bottom: none; }
+    .score-badge { font-weight: 700; padding: 0.15rem 0.6rem; border-radius: 6px; color: #fff; font-size: 0.85rem; }
+
+    /* tools list */
+    .tool-chip {
+      display: flex; align-items: flex-start; gap: 0.7rem;
+      background: var(--card); padding: 1rem 1.2rem; border-radius: 12px;
+      border: 1px solid rgba(8, 131, 149, 0.1);
+    }
+    .tool-chip code { font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: 0.88rem; color: var(--wave); font-weight: 600; }
+    .tool-chip span { display: block; color: var(--muted); font-size: 0.85rem; margin-top: 0.15rem; }
+
+    /* connect / code block */
+    .connect { background: linear-gradient(160deg, var(--deep), var(--ocean)); color: #fff; }
+    .connect .section-head h2, .connect .section-head p { color: #fff; }
+    .connect .section-head p { opacity: 0.8; }
+    .codecard {
+      background: #041d29;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      max-width: 680px;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+    .codecard pre { overflow-x: auto; }
+    .codecard code {
+      font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+      font-size: 0.9rem;
+      color: #cdeef3;
+      white-space: pre;
+    }
+    .codecard .copy {
+      position: absolute; top: 1rem; right: 1rem;
+      background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff; border-radius: 8px; padding: 0.3rem 0.7rem; font-size: 0.78rem; cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .codecard .copy:hover { background: rgba(255, 255, 255, 0.22); }
+    .tok-key { color: #7fdbe7; }
+    .tok-str { color: #9be89b; }
+
+    /* ---------- Contribute / Open Source ---------- */
+    .contribute { background: #eef6f8; }
+    .oss-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(8, 131, 149, 0.12); color: var(--ocean);
+      font-weight: 600; font-size: 0.85rem;
+      padding: 0.4rem 0.9rem; border-radius: 999px; margin-bottom: 1rem;
+    }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; margin-bottom: 2.5rem; }
+    .step {
+      background: var(--card); border-radius: 14px; padding: 1.2rem 1rem; text-align: center;
+      box-shadow: 0 4px 16px rgba(4, 42, 61, 0.06); position: relative;
+    }
+    .step .n {
+      width: 30px; height: 30px; border-radius: 50%; background: var(--wave); color: #fff;
+      font-weight: 700; display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 0.7rem; font-size: 0.9rem;
+    }
+    .step h4 { font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .step p { font-size: 0.82rem; color: var(--muted); }
+    .step code { font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: 0.78rem; color: var(--wave); }
+
+    .first-contribs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .fc {
+      background: var(--card); border-radius: 14px; padding: 1.4rem;
+      border: 1px solid rgba(8, 131, 149, 0.1); transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .fc:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .fc .icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .fc h4 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .fc p { font-size: 0.86rem; color: var(--muted); }
+
+    @media (max-width: 860px) {
+      .steps { grid-template-columns: repeat(2, 1fr); }
+      .first-contribs { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- Footer ---------- */
+    footer { background: var(--ink); color: rgba(255, 255, 255, 0.7); padding: 3rem 0; text-align: center; }
+    footer a { color: var(--sky); font-weight: 500; }
+    footer .links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.2rem; }
+    footer .fine { font-size: 0.85rem; opacity: 0.6; }
+
+    /* responsive */
+    @media (max-width: 860px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="container">
+      <span class="eyebrow">🏄 Model Context Protocol Server</span>
+      <h1>MCP Surf&nbsp;Forecast<br /><span class="accent">surf intelligence for your AI</span></h1>
+      <p class="lead">Wave quality scoring, beach discovery, and session planning — turn any LLM into a surf-savvy copilot.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/luisaugustomachadomoretto/mcp-surf-forecast">⭐ View on GitHub</a>
+        <a class="btn btn-ghost" href="#connect">Connect your AI →</a>
+        <a class="btn btn-ghost" href="#contribute">Contribute 🤙</a>
+      </div>
+      <div class="status">
+        <span class="dot"></span> Live endpoint: <code>https://mcp-surf-forecast.fly.dev/mcp</code>
+      </div>
+    </div>
+    <!-- wave divider -->
+    <svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#f6f1e7" d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,72 L1440,120 L0,120 Z"></path>
+    </svg>
+  </header>
+
+  <!-- ===== STATS ===== -->
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><div class="num">960+</div><div class="label">Surf spots worldwide</div></div>
+      <div class="stat"><div class="num">12</div><div class="label">Smart tools</div></div>
+      <div class="stat"><div class="num">12</div><div class="label">Data providers</div></div>
+      <div class="stat"><div class="num">0–10</div><div class="label">Wave Quality Index</div></div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="block">
+    <div class="container">
+      <div class="section-head">
+        <h2>Stop checking 5 different apps</h2>
+        <p>One server condenses swell, wind, tide, and consistency into answers your AI can act on.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="feature"><div class="icon">🎯</div><h3>Wave Quality Index</h3><p>A single 0–10 score blends swell, wind, tide alignment, consistency, and direction match. No more cross-referencing tabs.</p></div>
+        <div class="feature"><div class="icon">🌍</div><h3>Global coverage</h3><p>Hundreds of breaks across Europe, Brazil, Australia, Hawaii, Indonesia, and Africa — aggregated from 12 providers.</p></div>
+        <div class="feature"><div class="icon">🧠</div><h3>Smart classification</h3><p>Recommendations by skill level and location. Beginners get safe picks; pros get the heavy spots.</p></div>
+        <div class="feature"><div class="icon">📅</div><h3>Session planning</h3><p>Best daylight windows, day-by-day outlooks, and swell alerts so you catch the right tide.</p></div>
+        <div class="feature"><div class="icon">🧥</div><h3>Gear advice</h3><p>Wetsuit thickness from water temp and wind chill, plus UV and safety notes for the full session.</p></div>
+        <div class="feature"><div class="icon">🔌</div><h3>Any MCP client</h3><p>Works with Claude, Cursor, and any Model Context Protocol-compatible assistant over HTTP.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WQI ===== -->
+  <section class="block" style="background:#eef6f8;">
+    <div class="container">
+      <div class="section-head">
+        <h2>The Wave Quality Index</h2>
+        <p>Ask "how good is it?" and get a number — with a full factor breakdown behind it.</p>
+      </div>
+      <table class="wqi-table">
+        <thead><tr><th>Score</th><th>Label</th><th>You should…</th></tr></thead>
+        <tbody>
+          <tr><td><span class="score-badge" style="background:#0a7d3c;">8–10</span></td><td>Very Good / Epic</td><td>Drop everything and go</td></tr>
+          <tr><td><span class="score-badge" style="background:#4caf50;">6–7</span></td><td>Good</td><td>Great session guaranteed</td></tr>
+          <tr><td><span class="score-badge" style="background:#e3a008;">4–5</span></td><td>Fair</td><td>Fun if you're not picky</td></tr>
+          <tr><td><span class="score-badge" style="background:#e06817;">2–3</span></td><td>Poor</td><td>Maybe do yoga instead</td></tr>
+          <tr><td><span class="score-badge" style="background:#c0392b;">0–1</span></td><td>Flat</td><td>Definitely do yoga</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== TOOLS ===== -->
+  <section class="block">
+    <div class="container">
+      <div class="section-head">
+        <h2>12 tools at your AI's fingertips</h2>
+        <p>Everything is a single call away — discovery, scoring, planning, and gear.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="tool-chip">🌊<div><code>wave_quality_index</code><span>Score any beach 0–10 with full breakdown</span></div></div>
+        <div class="tool-chip">🏆<div><code>classify_best_spot_nearby</code><span>Ranked spots by quality within your radius</span></div></div>
+        <div class="tool-chip">🚦<div><code>classify_spot_for_skill</code><span>Go / caution / avoid for your level</span></div></div>
+        <div class="tool-chip">📍<div><code>find_beaches_in_radius</code><span>Discover spots near GPS coordinates</span></div></div>
+        <div class="tool-chip">🏙️<div><code>find_beaches_near_city</code><span>Same, but from a city name</span></div></div>
+        <div class="tool-chip">🔎<div><code>filter_beaches</code><span>Multi-criteria search (region, wave type, skill)</span></div></div>
+        <div class="tool-chip">⏱️<div><code>best_sessions_today</code><span>Optimal windows considering tide + wind</span></div></div>
+        <div class="tool-chip">📊<div><code>compare_beaches</code><span>Side-by-side forecast comparison</span></div></div>
+        <div class="tool-chip">🔔<div><code>check_swell_alert</code><span>Upcoming swell notifications</span></div></div>
+        <div class="tool-chip">🧥<div><code>wetsuit_recommendation</code><span>Gear advice from water temp + wind chill</span></div></div>
+        <div class="tool-chip">🌤️<div><code>surf_conditions_full</code><span>Complete conditions in one call</span></div></div>
+        <div class="tool-chip">📆<div><code>forecast_by_day</code><span>Day-by-day outlook for the next 7 days</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONNECT ===== -->
+  <section class="block connect" id="connect">
+    <div class="container">
+      <div class="section-head">
+        <h2>Connect in 30 seconds</h2>
+        <p>Point your MCP client at the live HTTP endpoint — no install required.</p>
+      </div>
+      <div class="codecard">
+        <button class="copy" onclick="copyConfig()">Copy</button>
+        <pre><code id="cfg">{
+  "mcpServers": {
+    "surf-forecast": {
+      "url": "https://mcp-surf-forecast.fly.dev/mcp"
+    }
+  }
+}</code></pre>
+      </div>
+      <p style="text-align:center; margin-top:1.4rem; opacity:0.75; font-size:0.9rem;">
+        Add this to your client's <code>mcp.json</code> (Claude Desktop, Cursor, Kiro, …) and start asking about waves.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTRIBUTE / OPEN SOURCE ===== -->
+  <section class="block contribute" id="contribute">
+    <div class="container">
+      <div class="section-head">
+        <span class="oss-badge">⬡ Open source · MIT licensed</span>
+        <h2>Built in the open — join the lineup</h2>
+        <p>Whether it's adding new beaches, improving the WQI algorithm, or integrating real-time data sources, contributions are welcome. No gatekeeping — paddle out.</p>
+      </div>
+
+      <!-- workflow steps -->
+      <div class="steps">
+        <div class="step"><div class="n">1</div><h4>Branch</h4><p><code>git checkout -b feature/…</code></p></div>
+        <div class="step"><div class="n">2</div><h4>Build</h4><p>Make your changes</p></div>
+        <div class="step"><div class="n">3</div><h4>Test</h4><p><code>npm test</code> &amp; <code>typecheck</code></p></div>
+        <div class="step"><div class="n">4</div><h4>PR</h4><p>Open a pull request</p></div>
+      </div>
+
+      <!-- easy first contributions -->
+      <div class="first-contribs">
+        <div class="fc"><div class="icon">🏖️</div><h4>Add beaches</h4><p>Drop entries into <code>beaches.json</code> — no code needed.</p></div>
+        <div class="fc"><div class="icon">🌊</div><h4>Tune the WQI</h4><p>Improve scoring accuracy for specific wave types.</p></div>
+        <div class="fc"><div class="icon">🌍</div><h4>Add providers</h4><p>Implement a new forecast data source.</p></div>
+        <div class="fc"><div class="icon">📝</div><h4>Improve prompts</h4><p>Better LLM guidance for surf planning.</p></div>
+      </div>
+
+      <div style="text-align:center; margin-top:2.6rem;">
+        <a class="btn btn-primary" href="https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/blob/main/README.md#-contributing">📖 Read the contributing guide</a>
+        <a class="btn btn-ghost" style="color:var(--ocean); border-color:rgba(8,131,149,0.3);" href="https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/issues">💡 Browse open issues</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="links">
+        <a href="https://github.com/luisaugustomachadomoretto/mcp-surf-forecast">GitHub</a>
+        <a href="https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/tree/main/docs">Docs</a>
+        <a href="#contribute">Contribute</a>
+        <a href="https://modelcontextprotocol.io/">About MCP</a>
+        <a href="https://mcp-surf-forecast.fly.dev/mcp">Live endpoint</a>
+      </div>
+      <p class="fine">Built for surfers, by surfers. 🤙 &nbsp;·&nbsp; MIT License</p>
+      <p class="fine">The live <code>/mcp</code> endpoint is public and read-only.</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyConfig() {
+      const text = document.getElementById('cfg').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.querySelector('.copy');
+        const old = btn.innerText;
+        btn.innerText = 'Copied!';
+        setTimeout(() => (btn.innerText = old), 1600);
+      });
+    }
+  </script>
+</body>
+</html>
