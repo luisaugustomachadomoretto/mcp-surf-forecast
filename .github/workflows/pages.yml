@@ -1,39 +1,44 @@
-name: Deploy Pages
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches: [main]
-    # Only rebuild the site when the landing page itself changes.
-    paths:
-      - "index.html"
-      - ".github/workflows/pages.yml"
-  # Allow manual runs from the Actions tab.
+    branches: ["main"]
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Permissions required by the GitHub Pages deploy action.
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent Pages deployment; don't cancel in-progress runs.
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: pages
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Configure Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Auto-provision the Pages site if it isn't enabled yet, so no
+          # manual Settings → Pages step is required.
+          enablement: true
 
-      # Stage only the static site files (avoid uploading the whole repo).
+      # Stage only the static site file(s) instead of the whole repo.
       - name: Stage site
         run: |
           mkdir -p _site
@@ -46,4 +51,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
