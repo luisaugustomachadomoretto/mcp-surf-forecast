@@ -54,6 +54,11 @@ export interface Forecast {
   utcOffsetSeconds: number
   /** Hourly samples (next ~7 days depending on API). */
   hours: ForecastHour[]
+  /**
+   * Per-date daylight bounds keyed by local date (YYYY-MM-DD). sunrise/sunset
+   * are naïve local ISO strings (no offset), matching the hourly `time` format.
+   */
+  daylight: Record<string, { sunrise: string; sunset: string }>
   /** True when data came from the fallback (API unavailable). */
   stale: boolean
   /** Human-readable note when stale. */
@@ -123,6 +128,7 @@ function buildWeatherUrl(lat: number, lon: number): string {
     ].join(','),
     wind_speed_unit: 'kn',
     forecast_days: '7',
+    daily: ['sunrise', 'sunset'].join(','),
     timezone: 'auto',
   })
   return `${WEATHER_URL}?${params.toString()}`
@@ -175,12 +181,29 @@ function mergeHourly(marine: any, weather: any): ForecastHour[] {
 }
 
 /**
+ * Parse Open-Meteo `daily.sunrise`/`daily.sunset` (naïve local ISO strings)
+ * into a per-date lookup keyed by local date. Returns {} when absent.
+ */
+function parseDaylight(weather: any): Record<string, { sunrise: string; sunset: string }> {
+  const dates: string[] = weather?.daily?.time ?? []
+  const sunrise: string[] = weather?.daily?.sunrise ?? []
+  const sunset: string[] = weather?.daily?.sunset ?? []
+  const out: Record<string, { sunrise: string; sunset: string }> = {}
+  dates.forEach((d, i) => {
+    if (typeof sunrise[i] === 'string' && typeof sunset[i] === 'string') {
+      out[d] = { sunrise: sunrise[i], sunset: sunset[i] }
+    }
+  })
+  return out
+}
+
+/**
  * Derive a tide state for each hour from the sea-level curve.
  * - 'high'/'low' at local maxima/minima (turning points)
  * - 'rising'/'falling' in between, based on slope
  * Mutates the array in place. Requires >= 3 samples with seaLevelM.
  */
-function deriveTideState(hours: ForecastHour[]): void {
+export function deriveTideState(hours: ForecastHour[]): void {
   const n = hours.length
   for (let i = 0; i < n; i++) {
     const cur = hours[i].seaLevelM
@@ -189,18 +212,27 @@ function deriveTideState(hours: ForecastHour[]): void {
     const next = i < n - 1 ? hours[i + 1].seaLevelM : null
 
     if (prev != null && next != null) {
-      // Turning points (within a small epsilon to avoid flat-noise flapping).
-      const eps = 0.02
-      if (cur >= prev - eps && cur >= next - eps && (cur > prev || cur > next)) {
+      // Local extrema require a TRUE turning point: the hour must be at least
+      // as high (low) as both neighbours AND strictly higher (lower) than at
+      // least one. A monotonic ramp (e.g. 0,0.01,0.02) is NOT an extremum —
+      // using an epsilon here would mislabel steady rises/falls as high/low.
+      if (cur >= prev && cur >= next && (cur > prev || cur > next)) {
         hours[i].tideState = 'high'; continue
       }
-      if (cur <= prev + eps && cur <= next + eps && (cur < prev || cur < next)) {
+      if (cur <= prev && cur <= next && (cur < prev || cur < next)) {
         hours[i].tideState = 'low'; continue
       }
     }
-    const ref = next ?? prev
-    if (ref == null) { hours[i].tideState = null; continue }
-    hours[i].tideState = (next ?? cur) >= cur ? 'rising' : 'falling'
+    // Slope between samples. At the final hour (next == null) or before a data
+    // gap, fall back to the PREVIOUS reading so a falling curve ending in a
+    // gap isn't reported as rising.
+    if (next != null) {
+      hours[i].tideState = next >= cur ? 'rising' : 'falling'
+    } else if (prev != null) {
+      hours[i].tideState = cur >= prev ? 'rising' : 'falling'
+    } else {
+      hours[i].tideState = null
+    }
   }
 }
 
@@ -212,6 +244,7 @@ function fallback(lat: number, lon: number, reason: string): Forecast {
     timezone: 'UTC',
     utcOffsetSeconds: 0,
     hours: [],
+    daylight: {},
     stale: true,
     note: `Live forecast unavailable (${reason}). No hourly data returned.`,
   }
@@ -232,6 +265,10 @@ export function localTimeToEpochMs(naiveIso: string, utcOffsetSeconds: number): 
 
 /**
  * Get a forecast for a location. Cached for 30 min; never throws.
+ *
+ * Concurrent callers for the same (lat,lon) share a single in-flight request
+ * (dedup) so burst fan-out from the ranking/filter tools doesn't launch
+ * duplicate upstream fetches for the same spot.
  */
 export async function getForecast(lat: number, lon: number): Promise<Forecast> {
   const key = cacheKey(lat, lon)
@@ -239,6 +276,20 @@ export async function getForecast(lat: number, lon: number): Promise<Forecast> {
   const cached = cache.get(key)
   if (cached && cached.expires > now) return cached.value
 
+  const pending = inflight.get(key)
+  if (pending) return pending
+
+  const promise = fetchForecast(lat, lon, key).finally(() => {
+    inflight.delete(key)
+  })
+  inflight.set(key, promise)
+  return promise
+}
+
+const inflight = new Map<string, Promise<Forecast>>()
+
+async function fetchForecast(lat: number, lon: number, key: string): Promise<Forecast> {
+  const now = Date.now()
   try {
     const [marine, weather] = await Promise.all([
       fetchJson(buildMarineUrl(lat, lon)),
@@ -246,6 +297,7 @@ export async function getForecast(lat: number, lon: number): Promise<Forecast> {
     ])
 
     const hours = mergeHourly(marine, weather)
+    const daylight = parseDaylight(weather)
     // Both endpoints request timezone=auto, so offsets match; prefer marine.
     const utcOffsetSeconds = Number(
       marine?.utc_offset_seconds ?? weather?.utc_offset_seconds ?? 0,
@@ -258,6 +310,7 @@ export async function getForecast(lat: number, lon: number): Promise<Forecast> {
       timezone,
       utcOffsetSeconds,
       hours,
+      daylight,
       stale: hours.length === 0,
       note: hours.length === 0 ? 'API returned no hourly samples.' : undefined,
     }
@@ -320,3 +373,26 @@ export function sampleWithRange(forecast: Forecast, target: Date = new Date()): 
 }
 
 export { KMH_TO_KTS }
+
+/**
+ * Daylight hour bounds (local clock hours) for a given local date, derived from
+ * the forecast's sunrise/sunset. Falls back to a fixed 06:00–20:00 window when
+ * the date has no sunrise/sunset data.
+ *
+ * `startHr` is floored to the sunrise hour and `endHr` is the ceil of the
+ * sunset hour, so an hourly slot is included if any of it is in daylight.
+ */
+export function daylightHourBounds(
+  forecast: Forecast,
+  localDate: string,
+): { startHr: number; endHr: number; source: 'sun' | 'default' } {
+  const d = forecast.daylight[localDate]
+  if (!d) return { startHr: 6, endHr: 20, source: 'default' }
+  const sunriseHr = Number(d.sunrise.slice(11, 13))
+  const sunsetMin = Number(d.sunset.slice(14, 16))
+  const sunsetHr = Number(d.sunset.slice(11, 13)) + (sunsetMin > 0 ? 1 : 0)
+  if (!Number.isFinite(sunriseHr) || !Number.isFinite(sunsetHr)) {
+    return { startHr: 6, endHr: 20, source: 'default' }
+  }
+  return { startHr: sunriseHr, endHr: Math.min(sunsetHr, 23), source: 'sun' }
+}

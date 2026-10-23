@@ -26,15 +26,32 @@ export interface Beach {
   camUrl: string | null
   /** Optional link to the external forecast page (scraped datasets). */
   forecastUrl?: string
+  /** Source subregion (e.g. "Algarve", "Landes") when normalized from scraped data. */
+  subregion?: string
+}
+
+/**
+ * Map a country to the coarse region vocabulary used by the curated DB and the
+ * filter_beaches tool. Scraped datasets store subregions (Algarve, Landes…) in
+ * their region field, which would otherwise be excluded by an exact-match
+ * region filter like region: 'Europe'.
+ */
+const COUNTRY_TO_REGION: Record<string, string> = {
+  Portugal: 'Europe',
+  France: 'Europe',
 }
 
 /** Normalize a scraped record to the Beach shape; drop ones without coords. */
 function fromScraped(p: any): Beach | null {
   if (p.lat == null || p.lon == null) return null
+  // Normalize to the coarse region vocabulary (e.g. "Europe") so these records
+  // are matched by filter_beaches; keep the source subregion separately.
+  const normalizedRegion = COUNTRY_TO_REGION[p.country] ?? p.region
+  const subregion = normalizedRegion !== p.region ? p.region : undefined
   return {
     id: p.id,
     name: p.name,
-    region: p.region,
+    region: normalizedRegion,
     country: p.country,
     lat: p.lat,
     lon: p.lon,
@@ -48,6 +65,7 @@ function fromScraped(p: any): Beach | null {
     providers: Array.isArray(p.providers) ? p.providers : ['surf-forecast', 'open-meteo'],
     camUrl: p.camUrl ?? null,
     forecastUrl: p.forecastUrl,
+    subregion,
   }
 }
 

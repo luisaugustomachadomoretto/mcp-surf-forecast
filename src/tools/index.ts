@@ -3,8 +3,26 @@ import { z } from 'zod'
 import { beaches } from '../providers/beaches.js'
 import { haversineDistance } from '../utils/geo.js'
 import { compassToDegrees } from '../utils/math.js'
+import { mapWithConcurrency } from '../utils/concurrency.js'
 import { calcWqi, wqiLabel } from './wqi.js'
-import { getForecast, sampleAt, sampleWithRange, localTimeToEpochMs } from '../providers/forecast.js'
+import { getForecast, sampleAt, sampleWithRange, localTimeToEpochMs, daylightHourBounds } from '../providers/forecast.js'
+
+/**
+ * Resolve a user-supplied date/timestamp into an absolute target instant,
+ * interpreted in the SPOT's local timezone.
+ *
+ * - A full timestamp (contains "T") is taken as-is (absolute instant).
+ * - A date-only string ("2026-10-24") is anchored to local NOON on that date
+ *   at the spot, so a single daytime sample is representative instead of
+ *   midnight-UTC (which can land on the previous local day for -offset spots).
+ * - Omitted → now.
+ */
+function resolveTarget(input: string | undefined, utcOffsetSeconds: number): Date {
+  if (!input) return new Date()
+  if (input.includes('T')) return new Date(input)
+  // Date-only: local noon on that date = midnight-UTC + 12h − local offset.
+  return new Date(localTimeToEpochMs(`${input}T12:00`, utcOffsetSeconds))
+}
 
 /**
  * Register all MCP tools.
@@ -63,11 +81,13 @@ export function registerTools(server: FastMCP): void {
         candidates = candidates.filter(b => b.skillLevel.includes(skillLevel))
       }
 
-      const scored = (await Promise.all(candidates.map(async (b) => {
+      // Cap fan-out so a large radius doesn't launch hundreds of upstream
+      // fetches at once (dedup in the provider shares repeats for same coords).
+      const scored = (await mapWithConcurrency(candidates, 8, async (b) => {
         const forecast = await getForecast(b.lat, b.lon)
         const wqi = calcWqi(b, sampleAt(forecast))
         return { ...b, ...wqi }
-      })))
+      }))
         .filter(s => s.wqi >= minWqi)
         .sort((a, b) => b.wqi - a.wqi)
         .slice(0, topN)
@@ -230,10 +250,10 @@ export function registerTools(server: FastMCP): void {
       if (skillLevel) results = results.filter(b => b.skillLevel.includes(skillLevel))
 
       if (minWqi > 0) {
-        results = (await Promise.all(results.map(async (b) => {
+        results = (await mapWithConcurrency(results, 8, async (b) => {
           const forecast = await getForecast(b.lat, b.lon)
           return { ...b, wqi: calcWqi(b, sampleAt(forecast)).wqi }
-        })))
+        }))
           .filter(b => b.wqi >= minWqi)
       }
 
@@ -270,8 +290,11 @@ export function registerTools(server: FastMCP): void {
       const localNow = new Date(Date.now() + off * 1000)
       const today = localNow.toISOString().split('T')[0]
       const nowMs = Date.now()
-      // Score each remaining daylight hour (06:00–20:00) today — skip hours
-      // that have already passed so the windows are actionable.
+      // Daylight bounds from the spot's sunrise/sunset for TODAY (falls back to
+      // 06:00–20:00 when sun data is unavailable).
+      const { startHr, endHr, source: daylightSource } = daylightHourBounds(forecast, today)
+      // Score each remaining daylight hour today — skip hours that have already
+      // passed so the windows are actionable.
       const hourly = forecast.hours
         .filter(h => h.time.startsWith(today))
         .filter(h => localTimeToEpochMs(h.time, off) >= nowMs - 3600_000)
@@ -280,7 +303,7 @@ export function registerTools(server: FastMCP): void {
           const hr = Number(h.time.slice(11, 13))
           return { time: h.time, hr, wqi: calcWqi(beach, h).wqi }
         })
-        .filter(h => h.hr >= 6 && h.hr <= 20)
+        .filter(h => h.hr >= startHr && h.hr <= endHr)
 
       // Group consecutive hours with WQI >= 5 into session windows.
       const sessions: Array<{ startTime: string; endTime: string; wqi: number; confidence: string }> = []
@@ -289,9 +312,14 @@ export function registerTools(server: FastMCP): void {
         if (run.length) {
           const peak = Math.max(...run.map(r => r.wqi))
           const fmt = (iso: string) => iso.slice(11, 16)
+          // Each qualifying hour is a 1-hour slot; the session ends at the NEXT
+          // hourly boundary after the last good hour (a 07:00–08:00 run spans
+          // 07:00→08:00, not a zero-length 07:00→07:00).
+          const last = run[run.length - 1]
+          const endHr = (last.hr + 1) % 24
           sessions.push({
             startTime: fmt(run[0].time),
-            endTime: fmt(run[run.length - 1].time),
+            endTime: `${String(endHr).padStart(2, '0')}:00`,
             wqi: Math.round(peak * 10) / 10,
             confidence: peak >= 7 ? 'high' : peak >= 6 ? 'medium' : 'low',
           })
@@ -309,6 +337,11 @@ export function registerTools(server: FastMCP): void {
         beachId, name: beach.name, date: today, dataStale: false,
         timezone: forecast.timezone, utcOffsetSeconds: forecast.utcOffsetSeconds,
         timeNote: 'Session times are in the spot local timezone.',
+        daylight: {
+          from: `${String(startHr).padStart(2, '0')}:00`,
+          to: `${String(endHr).padStart(2, '0')}:00`,
+          source: daylightSource === 'sun' ? 'sunrise/sunset' : 'default (06:00–20:00)',
+        },
         sessions,
       })
     },
@@ -328,13 +361,22 @@ export function registerTools(server: FastMCP): void {
         const beach = beaches.find(b => b.id === id)
         if (!beach) return { beachId: id, error: 'Not found' }
         const forecast = await getForecast(beach.lat, beach.lon)
-        const sample = sampleAt(forecast, date ? new Date(date) : new Date())
+        // Interpret the requested date in THIS beach's local timezone, and
+        // report when it lands outside the covered window instead of silently
+        // returning the nearest edge hour.
+        const target = resolveTarget(date, forecast.utcOffsetSeconds)
+        const picked = sampleWithRange(forecast, target)
+        const sample = picked.sample
         const wqi = calcWqi(beach, sample)
         return {
           beachId: id,
           name: beach.name,
           wqi: wqi.wqi,
           label: wqi.label,
+          sampleLocalTime: sample?.time ?? null,
+          timezone: forecast.timezone,
+          dataStale: forecast.stale,
+          outOfRange: picked.outOfRange,
           swellHeightM: sample?.swellHeightM ?? null,
           swellPeriodS: sample?.swellPeriodS ?? null,
           windSpeedKts: sample?.windSpeedKts ?? null,
@@ -342,6 +384,7 @@ export function registerTools(server: FastMCP): void {
           bestTide: beach.bestTide,
           bestSwellDir: beach.bestSwellDir,
           summary: wqi.summary,
+          ...(picked.outOfRange ? { warning: `Requested date is outside this spot's forecast window (${picked.coverage?.from} … ${picked.coverage?.to} ${forecast.timezone}); using nearest hour (${picked.offsetHours}h off).` } : {}),
         }
       }))
 
@@ -371,12 +414,20 @@ export function registerTools(server: FastMCP): void {
         })
       }
 
-      const cutoff = Date.now() + daysAhead * 24 * 60 * 60 * 1000
+      const off = forecast.utcOffsetSeconds
+      const nowMs = Date.now()
+      const cutoff = nowMs + daysAhead * 24 * 60 * 60 * 1000
       const windows = forecast.hours
-        .filter(h => new Date(h.time).getTime() <= cutoff)
+        // Use the absolute instant (offset-aware) for both bounds so non-UTC
+        // spots aren't shifted, and already-past hours don't trigger alerts.
+        .filter(h => {
+          const atMs = localTimeToEpochMs(h.time, off)
+          return atMs >= nowMs && atMs <= cutoff
+        })
         .filter(h => (h.swellHeightM ?? 0) >= minSwellHeightM)
         .map(h => ({
-          timestamp: h.time,
+          timestamp: new Date(localTimeToEpochMs(h.time, off)).toISOString(),
+          localTime: h.time,
           swellHeightM: h.swellHeightM,
           swellPeriodS: h.swellPeriodS,
           swellDirectionDeg: h.swellDirectionDeg,
@@ -389,6 +440,9 @@ export function registerTools(server: FastMCP): void {
           ? `Swell >= ${minSwellHeightM}m found in ${windows.length} hourly window(s) over the next ${daysAhead} days.`
           : `No swell >= ${minSwellHeightM}m forecasted in the next ${daysAhead} days.`,
         peakSwellM: windows.length ? Math.max(...windows.map(w => w.swellHeightM ?? 0)) : null,
+        timezone: forecast.timezone,
+        utcOffsetSeconds: off,
+        timeNote: 'timestamp is UTC (absolute); localTime is in the spot local timezone.',
         windows: windows.slice(0, 48),
       })
     },
@@ -409,7 +463,8 @@ export function registerTools(server: FastMCP): void {
       if (!beach) return JSON.stringify({ error: `Beach not found: ${beachId}` })
 
       const forecast = await getForecast(beach.lat, beach.lon)
-      const sample = sampleAt(forecast, timestamp ? new Date(timestamp) : new Date())
+      const picked = sampleWithRange(forecast, resolveTarget(timestamp, forecast.utcOffsetSeconds))
+      const sample = picked.sample
 
       // Fallback water temps by region if the live sample is missing.
       const waterTempMap: Record<string, number> = {
@@ -448,6 +503,10 @@ export function registerTools(server: FastMCP): void {
         airTempC: Math.round(airTempC * 10) / 10,
         windSpeedKts: Math.round(windSpeedKts * 10) / 10,
         dataStale: forecast.stale,
+        outOfRange: picked.outOfRange,
+        sampleLocalTime: sample?.time ?? null,
+        timezone: forecast.timezone,
+        ...(picked.outOfRange ? { warning: `Requested time is outside the forecast window (${picked.coverage?.from} … ${picked.coverage?.to} ${forecast.timezone}); using nearest hour (${picked.offsetHours}h off) — recommendation may not reflect the requested time.` } : {}),
         windChillFactor, effectiveTemp: Math.round(adjusted * 10) / 10,
         recommendation: `${thickness} ${type}`,
         thickness, type, boots, gloves, hood,
@@ -608,19 +667,26 @@ export function registerTools(server: FastMCP): void {
 
       const nowMs = Date.now()
       const off = forecast.utcOffsetSeconds
+      // Local "today" at the spot, so we don't spend a day slot on a past date.
+      const localToday = new Date(nowMs + off * 1000).toISOString().slice(0, 10)
       const avg = (xs: number[]) => xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null
       const max = (xs: number[]) => xs.length ? Math.max(...xs) : null
       const r1 = (n: number | null) => n == null ? null : Math.round(n * 10) / 10
 
       const out = [...byDate.entries()]
         .sort(([a], [b]) => a.localeCompare(b))
+        // Drop past local dates BEFORE limiting, so `days` future days are kept
+        // even if the API returned an earlier local date near midnight.
+        .filter(([date]) => date >= localToday)
         .slice(0, days)
         .map(([date, hrs]) => {
+          // Date-specific daylight bounds (sunrise/sunset); fixed 06–20 fallback.
+          const { startHr, endHr } = daylightHourBounds(forecast, date)
           // Score daylight hours; for today, skip hours already passed.
           // Hour is read from the LOCAL time string; "passed" uses the real instant.
           const daylight = hrs.filter(h => {
             const hr = Number(h.time.slice(11, 13))
-            if (hr < 6 || hr > 20) return false
+            if (hr < startHr || hr > endHr) return false
             return localTimeToEpochMs(h.time, off) >= nowMs - 3600_000
           })
           const scored = daylight.map(h => ({ time: h.time, wqi: calcWqi(beach, h).wqi, h }))

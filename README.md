@@ -9,8 +9,8 @@ An MCP server that gives LLMs real-time surf intelligence — wave quality scori
 [![Node.js 22+](https://img.shields.io/badge/Node.js-22%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![FastMCP TS](https://img.shields.io/badge/FastMCP-TypeScript-3178C6?logo=typescript&logoColor=white)](https://github.com/PrefectHQ/fastmcp-ts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/YOUR_ORG/mcp-surf-forecast/ci.yml?label=CI&logo=github)](https://github.com/YOUR_ORG/mcp-surf-forecast/actions)
-[![Qodana](https://img.shields.io/github/actions/workflow/status/YOUR_ORG/mcp-surf-forecast/qodana.yml?label=Qodana&logo=jetbrains)](https://github.com/YOUR_ORG/mcp-surf-forecast/actions/workflows/qodana.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/luisaugustomachadomoretto/mcp-surf-forecast/ci.yml?label=CI&logo=github)](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/actions)
+[![Qodana](https://img.shields.io/github/actions/workflow/status/luisaugustomachadomoretto/mcp-surf-forecast/qodana.yml?label=Qodana&logo=jetbrains)](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/actions/workflows/qodana.yml)
 
 [Quick Start](#-quick-start) · [Features](#-features) · [Tools](#-tools) · [Prompts](#-prompts) · [Configuration](#%EF%B8%8F-configuration) · [Contributing](#-contributing)
 
@@ -363,7 +363,7 @@ Pre-built conversation starters that turn your AI into a surf expert:
 ### Install
 
 ```bash
-git clone https://github.com/YOUR_ORG/mcp-surf-forecast.git
+git clone https://github.com/luisaugustomachadomoretto/mcp-surf-forecast.git
 cd mcp-surf-forecast
 npm install
 ```
@@ -720,6 +720,6 @@ MIT — see [LICENSE](LICENSE) for details.
 
 *Stop checking 5 different apps. Let AI find your next session.*
 
-[⭐ Star this repo](https://github.com/YOUR_ORG/mcp-surf-forecast) · [🐛 Report Bug](https://github.com/YOUR_ORG/mcp-surf-forecast/issues) · [💡 Request Feature](https://github.com/YOUR_ORG/mcp-surf-forecast/issues)
+[⭐ Star this repo](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast) · [🐛 Report Bug](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/issues) · [💡 Request Feature](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/issues)
 
 </div>
