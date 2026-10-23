@@ -58,12 +58,46 @@ jobs:
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
 
+      # Fail fast with a clear message if the deploy token isn't configured,
+      # instead of flyctl falling back to an interactive login that errors
+      # with a confusing "no access token available" message.
+      - name: Check FLY_API_TOKEN is set
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        run: |
+          if [ -z "$FLY_API_TOKEN" ]; then
+            echo "::error::FLY_API_TOKEN secret is not set. Create a deploy token with 'fly tokens create deploy -x 999999h' and add it under Settings → Secrets and variables → Actions as FLY_API_TOKEN."
+            exit 1
+          fi
+
       # Builds the Dockerfile's `runtime` target (per fly.toml) on Fly's
       # remote builders and releases it.
       - name: Deploy to Fly.io
         run: flyctl deploy --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+      # A Fly app only gets a public DNS record once it has a public IP.
+      # fly launch/deploy doesn't always allocate one, so ensure it here.
+      # Idempotent: only allocates what's missing, so it's safe on every push.
+      - name: Ensure public IPs are allocated
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        run: |
+          IPS="$(flyctl ips list 2>/dev/null || true)"
+          echo "$IPS"
+          if ! echo "$IPS" | grep -qiE '\bv6\b'; then
+            echo "Allocating IPv6..."
+            flyctl ips allocate-v6 --yes
+          else
+            echo "IPv6 already allocated."
+          fi
+          if ! echo "$IPS" | grep -qiE '\bv4\b'; then
+            echo "Allocating shared IPv4..."
+            flyctl ips allocate-v4 --shared --yes
+          else
+            echo "IPv4 already allocated."
+          fi
 
       # Surface the public MCP endpoint in the logs and the job summary.
       # The hostname is deterministic (<app>.fly.dev), so we read the app name
