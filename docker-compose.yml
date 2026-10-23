@@ -13,3 +13,25 @@ services:
       HOST: 0.0.0.0
       LOG_LEVEL: info
     restart: unless-stopped
+
+  # Development-only: MCP Inspector UI. Not started by default.
+  # Run with: docker compose --profile dev up inspector
+  inspector:
+    profiles: ["dev"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    image: mcp-surf-forecast:dev
+    container_name: mcp-surf-forecast-inspector
+    ports:
+      - "6274:6274" # Inspector web UI
+      - "6277:6277" # Inspector proxy server
+    environment:
+      HOST: 0.0.0.0
+      DANGEROUSLY_BIND_ALL_INTERFACES: "true"
+      CLIENT_PORT: "6274"
+      MCP_SANDBOX_PORT: "6277"
+      LOG_LEVEL: debug
+      # Auth stays ON (do not add DANGEROUSLY_OMIT_AUTH here — the backend
+      # spawns processes). Read the session token from the container logs.
