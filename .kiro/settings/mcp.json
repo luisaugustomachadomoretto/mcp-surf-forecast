@@ -1,9 +1,7 @@
 {
   "mcpServers": {
-    "surf-forecast-http": {
-      "url": "http://localhost:3000/mcp",
-      "timeout": 120000,
-      "disabled": false
+    "surf-forecast": {
+      "url": "https://mcp-surf-forecast.fly.dev/mcp"
     }
   }
 }
