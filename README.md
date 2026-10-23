@@ -382,6 +382,49 @@ npm run start:http
 npm run dev
 ```
 
+### Run with Docker
+
+The multi-stage `Dockerfile` ships two targets: a lean **production** image
+(compiled `dist/`, prod deps only, non-root) and a **dev** image that bundles
+the sources and the MCP Inspector.
+
+**Production (HTTP server on port 3000):**
+
+```bash
+# docker compose (recommended)
+docker compose up -d surf-forecast
+# → MCP HTTP endpoint at http://localhost:3000/mcp
+
+# or plain docker
+docker build --target runtime -t mcp-surf-forecast:latest .
+docker run --rm -p 3000:3000 mcp-surf-forecast:latest
+```
+
+**Development (MCP Inspector UI):**
+
+```bash
+# docker compose — the inspector lives behind the "dev" profile
+docker compose --profile dev up inspector
+# → Inspector UI at http://localhost:6274 (sandbox/proxy on 6277)
+
+# or plain docker
+docker build --target dev -t mcp-surf-forecast:dev .
+docker run --rm -p 6274:6274 -p 6277:6277 mcp-surf-forecast:dev
+```
+
+The Inspector backend keeps its auth token enabled. On startup it prints a
+pre-authenticated URL with the session token to the container logs — copy that
+into your browser:
+
+```bash
+docker compose --profile dev logs -f inspector | grep -i token
+```
+
+> ⚠️ The dev image binds to all interfaces (`DANGEROUSLY_BIND_ALL_INTERFACES`)
+> so the UI is reachable through the published ports. Keep the auth token **on**
+> and never expose ports 6274/6277 publicly — the backend can spawn processes.
+```
+
 ### Connect your AI client
 
 **Claude Desktop** — add to your `mcp.json`:
