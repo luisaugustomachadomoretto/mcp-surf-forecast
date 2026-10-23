@@ -1,0 +1,7645 @@
+[
+  {
+    "id": "cortegaca-pt",
+    "name": "Cortegaca",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Cortegaca",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cortegaca/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.94,
+    "lon": -8.66,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:33.255Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "costa-nova-pt",
+    "name": "Costa Nova",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Costa-Nova",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Costa-Nova/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.63,
+    "lon": -8.75,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:37.072Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "esmoriz-pt",
+    "name": "Esmoriz",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Esmoriz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Esmoriz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.98,
+    "lon": -8.65,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:40.988Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "espinho-pt",
+    "name": "Espinho",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Espinho",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Espinho/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41,
+    "lon": -8.65,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:44.783Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "figueira-da-foz-buarcos-pt",
+    "name": "Figueira da Foz - Buarcos",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Buarcos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Buarcos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.17,
+    "lon": -8.89,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:48.570Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "figueira-da-foz-cabedelo-pt",
+    "name": "Figueira da Foz - Cabedelo",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Cabedelo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cabedelo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.15,
+    "lon": -8.87,
+    "waveType": [],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:52.117Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "figueira-da-foz-gala-pt",
+    "name": "Figueira da Foz - Gala",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Gala",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Gala/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.12,
+    "lon": -8.87,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:55.944Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "furadouro-pt",
+    "name": "Furadouro",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Furadouro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Furadouro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.91,
+    "lon": -8.67,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:01:59.835Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "maceda-pt",
+    "name": "Maceda",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Maceda",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Maceda/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.92,
+    "lon": -8.66,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:03.853Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "murtinheira-pt",
+    "name": "Murtinheira",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Murtinheira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Murtinheira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.21,
+    "lon": -8.9,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:07.715Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "nazare-pt",
+    "name": "Nazare",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Nazare",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Nazare/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.6,
+    "lon": -9.07,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:11.510Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "pedrogao-pt",
+    "name": "Pedrogao",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Pedrogao",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pedrogao/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.92,
+    "lon": -8.95,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:15.292Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-barra-pt",
+    "name": "Praia da Barra",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praiada-Barra",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiada-Barra/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.64,
+    "lon": -8.75,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "advanced",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:19.086Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-leirosa-pt",
+    "name": "Praia da Leirosa",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-da-Leirosa",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Leirosa/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.06,
+    "lon": -8.89,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:23.082Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-tocha-pt",
+    "name": "Praia da Tocha",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-da-Tocha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Tocha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.33,
+    "lon": -8.84,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:26.968Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-torreira-pt",
+    "name": "Praia da Torreira",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-da-Torreira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Torreira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.76,
+    "lon": -8.71,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:30.965Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-vagueira-pt",
+    "name": "Praia da Vagueira",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-da-Vagueira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Vagueira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.56,
+    "lon": -8.77,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:34.854Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-vieira-pt",
+    "name": "Praia da Vieira",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-da-Vieira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Vieira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.87,
+    "lon": -8.97,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:38.341Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-de-mira-pt",
+    "name": "Praia de Mira",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praiade-Mira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiade-Mira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.45,
+    "lon": -8.81,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:42.231Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-norte-pt",
+    "name": "Praia do Norte",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-do-Norte-1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Norte-1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.61,
+    "lon": -9.09,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:46.222Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-osso-da-baleia-pt",
+    "name": "Praia do Osso da Baleia",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-do-Osso-da-Baleia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Osso-da-Baleia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40,
+    "lon": -8.91,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:49.812Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-paredes-pt",
+    "name": "Praia Paredes",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Praia-Paredes",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-Paredes/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.7,
+    "lon": -9.05,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:53.699Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sao-jacinto-pt",
+    "name": "Sao Jacinto",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Sao-Jacinto",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Jacinto/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.67,
+    "lon": -8.75,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:02:57.183Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sao-pedro-de-moel-pt",
+    "name": "Sao Pedro de Moel",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Sao-Pedrode-Muel",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Pedrode-Muel/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.82,
+    "lon": -9,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:01.111Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "silvalde-pt",
+    "name": "Silvalde",
+    "country": "Portugal",
+    "region": "Beira",
+    "forecastSlug": "Silvalde",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Silvalde/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 40.99,
+    "lon": -8.65,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:04.653Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "a-ver-o-mar-pt",
+    "name": "A Ver o Mar",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "A-Ver-o-Mar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/A-Ver-o-Mar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.39,
+    "lon": -8.78,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:08.562Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "afife-pt",
+    "name": "Afife",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Afife",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Afife/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.78,
+    "lon": -8.87,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:12.643Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "agucadoura-pt",
+    "name": "Agucadoura",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Agucadoura",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Agucadoura/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.43,
+    "lon": -8.79,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:16.530Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "azurara-pt",
+    "name": "Azurara",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Azurara",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Azurara/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.34,
+    "lon": -8.75,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:20.323Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "barra-do-douro-pt",
+    "name": "Barra do Douro",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Barrado-Douro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Barrado-Douro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.15,
+    "lon": -8.68,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:24.040Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "canidelo-pt",
+    "name": "Canidelo",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Canidelo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Canidelo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.11,
+    "lon": -8.67,
+    "waveType": [
+      "point-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "advanced"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:27.556Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cavalos-de-fao-pt",
+    "name": "Cavalos de Fao",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Cavalos-de-Fao",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cavalos-de-Fao/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.5,
+    "lon": -8.8,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:31.383Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "esposende-pt",
+    "name": "Esposende",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Esposende",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Esposende/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.53,
+    "lon": -8.8,
+    "waveType": [],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:35.305Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "kings-rock-pt",
+    "name": "Kings Rock",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Kings-Rock",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Kings-Rock/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.72,
+    "lon": -8.87,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:39.058Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "leca-pt",
+    "name": "Leca",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Leca",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Leca/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.19,
+    "lon": -8.71,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:42.955Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "luz-pt",
+    "name": "Luz",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Luz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Luz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.16,
+    "lon": -8.69,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:46.640Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "matosinhos-pt",
+    "name": "Matosinhos",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Matosinhos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Matosinhos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.17,
+    "lon": -8.69,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:50.532Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "mindelo-pt",
+    "name": "Mindelo",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Mindelo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Mindelo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.31,
+    "lon": -8.74,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:54.380Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "miramar-pt",
+    "name": "Miramar",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Miramar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Miramar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.07,
+    "lon": -8.66,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:03:57.995Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "moledo-pt",
+    "name": "Moledo",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Moledo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Moledo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.85,
+    "lon": -8.87,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:01.797Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ofir-pt",
+    "name": "Ofir",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Ofir",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ofir/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.52,
+    "lon": -8.79,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:05.790Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "povoa-do-varzim-pt",
+    "name": "Povoa do Varzim",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Povoado-Varzim",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Povoado-Varzim/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.37,
+    "lon": -8.77,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:09.684Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-amorosa-pt",
+    "name": "Praia da Amorosa",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Praia-da-Amorosa",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Amorosa/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.65,
+    "lon": -8.83,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:13.420Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-aterro-pt",
+    "name": "Praia do Aterro",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Praia-do-Aterro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Aterro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.21,
+    "lon": -8.72,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:17.362Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-cabedelo-pt",
+    "name": "Praia do Cabedelo",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Praia-do-Cabedelo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Cabedelo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.68,
+    "lon": -8.83,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:04:21.254Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-rock-pt",
+    "name": "Praia do Rock",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Praia-do-Rock",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Rock/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.36,
+    "lon": -8.76,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:25.247Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sacor-pt",
+    "name": "Sacor",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Sacor",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sacor/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.19,
+    "lon": -8.71,
+    "waveType": [
+      "beach-break",
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:29.139Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "viana-do-castelo-pt",
+    "name": "Viana do Castelo",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Vianado-Castelo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vianado-Castelo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.69,
+    "lon": -8.85,
+    "waveType": [],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:32.898Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "vila-do-conde-pt",
+    "name": "Vila do Conde",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Vilado-Conde",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vilado-Conde/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.35,
+    "lon": -8.76,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:36.924Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "vila-praia-de-ancora-pt",
+    "name": "Vila Praia de Ancora",
+    "country": "Portugal",
+    "region": "Douro and Minho",
+    "forecastSlug": "Vila-Praiade-Ancora",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vila-Praiade-Ancora/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 41.81,
+    "lon": -8.87,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:40.710Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "backdoor-pt",
+    "name": "Backdoor",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Backdoor",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Backdoor/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.92,
+    "lon": -9.43,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:44.329Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cave-pt",
+    "name": "Cave",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Cave",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cave/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.99,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:48.084Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "coxos-ericeira",
+    "name": "Coxos",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Coxos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Coxos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.9775,
+    "lon": -9.4178,
+    "waveType": [
+      "point-break",
+      "hollow",
+      "right"
+    ],
+    "skillLevel": [
+      "advanced",
+      "expert"
+    ],
+    "bestTide": "mid",
+    "bestSwellDir": "NW",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true
+  },
+  {
+    "id": "crazy-left-pt",
+    "name": "Crazy Left",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Crazy-Left",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Crazy-Left/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.98,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:51.688Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "foz-do-lizandro-pt",
+    "name": "Foz do Lizandro",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Fozdo-Lizandro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Fozdo-Lizandro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.94,
+    "lon": -9.42,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:55.433Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "furnas-pt",
+    "name": "Furnas",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Furnas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Furnas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.9,
+    "lon": -9.44,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:04:59.345Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "limipicos-pt",
+    "name": "Limipicos",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Limipicos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Limipicos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.93,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:03.234Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "malhadinha-pt",
+    "name": "Malhadinha",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Malhadinha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Malhadinha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.94,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:06.923Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "pedra-branca-pt",
+    "name": "Pedra Branca",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Pedra-Branca",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pedra-Branca/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.98,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:10.816Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "pontinha-pt",
+    "name": "Pontinha",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Pontinha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pontinha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.96,
+    "lon": -9.42,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:14.708Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-norte-pt",
+    "name": "Praia do Norte",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Praiado-Norte",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Norte/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.97,
+    "lon": -9.42,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:18.496Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-peixe-pt",
+    "name": "Praia do Peixe",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Praiado-Peixe",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Peixe/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.96,
+    "lon": -9.42,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:22.489Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-sul-pt",
+    "name": "Praia do Sul",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Praia-do-Sul-1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Sul-1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.96,
+    "lon": -9.42,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:26.278Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "reef-pt",
+    "name": "Reef",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Reef",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Reef/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.98,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:30.144Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ribeira-dilhas-pt",
+    "name": "Ribeira D'ilhas",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Ribeira-Dilhas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ribeira-Dilhas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.99,
+    "lon": -9.42,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:33.998Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sao-juliao-pt",
+    "name": "Sao Juliao",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Sao-Juliao",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Juliao/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.93,
+    "lon": -9.42,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:37.849Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sao-lourenco-pt",
+    "name": "Sao Lourenco",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "Sao-Lourenco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Lourenco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.01,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:41.740Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "the-reef-pt",
+    "name": "The Reef",
+    "country": "Portugal",
+    "region": "Ericeira",
+    "forecastSlug": "The-Reef",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/The-Reef/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.93,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:45.530Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "adraga-pt",
+    "name": "Adraga",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Adraga",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Adraga/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.8,
+    "lon": -9.49,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:49.314Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "azarujinha-pt",
+    "name": "Azarujinha",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Azarujinha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Azarujinha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.69,
+    "lon": -9.38,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:53.211Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "bafureira-pt",
+    "name": "Bafureira",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Bafureira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Bafureira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.69,
+    "lon": -9.37,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:05:57.101Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "bica-pt",
+    "name": "Bica",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Bica",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Bica/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.69,
+    "lon": -9.37,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:00.993Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "bicas-pt",
+    "name": "Bicas",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Bicas_1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Bicas_1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.45,
+    "lon": -9.21,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:04.879Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "bolina-pt",
+    "name": "Bolina",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Bolina",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Bolina/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.7,
+    "lon": -9.39,
+    "waveType": [
+      "point-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:08.771Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "carcavelos",
+    "name": "Carcavelos",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Carcavelos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Carcavelos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.6775,
+    "lon": -9.3358,
+    "waveType": [
+      "beach-break",
+      "mellow",
+      "a-frame"
+    ],
+    "skillLevel": [
+      "beginner",
+      "intermediate"
+    ],
+    "bestTide": "all",
+    "bestSwellDir": "W",
+    "bestWindDir": "N",
+    "camUrl": "https://www.meobeachcam.com/en/livecams/carcavelos",
+    "enriched": true
+  },
+  {
+    "id": "caxias-pt",
+    "name": "Caxias",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Caxias",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Caxias/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.7,
+    "lon": -9.28,
+    "waveType": [
+      "point-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:12.666Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "costa-caparica",
+    "name": "Costa da Caparica",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Costada-Caparica",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Costada-Caparica/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.6267,
+    "lon": -9.2358,
+    "waveType": [
+      "beach-break",
+      "mellow"
+    ],
+    "skillLevel": [
+      "beginner",
+      "intermediate"
+    ],
+    "bestTide": "mid",
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true
+  },
+  {
+    "id": "cresmina-pt",
+    "name": "Cresmina",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Cresmina",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cresmina/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.73,
+    "lon": -9.48,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:16.455Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "fonte-da-telha-pt",
+    "name": "Fonte da Telha",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Fonte-da-Telha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Fonte-da-Telha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.58,
+    "lon": -9.2,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:20.244Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "lagoa-de-albufeira-pt",
+    "name": "Lagoa de Albufeira",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Lagoa-de-Albufeira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Lagoa-de-Albufeira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.51,
+    "lon": -9.18,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:24.096Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "monte-estoril-pt",
+    "name": "Monte Estoril",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Monte-Estoril",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Monte-Estoril/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.7,
+    "lon": -9.41,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:27.851Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "paco-darcos-pt",
+    "name": "Paco D'arcos",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Paco-D-arcos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Paco-D-arcos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.69,
+    "lon": -9.3,
+    "waveType": [
+      "point-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:31.819Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "parede-pt",
+    "name": "Parede",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Parede",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Parede/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.69,
+    "lon": -9.35,
+    "waveType": [
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:35.413Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "poca-pt",
+    "name": "Poca",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Poca",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Poca/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.7,
+    "lon": -9.39,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:39.285Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-foz-cabo-espichel-sesimbra-pt",
+    "name": "Praia da Foz Cabo Espichel Sesimbra",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praia-da-Foz-Cabo-Espichel-Sesimbra",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Foz-Cabo-Espichel-Sesimbra/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.45,
+    "lon": -9.2,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:43.079Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-rainha-pt",
+    "name": "Praia da Rainha",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praiada-Rainha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiada-Rainha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.56,
+    "lon": -9.2,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:46.820Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-saude-pt",
+    "name": "Praia da Saude",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praia-da-Saude",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Saude/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.63,
+    "lon": -9.23,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:50.556Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-das-macas-pt",
+    "name": "Praia das Macas",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praiadas-Macas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiadas-Macas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.81,
+    "lon": -9.48,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:54.445Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-castello-pt",
+    "name": "Praia do Castello",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praiado-Castello",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Castello/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.63,
+    "lon": -9.23,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:06:58.338Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-guincho-pt",
+    "name": "Praia do Guincho",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praiado-Guincho",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Guincho/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.74,
+    "lon": -9.48,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:02.228Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-magoito-pt",
+    "name": "Praia do Magoito",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praia-do-Magoito",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Magoito/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.86,
+    "lon": -9.45,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:06.019Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-meco-pt",
+    "name": "Praia do Meco",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praia-do-Meco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Meco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.49,
+    "lon": -9.19,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:09.807Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-tamariz-pt",
+    "name": "Praia do Tamariz",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praiado-Tamariz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Tamariz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.7,
+    "lon": -9.42,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:13.803Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-grande-pt",
+    "name": "Praia Grande",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praia-Grande",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-Grande/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.81,
+    "lon": -9.48,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:17.588Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-pequena-pt",
+    "name": "Praia Pequena",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Praia-Pequena",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-Pequena/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.82,
+    "lon": -9.47,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:21.072Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "santo-amaro-pt",
+    "name": "Santo Amaro",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Santo-Amaro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Santo-Amaro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.68,
+    "lon": -9.32,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:24.655Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sao-joao-pt",
+    "name": "Sao Joao",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Sao-Joao",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Joao/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.66,
+    "lon": -9.27,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:28.469Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sao-pedro-pt",
+    "name": "Sao Pedro",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Sao-Pedro-1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Pedro-1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.69,
+    "lon": -9.37,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:32.336Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "torre-pt",
+    "name": "Torre",
+    "country": "Portugal",
+    "region": "Lisboa",
+    "forecastSlug": "Torre",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Torre/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.68,
+    "lon": -9.32,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:36.226Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "achadas-da-cruz-pt",
+    "name": "Achadas Da Cruz",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Achadas-Da-Cruz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Achadas-Da-Cruz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.85,
+    "lon": -17.22,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:07:40.321Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cabo-girao-pt",
+    "name": "Cabo Girao",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Cabo-Girao",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cabo-Girao/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.65,
+    "lon": -17.01,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:07:44.160Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cais-do-funchal-pt",
+    "name": "Cais do Funchal",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Cais-do-Funchal",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cais-do-Funchal/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.65,
+    "lon": -16.9,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:07:48.116Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "contreira-pt",
+    "name": "Contreira",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Contreira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Contreira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.84,
+    "lon": -17.14,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:51.911Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "faial-pt",
+    "name": "Faial",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Faial",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Faial/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.79,
+    "lon": -16.85,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:55.681Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "faja-da-areia-pt",
+    "name": "Faja da Areia",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Fajada-Areia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Fajada-Areia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.81,
+    "lon": -17.05,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:07:59.575Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "faja-dos-padres-pt",
+    "name": "Faja Dos Padres",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Faja-Dos-Padres",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Faja-Dos-Padres/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.65,
+    "lon": -17.02,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:03.371Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "jardim-do-mar-pt",
+    "name": "Jardim do Mar",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Jardimdo-Mar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Jardimdo-Mar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.74,
+    "lon": -17.21,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:07.254Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "lugar-de-baixo-pt",
+    "name": "Lugar De Baixo",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Lugar-De-Baixo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Lugar-De-Baixo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.68,
+    "lon": -17.1,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:10.941Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "machico-pt",
+    "name": "Machico",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Machico",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Machico/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.71,
+    "lon": -16.76,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:14.827Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "madalena-do-mar-pt",
+    "name": "Madalena do Mar",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Madalena-do-Mar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Madalena-do-Mar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.7,
+    "lon": -17.14,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir"
+    ],
+    "enrichedAt": "2026-10-22T20:08:18.723Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "paul-do-mar-pt",
+    "name": "Paul do Mar",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Pauldo-Mar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pauldo-Mar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.76,
+    "lon": -17.24,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:22.508Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "pizo-pt",
+    "name": "Pizo",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Pizo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pizo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.64,
+    "lon": -16.96,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:08:26.403Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ponta-delgada-pt",
+    "name": "Ponta Delgada",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Ponta-Delgada",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ponta-Delgada/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.83,
+    "lon": -16.98,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:29.681Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ponta-do-pargo-pt",
+    "name": "Ponta do Pargo",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Ponta-do-Pargo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ponta-do-Pargo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.81,
+    "lon": -17.26,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-22T20:08:33.674Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ponta-do-sol-pt",
+    "name": "Ponta do Sol",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Pontado-Sol",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pontado-Sol/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.67,
+    "lon": -17.1,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:37.482Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ponta-pequena-pt",
+    "name": "Ponta Pequena",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Ponta-Pequena",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ponta-Pequena/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.75,
+    "lon": -17.23,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:41.149Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "porto-da-cruz-pt",
+    "name": "Porto da Cruz",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Porto-Da-Cruz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Porto-Da-Cruz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.77,
+    "lon": -16.82,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:45.038Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "porto-moniz-pt",
+    "name": "Porto Moniz",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Porto-Moniz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Porto-Moniz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.86,
+    "lon": -17.16,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:48.728Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-formosa-pt",
+    "name": "Praia Formosa",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Praia-Formosa-2",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-Formosa-2/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.64,
+    "lon": -16.95,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:52.550Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ribeira-da-janela-pt",
+    "name": "Ribeira da Janela",
+    "country": "Portugal",
+    "region": "Madeira",
+    "forecastSlug": "Ribeirada-Janela",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ribeirada-Janela/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 32.85,
+    "lon": -17.15,
+    "waveType": [
+      "beach-break",
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:08:56.403Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "almagreira-pt",
+    "name": "Almagreira",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Almagreira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Almagreira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.38,
+    "lon": -9.32,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:00.198Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "baia-pt",
+    "name": "Baia",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Baia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Baia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.37,
+    "lon": -9.36,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:03.889Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "baleal-reef-pt",
+    "name": "Baleal Reef",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Baleal-Reef",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Baleal-Reef/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.38,
+    "lon": -9.34,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:07.668Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "baleal-sul-pt",
+    "name": "Baleal Sul",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Baleal-Sul",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Baleal-Sul/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.36,
+    "lon": -9.36,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:11.564Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "belgas-pt",
+    "name": "Belgas",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Belgas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Belgas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.42,
+    "lon": -9.25,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:16.131Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cantinho-pt",
+    "name": "Cantinho",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Cantinho",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cantinho/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.37,
+    "lon": -9.34,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:20.062Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "consolacao-lefts-pt",
+    "name": "Consolacao Lefts",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Consolacao-Lefts",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Consolacao-Lefts/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.33,
+    "lon": -9.36,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:23.847Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "consolacao-rights-pt",
+    "name": "Consolacao Rights",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Consolacao-Rights",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Consolacao-Rights/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.33,
+    "lon": -9.36,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:27.637Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ferrel-pt",
+    "name": "Ferrel",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Ferrel",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ferrel/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.39,
+    "lon": -9.3,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:31.430Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "foz-do-arelho-pt",
+    "name": "Foz do Arelho",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Fozdo-Arelho",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Fozdo-Arelho/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.44,
+    "lon": -9.23,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:35.321Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "lagide-pt",
+    "name": "Lagide",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Lagide",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Lagide/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.38,
+    "lon": -9.33,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:39.112Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "mini-pipe-pt",
+    "name": "Mini Pipe",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Mini-Pipe",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Mini-Pipe/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.33,
+    "lon": -9.36,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:42.796Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "molho-leste-pt",
+    "name": "Molho Leste",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Molhe-Leste",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Molhe-Leste/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.35,
+    "lon": -9.37,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:46.584Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "porto-batel-pt",
+    "name": "Porto Batel",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Porto-Batel",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Porto-Batel/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.32,
+    "lon": -9.36,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:50.477Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-azul-pt",
+    "name": "Praia Azul",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Praia-Azul_1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-Azul_1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.11,
+    "lon": -9.4,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:54.265Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-areia-branca-pt",
+    "name": "Praia da Areia Branca",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Praiada-Areia-Branca",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiada-Areia-Branca/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.28,
+    "lon": -9.34,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:09:58.541Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-baleal-pt",
+    "name": "Praia do Baleal",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Praiado-Baleal",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Baleal/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.37,
+    "lon": -9.35,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:02.511Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-cerro-pt",
+    "name": "Praia do Cerro",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Praia-do-Cerro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Cerro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.36,
+    "lon": -9.37,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:06.349Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "santa-cruz-pt",
+    "name": "Santa Cruz",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Santa-Cruz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Santa-Cruz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.15,
+    "lon": -9.38,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:10.239Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "supertubos-peniche",
+    "name": "Supertubos",
+    "country": "Portugal",
+    "region": "Peniche",
+    "forecastSlug": "Supertubos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Supertubos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.3433,
+    "lon": -9.3655,
+    "waveType": [
+      "beach-break",
+      "hollow"
+    ],
+    "skillLevel": [
+      "advanced",
+      "expert"
+    ],
+    "bestTide": "low-to-mid",
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": "https://www.meobeachcam.com/en/livecams/supertubos",
+    "enriched": true
+  },
+  {
+    "id": "aberta-a-nova-pt",
+    "name": "Aberta A Nova",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Aberta-A-Nova",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Aberta-A-Nova/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.18,
+    "lon": -8.78,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:14.234Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "almograve-pt",
+    "name": "Almograve",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Almograve",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Almograve/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.65,
+    "lon": -8.8,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:17.822Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "burrinho-pt",
+    "name": "Burrinho",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Burrinho",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Burrinho/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.9,
+    "lon": -8.8,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:10:21.709Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cabo-de-sines-pt",
+    "name": "Cabo de Sines",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Cabode-Sines",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cabode-Sines/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.95,
+    "lon": -8.88,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-22T20:10:25.600Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "carvalhal-pt",
+    "name": "Carvalhal",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Carvalhal",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Carvalhal/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.31,
+    "lon": -8.78,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:10:29.421Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cogumelo-pt",
+    "name": "Cogumelo",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Cogumelo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cogumelo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.7,
+    "lon": -8.8,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:33.279Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "comporta-pt",
+    "name": "Comporta",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Comporta",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Comporta/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.38,
+    "lon": -8.81,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:10:37.274Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "malhao-pt",
+    "name": "Malhao",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Malhano",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Malhano/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.78,
+    "lon": -8.8,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:41.370Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "melides-pt",
+    "name": "Melides",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Melides",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Melides/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.13,
+    "lon": -8.79,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:10:45.261Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "porto-covo-pt",
+    "name": "Porto Covo",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Porto-Covo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Porto-Covo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.85,
+    "lon": -8.8,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:10:49.101Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-pego-pt",
+    "name": "Praia do Pego",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Praia-do-Pego",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Pego/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.29,
+    "lon": -8.78,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:10:52.937Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-dos-aivados-pt",
+    "name": "Praia dos Aivados",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Aivados",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Aivados/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.8,
+    "lon": -8.8,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:10:56.731Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sanguessuga-pt",
+    "name": "Sanguessuga",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Sanguessuga",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sanguessuga/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.91,
+    "lon": -8.8,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:11:00.330Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sao-torpes-pt",
+    "name": "Sao Torpes",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Sao-Torpes",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Torpes/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.92,
+    "lon": -8.81,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-22T20:11:03.901Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "troia-pt",
+    "name": "Troia",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Troia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Troia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.45,
+    "lon": -8.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:07.480Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "vila-nova-de-milfontes-pt",
+    "name": "Vila Nova de Milfontes",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Vila-Novade-Milfontes",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vila-Novade-Milfontes/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.71,
+    "lon": -8.79,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:11.375Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "zambujeira-do-mar-pt",
+    "name": "Zambujeira do Mar",
+    "country": "Portugal",
+    "region": "Alentejo",
+    "forecastSlug": "Zambujeira-do-Mar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Zambujeira-do-Mar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.53,
+    "lon": -8.79,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:15.265Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "albufeira-pt",
+    "name": "Albufeira",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Albufeira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Albufeira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.09,
+    "lon": -8.25,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:19.157Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "alfagar-pt",
+    "name": "Alfagar",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Alfagar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Alfagar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.09,
+    "lon": -8.21,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:22.976Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "alvor-pt",
+    "name": "Alvor",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Alvor",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Alvor/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.12,
+    "lon": -8.6,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:26.835Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "amoreira-pt",
+    "name": "Amoreira",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Amoreira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Amoreira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.35,
+    "lon": -8.85,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:30.656Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "arrifana-pt",
+    "name": "Arrifana",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Arrifana",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Arrifana/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.29,
+    "lon": -8.87,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:34.523Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "barranco-da-belharucas-pt",
+    "name": "Barranco da Belharucas",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Barranco-da-Belharucas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Barranco-da-Belharucas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.09,
+    "lon": -8.18,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:38.302Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "beliche-pt",
+    "name": "Beliche",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Beliche",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Beliche/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.02,
+    "lon": -8.99,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:42.021Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "burgau-pt",
+    "name": "Burgau",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Burgau",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Burgau/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.07,
+    "lon": -8.78,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:45.986Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "carrapateira-pt",
+    "name": "Carrapateira",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Carrapateira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Carrapateira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.2,
+    "lon": -8.9,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:49.872Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "carriagem-pt",
+    "name": "Carriagem",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Carriagem",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Carriagem/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.34,
+    "lon": -8.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:53.712Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "castelejo-pt",
+    "name": "Castelejo",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Castelejo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Castelejo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.1,
+    "lon": -8.95,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:11:57.456Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cordoama-pt",
+    "name": "Cordoama",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Cordama",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cordama/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.11,
+    "lon": -8.94,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:01.143Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "figueiros-pt",
+    "name": "Figueiros",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Figueiros",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Figueiros/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.25,
+    "lon": -8.87,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:05.033Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "forte-novo-pt",
+    "name": "Forte Novo",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Forte-Novo-Quarteira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Forte-Novo-Quarteira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.06,
+    "lon": -8.09,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:08.720Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ilha-de-faro-pt",
+    "name": "Ilha de Faro",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Ilha-de-Faro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ilha-de-Faro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 36.99,
+    "lon": -7.97,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:12.606Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ilha-de-tavira-pt",
+    "name": "Ilha de Tavira",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Ilha-de-Tavira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ilha-de-Tavira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.11,
+    "lon": -7.62,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:16.502Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ilha-deserta-pt",
+    "name": "Ilha Deserta",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Ilha-Deserta",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ilha-Deserta/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 36.96,
+    "lon": -7.88,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:20.188Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ilha-do-farol-pt",
+    "name": "Ilha do Farol",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Ilha-do-Farol",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ilha-do-Farol/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 36.97,
+    "lon": -7.87,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:24.079Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ingrina-pt",
+    "name": "Ingrina",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Ingrina",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ingrina/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.05,
+    "lon": -8.88,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:27.782Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "julias-pt",
+    "name": "Julias",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Julias",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Julias/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.04,
+    "lon": -8.05,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:31.596Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "lage-do-pescador-pt",
+    "name": "Lage do Pescador",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Lage-do-Pescador",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Lage-do-Pescador/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.32,
+    "lon": -8.88,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:35.229Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "luz-pt",
+    "name": "Luz",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Luz-1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Luz-1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.09,
+    "lon": -8.73,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:38.825Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "mareta-pt",
+    "name": "Mareta",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Mareta",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Mareta/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37,
+    "lon": -8.94,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:42.615Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "martinhal-pt",
+    "name": "Martinhal",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Martinhal",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Martinhal/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.02,
+    "lon": -8.93,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:46.339Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "meia-praia-pt",
+    "name": "Meia Praia",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Meia-Praia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Meia-Praia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.11,
+    "lon": -8.66,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:49.941Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "monte-clerigo-pt",
+    "name": "Monte Clerigo",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Monte-Clerigo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Monte-Clerigo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.33,
+    "lon": -8.87,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:53.874Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "ponta-ruiva-pt",
+    "name": "Ponta Ruiva",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Ponta-Ruiva",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ponta-Ruiva/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.07,
+    "lon": -8.97,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:12:57.167Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-falesia-pt",
+    "name": "Praia da Falesia",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praia-da-Falesia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Falesia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.07,
+    "lon": -8.13,
+    "waveType": [],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon"
+    ],
+    "enrichedAt": "2026-10-22T20:13:00.940Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-da-rocha-pt",
+    "name": "Praia da Rocha",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praiada-Rocha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiada-Rocha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.1,
+    "lon": -8.51,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:04.733Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-de-altura-pt",
+    "name": "Praia de Altura",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praia-de-Altura",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-de-Altura/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.17,
+    "lon": -7.5,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:08.223Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-de-faro-pt",
+    "name": "Praia de Faro",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praia-de-Faro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-de-Faro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.01,
+    "lon": -8,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:12.209Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-de-odeceixe-pt",
+    "name": "Praia de Odeceixe",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praiade-Odeceixe",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiade-Odeceixe/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.49,
+    "lon": -8.8,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:16.095Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-amado-pt",
+    "name": "Praia do Amado",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praiado-Amado",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Amado/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.17,
+    "lon": -8.9,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:20.094Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-bordeira-pt",
+    "name": "Praia do Bordeira",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praia-do-Bordeira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Bordeira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.2,
+    "lon": -8.9,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:23.984Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "praia-do-cabeco-pt",
+    "name": "Praia do Cabeco",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Praia-do-Cabeco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Cabeco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.18,
+    "lon": -7.47,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:27.769Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "rocha-negra-pt",
+    "name": "Rocha Negra",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Luz-Rocha-Negra",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Luz-Rocha-Negra/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.08,
+    "lon": -8.73,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:31.585Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "salema-pt",
+    "name": "Salema",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Salema",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Salema/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.07,
+    "lon": -8.83,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:35.555Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "tonel-pt",
+    "name": "Tonel",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Tonel",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Tonel/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.01,
+    "lon": -8.95,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:39.545Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "vale-do-lobo-pt",
+    "name": "Vale do Lobo",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Vale-do-Lobo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vale-do-Lobo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.05,
+    "lon": -8.06,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:43.441Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "vale-figueira-pt",
+    "name": "Vale Figueira",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Vale-Figueira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vale-Figueira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.25,
+    "lon": -8.87,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:47.157Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "vila-real-de-santo-antonio-pt",
+    "name": "Vila Real de Santo Antonio",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Vila-Real-de-Santo-Antonia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vila-Real-de-Santo-Antonia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.17,
+    "lon": -7.41,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:50.815Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "zavial-pt",
+    "name": "Zavial",
+    "country": "Portugal",
+    "region": "Algarve",
+    "forecastSlug": "Zavial",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Zavial/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.05,
+    "lon": -8.87,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:54.704Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "faial-praia-do-almoxarife-pt",
+    "name": "Faial - Praia do Almoxarife",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Praiado-Almoxarife",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Almoxarife/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.56,
+    "lon": -28.61,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:13:58.600Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "faial-praia-do-norte-pt",
+    "name": "Faial - Praia do Norte",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Praiado-Norte-Azores",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praiado-Norte-Azores/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.61,
+    "lon": -28.76,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:02.591Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "graciosa-lagou-pt",
+    "name": "Graciosa - Lagou",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Lagou",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Lagou/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.09,
+    "lon": -28.06,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:06.482Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "graciosa-porto-da-praia-pt",
+    "name": "Graciosa - Porto da Praia",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Portoda-Praia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Portoda-Praia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 39.09,
+    "lon": -28.01,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:10.373Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-jorge-faja-dos-cubres-pt",
+    "name": "San Jorge - Faja dos Cubres",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Fajados-Cubres",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Fajados-Cubres/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.62,
+    "lon": -27.92,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "SW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:14.264Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-jorge-punta-da-caldeira-pt",
+    "name": "San Jorge - Punta da Caldeira",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Puntada-Caldeira",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Puntada-Caldeira/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.64,
+    "lon": -27.95,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "SW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:17.746Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-areias-pt",
+    "name": "San Miguel - Areias",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Areias",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Areias/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.82,
+    "lon": -25.56,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:21.638Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-baixa-de-viola-pt",
+    "name": "San Miguel - Baixa de Viola",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Baixade-Viola",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Baixade-Viola/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.84,
+    "lon": -25.38,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:25.222Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-ponta-dos-mosteiros-pt",
+    "name": "San Miguel - Ponta dos Mosteiros",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Pontados-Mosteiros",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pontados-Mosteiros/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.89,
+    "lon": -25.82,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:29.112Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-populo-pt",
+    "name": "San Miguel - Populo",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Populo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Populo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.75,
+    "lon": -25.62,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:32.927Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-rabo-de-peixe-pt",
+    "name": "San Miguel - Rabo de Peixe",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Rabode-Peixe",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Rabode-Peixe/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.82,
+    "lon": -25.58,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:36.717Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-ribeira-grande-pt",
+    "name": "San Miguel - Ribeira Grande",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Ribeira-Grande",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ribeira-Grande/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.82,
+    "lon": -25.54,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "SE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:40.685Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-ribeira-quente-pt",
+    "name": "San Miguel - Ribeira Quente",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Ribeira-Quente",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Ribeira-Quente/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.73,
+    "lon": -25.3,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:44.473Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-miguel-santa-iria-pt",
+    "name": "San Miguel - Santa Iria",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Santa-Iria",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Santa-Iria/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.83,
+    "lon": -25.43,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:48.263Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "santa-maria-anjos-pt",
+    "name": "Santa Maria - Anjos",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Anjos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Anjos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 37.01,
+    "lon": -25.16,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:52.127Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "santa-maria-praia-formosa-pt",
+    "name": "Santa Maria - Praia Formosa",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Praia-Formosa",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-Formosa/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 36.95,
+    "lon": -25.1,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:56.044Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-baia-das-quatro-ribeiras-pt",
+    "name": "Terceira - Baia Das Quatro Ribeiras",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Baia-Das-Quatro-Ribeiras",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Baia-Das-Quatro-Ribeiras/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.79,
+    "lon": -27.19,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:14:59.935Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-contendas-pt",
+    "name": "Terceira - Contendas",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Contendas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Contendas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.64,
+    "lon": -27.08,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:03.766Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-ponta-do-queimado-pt",
+    "name": "Terceira - Ponta do Queimado",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Pontado-Queimado",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pontado-Queimado/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.78,
+    "lon": -27.36,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:07.732Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-porto-martins-pt",
+    "name": "Terceira - Porto Martins",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Porto-Martins",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Porto-Martins/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.71,
+    "lon": -27.05,
+    "waveType": [
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:11.611Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-porto-novo-pt",
+    "name": "Terceira - Porto Novo",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Porto-Novo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Porto-Novo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.67,
+    "lon": -27.08,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:15.500Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-praia-da-vitoria-pt",
+    "name": "Terceira - Praia da Vitoria",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Praia-da-Vitoria",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-da-Vitoria/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.72,
+    "lon": -27.06,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:19.496Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-praia-do-norte-pt",
+    "name": "Terceira - Praia do Norte",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Praia-do-Norte",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-do-Norte/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.78,
+    "lon": -27.09,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:23.279Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-praia-vitoria-pt",
+    "name": "Terceira - Praia Vitoria",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Praia-Vitoria",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Praia-Vitoria/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.73,
+    "lon": -27.06,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:27.172Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-santa-catarina-pt",
+    "name": "Terceira - Santa Catarina",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Santa-Catarina",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Santa-Catarina/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.71,
+    "lon": -27.05,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:31.021Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-sao-mateus-da-calheta-pt",
+    "name": "Terceira - Sao Mateus da Calheta",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Sao-Mateusda-Calherta",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sao-Mateusda-Calherta/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.65,
+    "lon": -27.28,
+    "waveType": [
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:34.958Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "terceira-vila-nova-pt",
+    "name": "Terceira - Vila Nova",
+    "country": "Portugal",
+    "region": "Azores",
+    "forecastSlug": "Vila-Nova",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Vila-Nova/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 38.8,
+    "lon": -27.26,
+    "waveType": [
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-22T20:15:38.746Z",
+    "source": "surf-forecast.com"
+  }
+]

@@ -9,8 +9,8 @@ An MCP server that gives LLMs real-time surf intelligence — wave quality scori
 [![Node.js 22+](https://img.shields.io/badge/Node.js-22%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![FastMCP TS](https://img.shields.io/badge/FastMCP-TypeScript-3178C6?logo=typescript&logoColor=white)](https://github.com/PrefectHQ/fastmcp-ts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/YOUR_ORG/mcp-surf-forecast/ci.yml?label=CI&logo=github)](https://github.com/YOUR_ORG/mcp-surf-forecast/actions)
-[![SonarCloud](https://img.shields.io/sonar/quality_gate/mcp-surf-forecast?server=https%3A%2F%2Fsonarcloud.io&logo=sonarcloud)](https://sonarcloud.io/project/overview?id=mcp-surf-forecast)
+[![CI](https://img.shields.io/github/actions/workflow/status/luisaugustomachadomoretto/mcp-surf-forecast/ci.yml?label=CI&logo=github)](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/actions)
+[![Qodana](https://img.shields.io/github/actions/workflow/status/luisaugustomachadomoretto/mcp-surf-forecast/qodana.yml?label=Qodana&logo=jetbrains)](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/actions/workflows/qodana.yml)
 
 [Quick Start](#-quick-start) · [Features](#-features) · [Tools](#-tools) · [Prompts](#-prompts) · [Configuration](#%EF%B8%8F-configuration) · [Contributing](#-contributing)
 
@@ -363,7 +363,7 @@ Pre-built conversation starters that turn your AI into a surf expert:
 ### Install
 
 ```bash
-git clone https://github.com/YOUR_ORG/mcp-surf-forecast.git
+git clone https://github.com/luisaugustomachadomoretto/mcp-surf-forecast.git
 cd mcp-surf-forecast
 npm install
 ```
@@ -559,18 +559,16 @@ npx fastmcp call wave_quality_index --url http://localhost:3000 beachId=coxos-er
 | `TRANSPORT` | No | `stdio` | Transport type: `stdio` or `http` |
 | `LOG_LEVEL` | No | `info` | Logging level: `debug`, `info`, `warn`, `error` |
 | `NOMINATIM_USER_AGENT` | No | `mcp-surf-forecast` | User-Agent for geocoding requests |
-| `SONAR_TOKEN` | CI only | — | SonarCloud authentication token |
+| `QODANA_TOKEN` | CI only | — | Qodana Cloud authentication token |
 | `SEMGREP_APP_TOKEN` | CI only | — | Semgrep security scanning token |
 
-### sonar-project.properties
+### qodana.yaml
 
-```properties
-sonar.projectKey=mcp-surf-forecast
-sonar.organization=<your-github-org>
-sonar.sources=src
-sonar.tests=tests
-sonar.javascript.lcov.reportPaths=coverage/lcov.info
-sonar.exclusions=src/data/**,dist/**
+```yaml
+version: "1.0"
+profile:
+  name: qodana.starter
+linter: jetbrains/qodana-js:2025.3
 ```
 
 ### Data Configuration
@@ -644,7 +642,7 @@ src/
 | 🛡️ | [Zod](https://zod.dev) | Runtime schema validation |
 | 🌐 | [Haversine](https://www.npmjs.com/package/haversine) | Geographic distance calculations |
 | 🧪 | [Vitest](https://vitest.dev) | Lightning-fast testing |
-| 📊 | [SonarCloud](https://sonarcloud.io) | Code quality & security |
+| 📊 | [Qodana](https://www.jetbrains.com/qodana/) | Code quality & security |
 
 ---
 
@@ -705,7 +703,7 @@ Full technical documentation lives in [`docs/`](docs/INDEX.md):
 | [Tools](docs/04-tools.md) | Computation & classification |
 | [WQI Spec](docs/05-wqi-spec.md) | Scoring algorithm deep-dive |
 | [Prompts](docs/06-prompts.md) | LLM interaction templates |
-| [Testing](docs/07-inspector-testing.md) | CI, SonarCloud, test strategy |
+| [Testing](docs/07-inspector-testing.md) | CI, Qodana, test strategy |
 | [Project Setup](docs/08-project-setup.md) | Dev environment & config |
 
 ---
@@ -722,6 +720,6 @@ MIT — see [LICENSE](LICENSE) for details.
 
 *Stop checking 5 different apps. Let AI find your next session.*
 
-[⭐ Star this repo](https://github.com/YOUR_ORG/mcp-surf-forecast) · [🐛 Report Bug](https://github.com/YOUR_ORG/mcp-surf-forecast/issues) · [💡 Request Feature](https://github.com/YOUR_ORG/mcp-surf-forecast/issues)
+[⭐ Star this repo](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast) · [🐛 Report Bug](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/issues) · [💡 Request Feature](https://github.com/luisaugustomachadomoretto/mcp-surf-forecast/issues)
 
 </div>

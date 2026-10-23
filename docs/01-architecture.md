@@ -219,7 +219,7 @@ The Inspector is bundled inside `fastmcp` — no extra dependency needed. It run
 |---------|---------|---------|-------|
 | `typescript` | `^5.5.0` | Language compiler | Build |
 | `vitest` | `^2.0.0` | Test runner | Testing |
-| `@vitest/coverage-v8` | `^2.0.0` | Coverage reporting (LCOV for SonarCloud) | Testing / CI |
+| `@vitest/coverage-v8` | `^2.0.0` | Coverage reporting (LCOV) | Testing / CI |
 | `@types/node` | `^22.0.0` | Node.js type definitions | Build |
 | `@types/haversine` | `^1.1.0` | Haversine type definitions | Build |
 

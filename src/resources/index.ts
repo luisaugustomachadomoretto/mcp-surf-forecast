@@ -1,7 +1,8 @@
 import type { FastMCP } from 'fastmcp'
 import { z } from 'zod'
-import beaches from '../data/beaches.json' with { type: 'json' }
+import { beaches } from '../providers/beaches.js'
 import providers from '../data/providers.json' with { type: 'json' }
+import { getForecast } from '../providers/forecast.js'
 
 /**
  * Register all MCP resources (read-only data endpoints).
@@ -59,13 +60,14 @@ export function registerResources(server: FastMCP): void {
     load: async ({ beachId }) => {
       const beach = beaches.find(b => b.id === beachId)
       if (!beach) throw new Error(`Beach not found: ${beachId}`)
-      // TODO: Replace with real forecast data from Open-Meteo
+      const forecast = await getForecast(beach.lat, beach.lon)
       return {
         text: JSON.stringify({
           beachId,
-          generatedAt: new Date().toISOString(),
-          note: 'Mock forecast — real API integration pending',
-          forecast: [],
+          generatedAt: forecast.generatedAt,
+          stale: forecast.stale,
+          note: forecast.note,
+          forecast: forecast.hours.slice(0, 72),
         }, null, 2),
       }
     },

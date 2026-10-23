@@ -76,7 +76,7 @@ mcp-surf-forecast/
 |---------|---------|---------|
 | `typescript` | `^5.5.0` | Language |
 | `vitest` | `^2.0.0` | Test runner |
-| `@vitest/coverage-v8` | `^2.0.0` | Coverage reporting (LCOV for SonarCloud) |
+| `@vitest/coverage-v8` | `^2.0.0` | Coverage reporting (LCOV) |
 | `@types/node` | `^22.0.0` | Node.js type definitions |
 | `@types/haversine` | `^1.1.6` | Haversine type defs |
 
@@ -146,7 +146,7 @@ export default defineConfig({
     testTimeout: 10000,
     coverage: {
       provider: 'v8',
-      reporter: ['text', 'lcov'],   // lcov for SonarCloud integration
+      reporter: ['text', 'lcov'],   // lcov for coverage reporting
       reportsDirectory: 'coverage',
       include: ['src/**/*.ts'],
       exclude: ['src/data/**'],
