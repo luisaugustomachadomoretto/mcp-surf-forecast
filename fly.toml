@@ -9,8 +9,6 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 # Change `app` to the unique name you chose during `fly launch`.
-app = "mcp-surf-forecast"
-primary_region = "mad"  # Madrid — close to the EU surf spots; adjust as needed.
 
 app = 'mcp-surf-forecast'
 primary_region = 'ams'
