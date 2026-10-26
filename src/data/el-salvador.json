@@ -1,0 +1,587 @@
+[
+  {
+    "id": "acajutla-sv",
+    "name": "Acajutla",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Acajutla",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Acajutla/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.61,
+    "lon": -89.87,
+    "waveType": [
+      "reef-break",
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:07.228Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-zunzal-sv",
+    "name": "El Zunzal",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "El-Zunzal",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Zunzal/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.49,
+    "lon": -89.43,
+    "waveType": [
+      "point-break",
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:11.107Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "los-cobanos-sv",
+    "name": "Los Cobanos",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Los-Cabanos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Los-Cabanos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.54,
+    "lon": -89.83,
+    "waveType": [
+      "beach-break",
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:15.009Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "comasagua-point-sv",
+    "name": "Comasagua Point",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Comasagua-Point",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Comasagua-Point/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.48,
+    "lon": -89.35,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:18.789Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "fishermans-point-sv",
+    "name": "Fishermans Point",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Fishermans-Point",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Fishermans-Point/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.48,
+    "lon": -89.31,
+    "waveType": [
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:22.706Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "mizata-sv",
+    "name": "Mizata",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Mizata",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Mizata/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.53,
+    "lon": -89.7,
+    "waveType": [
+      "point-break",
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:26.574Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "conchalio-sv",
+    "name": "Conchalio",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Playa-Conchalio",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Playa-Conchalio/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.48,
+    "lon": -89.34,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:30.363Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "k59-and-61-sv",
+    "name": "K59 and 61",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Kilometer59and61",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Kilometer59and61/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.5,
+    "lon": -89.53,
+    "waveType": [
+      "point-break",
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:34.253Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-san-diego-sv",
+    "name": "Playa San Diego",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Playa-San-Diego",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Playa-San-Diego/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.47,
+    "lon": -89.26,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:37.942Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "costa-del-sol-sv",
+    "name": "Costa del Sol",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Costadel-Sol",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Costadel-Sol/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.3,
+    "lon": -88.92,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:41.642Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-bocana-sv",
+    "name": "La Bocana",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Rio-Grande-La-Bocana",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Rio-Grande-La-Bocana/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.49,
+    "lon": -89.38,
+    "waveType": [
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:45.213Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "punta-mango-sv",
+    "name": "Punta Mango",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Punta-Mango",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Punta-Mango/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.16,
+    "lon": -88.12,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:48.849Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-muelle-the-pier-sv",
+    "name": "El Muelle - The Pier",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "The-Pier_1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/The-Pier_1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.49,
+    "lon": -89.32,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:52.585Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-paz-sv",
+    "name": "La Paz",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "La-Paz",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Paz/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.48,
+    "lon": -89.31,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:35:56.509Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "punta-roca-sv",
+    "name": "Punta Roca",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Punta-Roca_1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Punta-Roca_1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.48,
+    "lon": -89.33,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:36:00.264Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-zonte-sv",
+    "name": "El Zonte",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "El-Zonte",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Zonte/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.49,
+    "lon": -89.45,
+    "waveType": [
+      "reef-break",
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:36:04.071Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "las-flores-sv",
+    "name": "Las Flores",
+    "country": "El Salvador",
+    "region": "El Salvador - Costa del Balsamo",
+    "forecastSlug": "Las-Flores",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Las-Flores/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": 13.17,
+    "lon": -88.12,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:36:07.836Z",
+    "source": "surf-forecast.com"
+  }
+]

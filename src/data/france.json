@@ -9027,15 +9027,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.7,
+    "lon": -1.44,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:06:43.178Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "capbreton-la-piste-fr",
@@ -9048,15 +9062,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.64,
+    "lon": -1.45,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:06:51.779Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-lette-blanche-vieille-saint-girons-fr",
@@ -9069,15 +9096,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.9,
+    "lon": -1.38,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:06:55.569Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "seignosse-les-casernes-fr",
@@ -9090,15 +9129,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.72,
+    "lon": -1.43,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:06:59.358Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "capbreton-la-pointe-fr",
@@ -9111,15 +9165,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.63,
+    "lon": -1.46,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:03.329Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "labenne-ocean-fr",
@@ -9132,15 +9200,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.59,
+    "lon": -1.48,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:07.232Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "seignosse-les-casernes-fr-2",
@@ -9153,15 +9233,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.72,
+    "lon": -1.44,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:11.245Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "capbreton-le-prevent-fr",
@@ -9174,15 +9268,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.65,
+    "lon": -1.45,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:14.795Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "messanges-fr",
@@ -9195,15 +9303,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.91,
+    "lon": -1.38,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:18.611Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "seignosse-les-estagnots-fr",
@@ -9216,15 +9337,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.69,
+    "lon": -1.44,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:22.198Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "capbreton-le-santocha-fr",
@@ -9237,15 +9373,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.65,
+    "lon": -1.45,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:25.983Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "mimizan-fr",
@@ -9258,15 +9406,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 44.22,
+    "lon": -1.3,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:29.568Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "tarnos-la-digue-fr",
@@ -9279,15 +9441,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.54,
+    "lon": -1.52,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:33.357Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "contis-plage-fr",
@@ -9300,15 +9477,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 44.09,
+    "lon": -1.33,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:36.943Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "moliets-plage-fr",
@@ -9321,15 +9511,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.94,
+    "lon": -1.37,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:41.037Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "vieux-boucau-fr",
@@ -9342,15 +9547,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.79,
+    "lon": -1.43,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:44.930Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "hossegor-la-centrale-fr",
@@ -9363,15 +9583,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.66,
+    "lon": -1.44,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:48.719Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "mongrels-fr",
@@ -9384,15 +9618,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.64,
+    "lon": -1.45,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:52.508Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "west-peak-fr",
@@ -9405,15 +9652,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.69,
+    "lon": -1.44,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:07:56.298Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "hossegor-la-graviere-fr",
@@ -9426,15 +9686,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
+    "lat": 43.68,
+    "lon": -1.44,
     "waveType": [],
-    "skillLevel": [],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:08:00.085Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "ondres-plage-fr",
@@ -9447,15 +9718,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 43.58,
+    "lon": -1.49,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:08:03.876Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "argeles-sur-mer-fr",
@@ -9468,15 +9752,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 42.57,
+    "lon": 3.05,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "W",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:07.565Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-grande-motte-fr",
@@ -9489,15 +9784,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.56,
+    "lon": 4.08,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "N",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:11.353Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "maguelone-fr",
@@ -9510,15 +9816,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.52,
+    "lon": 3.91,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "N",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:15.042Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "banyuls-fr",
@@ -9531,15 +9848,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 42.48,
+    "lon": 3.13,
+    "waveType": [
+      "beach-break",
+      "reef-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:18.796Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-guillotine-fr",
@@ -9552,15 +9881,21 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
+    "lat": 43.28,
+    "lon": 3.45,
     "waveType": [],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon"
+    ],
+    "enrichedAt": "2026-10-26T11:08:22.619Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "narbonne-plage-fr",
@@ -9573,15 +9908,25 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.15,
+    "lon": 3.16,
+    "waveType": [
+      "beach-break"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:26.407Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "canet-plage-pont-des-basses-fr",
@@ -9594,15 +9939,25 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 42.7,
+    "lon": 3.04,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-26T11:08:30.196Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-mail-fr",
@@ -9615,15 +9970,24 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.27,
+    "lon": 3.48,
+    "waveType": [
+      "reef-break"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-26T11:08:33.578Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "palavas-la-mairie-fr",
@@ -9636,15 +10000,24 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.53,
+    "lon": 3.94,
+    "waveType": [
+      "beach-break"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-26T11:08:37.163Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "collioure-fr",
@@ -9657,15 +10030,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 42.53,
+    "lon": 3.09,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "W",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:40.642Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-racou-fr",
@@ -9678,15 +10062,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 42.54,
+    "lon": 3.06,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "W",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:44.331Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "palavas-les-flots-fr",
@@ -9699,15 +10094,25 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.52,
+    "lon": 3.93,
+    "waveType": [
+      "beach-break"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:47.710Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "gruissan-plage-fr",
@@ -9720,15 +10125,25 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.1,
+    "lon": 3.11,
+    "waveType": [
+      "beach-break"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "W",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:51.602Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "les-ayguades-fr",
@@ -9741,15 +10156,21 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
+    "lat": 43.14,
+    "lon": 3.15,
     "waveType": [],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon"
+    ],
+    "enrichedAt": "2026-10-26T11:08:55.287Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "st-cyprien-fr",
@@ -9762,15 +10183,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 42.63,
+    "lon": 3.04,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "W",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:08:58.975Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-chapelle-fr-2",
@@ -9783,15 +10215,25 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.39,
+    "lon": 3.67,
+    "waveType": [
+      "reef-break"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "N",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:09:02.765Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "les-roquilles-fr",
@@ -9804,15 +10246,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
+    "lat": 43.54,
+    "lon": 3.97,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
     "skillLevel": [],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "N",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T11:09:06.446Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "grande-trait-fr",
@@ -9825,15 +10278,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.24,
+    "lon": -2.31,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "SW",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:10.341Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "plage-valentin-fr",
@@ -9846,15 +10312,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.28,
+    "lon": -2.5,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "SW",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:14.539Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "rade-de-croisic-fr",
@@ -9867,15 +10347,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.3,
+    "lon": -2.55,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "SW",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:18.427Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-courance-fr",
@@ -9888,15 +10381,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.24,
+    "lon": -2.28,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "N",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:22.222Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "pornichet-fr",
@@ -9909,15 +10416,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.26,
+    "lon": -2.35,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:26.009Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "st-brevin-lermitage-fr",
@@ -9930,15 +10449,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.21,
+    "lon": -2.16,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:29.822Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-govelle-fr",
@@ -9951,15 +10484,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.27,
+    "lon": -2.49,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:33.793Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "prefailles-fr",
@@ -9972,15 +10520,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.12,
+    "lon": -2.21,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:37.687Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "ste-marguerite-fr",
@@ -9993,15 +10553,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.24,
+    "lon": -2.32,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:41.267Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "belle-ile-fr",
@@ -10014,15 +10586,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.32,
+    "lon": -3.25,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:45.060Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-fort-bloque-fr",
@@ -10035,15 +10620,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.73,
+    "lon": -3.5,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:48.645Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "pointe-du-couregan-fr",
@@ -10056,15 +10655,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.72,
+    "lon": -3.48,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:52.431Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "belle-ile-les-donnants-fr",
@@ -10077,15 +10689,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
+    "lat": 47.32,
+    "lon": -3.24,
     "waveType": [],
-    "skillLevel": [],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:09:56.324Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-fozo-fr",
@@ -10098,15 +10721,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.59,
+    "lon": -3.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:00.215Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "port-bara-fr",
@@ -10119,15 +10756,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.49,
+    "lon": -3.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:04.001Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "etel-fr",
@@ -10140,15 +10789,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.64,
+    "lon": -3.22,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "SW",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:07.794Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "les-crevettes-ste-barbe-fr",
@@ -10161,15 +10823,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.6,
+    "lon": -3.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:11.685Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "port-blanc-fr",
@@ -10182,15 +10857,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.51,
+    "lon": -3.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:15.475Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "guidel-plages-fr",
@@ -10203,15 +10892,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.76,
+    "lon": -3.52,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:19.263Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "les-moules-fr",
@@ -10224,15 +10927,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.73,
+    "lon": -3.5,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:23.048Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "port-rhu-fr",
@@ -10245,15 +10961,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.5,
+    "lon": -3.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:26.842Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "kaolins-fr",
@@ -10266,15 +10996,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.73,
+    "lon": -3.5,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:30.734Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "penthievre-fr",
@@ -10287,15 +11029,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.57,
+    "lon": -3.14,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:34.626Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "ste-barbe-fr",
@@ -10308,15 +11063,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.6,
+    "lon": -3.16,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:38.414Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "kerhillio-fr",
@@ -10329,15 +11097,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
+    "lat": 47.61,
+    "lon": -3.16,
     "waveType": [],
-    "skillLevel": [],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:42.301Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "pic-kipu-fr",
@@ -10350,15 +11129,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.71,
+    "lon": -3.38,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:46.096Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "thoulars-fr",
@@ -10371,15 +11163,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.71,
+    "lon": -3.38,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:50.085Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "kirminhy-fr",
@@ -10392,15 +11196,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.64,
+    "lon": -3.21,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:53.878Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "plage-du-loch-fr",
@@ -10413,15 +11229,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.74,
+    "lon": -3.51,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:10:57.668Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "larmor-plage-fr",
@@ -10434,15 +11263,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.7,
+    "lon": -3.39,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "N",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:01.456Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "plouharnel-la-guerite-tata-beach-fr",
@@ -10455,15 +11298,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.59,
+    "lon": -3.14,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:05.344Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "audreselles-fr",
@@ -10476,15 +11332,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.82,
+    "lon": 1.59,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:08.932Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "mers-les-bains-fr",
@@ -10497,15 +11366,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.07,
+    "lon": 1.39,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:12.944Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "terminus-berck-fr",
@@ -10518,15 +11401,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.42,
+    "lon": 1.57,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:16.718Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "berck-sur-mer-fr",
@@ -10539,15 +11434,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.41,
+    "lon": 1.56,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:20.404Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "oye-plage-escardines-fr",
@@ -10560,15 +11468,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 51,
+    "lon": 2.04,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "NW",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:24.295Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "wimereux-fr",
@@ -10581,15 +11502,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.77,
+    "lon": 1.61,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:28.185Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "cap-blanc-nez-fr",
@@ -10602,15 +11537,26 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
+    "lat": 50.93,
+    "lon": 1.72,
     "waveType": [],
-    "skillLevel": [],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:31.976Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "pointe-aux-oies-fr",
@@ -10623,15 +11569,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.79,
+    "lon": 1.61,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:35.867Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "wissant-fr",
@@ -10644,15 +11603,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.9,
+    "lon": 1.68,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:39.653Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "cap-gris-nez-fr",
@@ -10665,15 +11639,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.87,
+    "lon": 1.59,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:43.548Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "sangatte-fr",
@@ -10686,15 +11673,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.94,
+    "lon": 1.74,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:47.338Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "dunkerque-fr",
@@ -10707,15 +11707,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 51.06,
+    "lon": 2.36,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "N",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:50.923Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "tardinghen-fr",
@@ -10728,15 +11742,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 50.88,
+    "lon": 1.63,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "S",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:54.710Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "anse-de-vauville-fr",
@@ -10749,15 +11776,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.64,
+    "lon": -1.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:11:58.500Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "dielette-left-fr",
@@ -10770,15 +11810,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.56,
+    "lon": -1.86,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:02.188Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "les-cous-cous-fr",
@@ -10791,15 +11844,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.56,
+    "lon": -1.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:06.079Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "anse-du-brick-fr",
@@ -10812,15 +11878,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.67,
+    "lon": -1.49,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:09.869Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "dielette-shore-break-fr",
@@ -10833,15 +11911,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.56,
+    "lon": -1.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:13.894Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "luc-sur-mer-fr",
@@ -10854,15 +11946,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.32,
+    "lon": -0.35,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:17.781Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "anse-st-martin-fr",
@@ -10875,15 +11981,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.71,
+    "lon": -1.89,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "S",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:21.745Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "ecalgrain-fr",
@@ -10896,15 +12015,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.69,
+    "lon": -1.94,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:25.639Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "nez-bayard-fr",
@@ -10917,15 +12050,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.73,
+    "lon": -1.94,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "NW",
+    "bestWindDir": "S",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:29.427Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "baubigny-fr",
@@ -10938,15 +12085,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.43,
+    "lon": -1.82,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:33.320Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "etretat-fr",
@@ -10959,15 +12119,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.71,
+    "lon": 0.19,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "SW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:37.109Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "pourville-fr",
@@ -10980,15 +12154,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.92,
+    "lon": 1.03,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "S",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:40.796Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "berneval-fr",
@@ -11001,15 +12188,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.97,
+    "lon": 1.2,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:44.383Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "fecamp-fr",
@@ -11022,15 +12224,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.76,
+    "lon": 0.36,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:48.272Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "sainte-adresse-fr",
@@ -11043,15 +12258,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.51,
+    "lon": 0.07,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:52.164Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "biville-fr",
@@ -11064,15 +12294,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.61,
+    "lon": -1.84,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:56.056Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "fort-de-st-germain-des-vaux-fr",
@@ -11085,15 +12329,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.72,
+    "lon": -1.9,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "S",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:12:59.845Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "sciotot-fr",
@@ -11106,15 +12363,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.5,
+    "lon": -1.85,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:03.634Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "bretteville-fr",
@@ -11127,15 +12396,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.66,
+    "lon": -1.52,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:07.537Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-crecque-fr",
@@ -11148,15 +12430,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.64,
+    "lon": -1.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:11.314Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "siouville-fr",
@@ -11169,15 +12463,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.56,
+    "lon": -1.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:15.308Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "carolles-fr",
@@ -11190,15 +12497,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 48.76,
+    "lon": -1.57,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:19.305Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-mondree-fr",
@@ -11211,15 +12533,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.69,
+    "lon": -1.46,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "N",
+    "bestWindDir": "S",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:22.993Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "trouville-fr",
@@ -11232,15 +12568,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.38,
+    "lon": 0.09,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:26.779Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "carteret-fr",
@@ -11253,15 +12603,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.37,
+    "lon": -1.81,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:30.670Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-grand-large-fr",
@@ -11274,15 +12637,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.49,
+    "lon": -1.85,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:34.459Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "vaucottes-fr",
@@ -11295,15 +12670,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.72,
+    "lon": 0.23,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "SE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:38.351Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "collignon-fr",
@@ -11316,15 +12706,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.66,
+    "lon": -1.57,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:42.243Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-havre-beach-fr",
@@ -11337,15 +12739,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.5,
+    "lon": 0.09,
+    "waveType": [
+      "beach-break",
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:46.136Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "veules-les-roses-fr",
@@ -11358,15 +12774,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.88,
+    "lon": 0.8,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:50.026Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "courseulles-sur-mer-fr",
@@ -11379,15 +12808,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.34,
+    "lon": -0.45,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:53.613Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-petits-dalles-fr",
@@ -11400,15 +12842,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.79,
+    "lon": 0.44,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "SW",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:13:57.398Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "yport-fr",
@@ -11421,15 +12876,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.74,
+    "lon": 0.3,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "SW",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:01.087Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "deauville-fr",
@@ -11442,15 +12910,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.36,
+    "lon": 0.07,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:04.775Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-poux-fr",
@@ -11463,15 +12944,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.47,
+    "lon": -1.84,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:08.461Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "dielette-harbour-fr",
@@ -11484,15 +12978,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.55,
+    "lon": -1.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:12.352Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-rozel-fr",
@@ -11505,15 +13012,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 49.48,
+    "lon": -1.85,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:15.939Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "bud-bud-fr",
@@ -11526,15 +13046,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.39,
+    "lon": -1.49,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:19.721Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-tranche-sur-mer-fr",
@@ -11547,15 +13082,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.34,
+    "lon": -1.47,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:23.516Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "sauveterre-fr",
@@ -11568,15 +13116,31 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.54,
+    "lon": -1.83,
+    "waveType": [
+      "beach-break",
+      "reef-break",
+      "point-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:27.406Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "ile-de-noirmoutier-fr",
@@ -11589,15 +13153,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 47.01,
+    "lon": -2.29,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:31.300Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-club-fr",
@@ -11610,15 +13187,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.72,
+    "lon": -1.99,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:34.878Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "sion-sur-locean-fr",
@@ -11631,15 +13222,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.71,
+    "lon": -1.98,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:38.670Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "ile-de-noirmoutier-barbatre-fr",
@@ -11652,15 +13256,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.94,
+    "lon": -2.19,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:42.459Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "le-phare-du-groin-du-cou-fr",
@@ -11673,15 +13291,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.34,
+    "lon": -1.46,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:46.251Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "st-gilles-croix-de-vie-fr",
@@ -11694,15 +13327,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.7,
+    "lon": -1.97,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "NE",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:50.039Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "laubraie-fr",
@@ -11715,15 +13362,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.51,
+    "lon": -1.82,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:53.624Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "les-conches-fr",
@@ -11736,15 +13397,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.37,
+    "lon": -1.48,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:14:57.312Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "st-jean-de-monts-fr",
@@ -11757,15 +13432,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.77,
+    "lon": -2.06,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:01.100Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-baie-des-sables-fr",
@@ -11778,15 +13466,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.49,
+    "lon": -1.79,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:04.991Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "les-dunes-fr",
@@ -11799,15 +13499,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.56,
+    "lon": -1.84,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:08.860Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "tanchet-fr",
@@ -11820,15 +13533,29 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.48,
+    "lon": -1.76,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
+    "bestSwellDir": "W",
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:12.469Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-sauzaie-fr",
@@ -11841,15 +13568,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.65,
+    "lon": -1.91,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:16.257Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "plage-des-granges-fr",
@@ -11862,15 +13602,28 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.59,
+    "lon": -1.85,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:19.944Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "la-terriere-fr",
@@ -11883,15 +13636,30 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.36,
+    "lon": -1.48,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
-    "bestSwellDir": null,
-    "bestWindDir": null,
+    "bestSwellDir": "W",
+    "bestWindDir": "E",
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:23.527Z",
+    "source": "surf-forecast.com"
   },
   {
     "id": "saint-nicolas-fr",
@@ -11904,14 +13672,27 @@
       "surf-forecast",
       "open-meteo"
     ],
-    "lat": null,
-    "lon": null,
-    "waveType": [],
-    "skillLevel": [],
+    "lat": 46.42,
+    "lon": -1.65,
+    "waveType": [
+      "point-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
     "bestTide": null,
     "bestSwellDir": null,
     "bestWindDir": null,
     "camUrl": null,
-    "enriched": false
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T11:15:27.418Z",
+    "source": "surf-forecast.com"
   }
 ]

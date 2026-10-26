@@ -1,0 +1,1865 @@
+[
+  {
+    "id": "barre-de-balizas-uy",
+    "name": "Barre de Balizas",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Barrede-Balizas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Barrede-Balizas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.31,
+    "lon": -53.79,
+    "waveType": [],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:11:55.639Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-balconada-uy",
+    "name": "La Balconada",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Balconada",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Balconada/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.66,
+    "lon": -54.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:10.688Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-moza-uy",
+    "name": "La Moza",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Moza",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Moza/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.02,
+    "lon": -53.54,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:14.583Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "barre-del-chuy-uy",
+    "name": "Barre del Chuy",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Barredel-Chuy",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Barredel-Chuy/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -33.79,
+    "lon": -53.42,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:18.390Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-caldera-uy",
+    "name": "La Caldera",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Caldera",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Caldera/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.66,
+    "lon": -54.18,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:22.444Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "laguna-de-rocha-uy",
+    "name": "Laguna de Rocha",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Lagunade-Rocha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Lagunade-Rocha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.67,
+    "lon": -54.22,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:26.257Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cabo-polonio-uy",
+    "name": "Cabo Polonio",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Cabo-Polonio",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cabo-Polonio/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.4,
+    "lon": -53.8,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:30.157Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-coronilla-uy",
+    "name": "La Coronilla",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Coronilla",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Coronilla/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -33.89,
+    "lon": -53.5,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:34.136Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "las-achiras-uy",
+    "name": "Las Achiras",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Las-Achiras",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Las-Achiras/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.03,
+    "lon": -53.54,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:37.996Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cerro-chato-uy",
+    "name": "Cerro Chato",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Cerro-Chato",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cerro-Chato/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.03,
+    "lon": -53.54,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:41.696Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-derecha-uy",
+    "name": "La Derecha",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Derecha",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Derecha/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.59,
+    "lon": -54.12,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:46.260Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "las-botes-uy",
+    "name": "Las Botes",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Las-Botes",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Las-Botes/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.67,
+    "lon": -54.16,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:50.343Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cerro-verde-uy",
+    "name": "Cerro Verde",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Cerro-Verde",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cerro-Verde/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34,
+    "lon": -53.53,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NE",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:54.077Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-derecha-del-barco-uy",
+    "name": "La Derecha del Barco",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Derechadel-Barco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Derechadel-Barco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.62,
+    "lon": -54.15,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:57.979Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "los-pesqueros-uy",
+    "name": "Los Pesqueros",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Los-Pesqueros",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Los-Pesqueros/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34,
+    "lon": -53.53,
+    "waveType": [],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T15:13:01.787Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cocoloco-uy",
+    "name": "Cocoloco",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Cocoloco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cocoloco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.63,
+    "lon": -54.15,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:05.670Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-derecha-del-faro-uy",
+    "name": "La Derecha del Faro",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Derechadel-Faro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Derechadel-Faro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.66,
+    "lon": -54.14,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:09.680Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-del-barco-uy",
+    "name": "Playa del Barco",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Playadel-Barco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Playadel-Barco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.04,
+    "lon": -53.54,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:13.551Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-morro-de-la-virgen-uy",
+    "name": "El Morro de la Virgen",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "El-Morrodela-Virgen",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Morrodela-Virgen/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.63,
+    "lon": -54.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:17.436Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-derecha-del-medio-uy",
+    "name": "La Derecha del Medio",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Derechadel-Medio",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Derechadel-Medio/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.6,
+    "lon": -54.13,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:21.231Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-grande-uy",
+    "name": "Playa Grande",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Playa-Grande_3",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Playa-Grande_3/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.05,
+    "lon": -53.54,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:25.015Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-suicidio-uy",
+    "name": "El Suicidio",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "El-Suicidio",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Suicidio/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.66,
+    "lon": -54.15,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:28.704Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-escollera-uy",
+    "name": "La Escollera",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Escollera",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Escollera/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.65,
+    "lon": -54.15,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:32.614Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "punta-de-la-viuda-uy",
+    "name": "Punta de la Viuda",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Puntadela-Viuda",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Puntadela-Viuda/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.07,
+    "lon": -53.56,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SW",
+    "bestWindDir": "E",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:36.374Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "himalaya-uy",
+    "name": "Himalaya",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Himalaya",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Himalaya/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.67,
+    "lon": -54.15,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:39.974Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-isla-uy",
+    "name": "La Isla",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Isla_2",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Isla_2/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.65,
+    "lon": -54.14,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:43.789Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "punta-del-diablo-uy",
+    "name": "Punta del Diablo",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Puntadel-Diablo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Puntadel-Diablo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.04,
+    "lon": -53.53,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:47.751Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-aguada-uy",
+    "name": "La Aguada",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Aguada",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Aguada/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.64,
+    "lon": -54.15,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:51.543Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-izquierda-de-la-rocas-uy",
+    "name": "La Izquierda de la Rocas",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "La-Izquierdadela-Rocas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Izquierdadela-Rocas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.6,
+    "lon": -54.13,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:55.361Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "zanja-honda-uy",
+    "name": "Zanja Honda",
+    "country": "Uruguay",
+    "region": "Uruguay - North",
+    "forecastSlug": "Zanja-Honda",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Zanja-Honda/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.67,
+    "lon": -54.17,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:13:59.224Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "bikini-uy",
+    "name": "Bikini",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Bikini",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Bikini/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.88,
+    "lon": -54.77,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:03.107Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-barra-uy",
+    "name": "La Barra",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "La-Barra_2",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Barra_2/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.92,
+    "lon": -54.87,
+    "waveType": [
+      "river-mouth"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:06.699Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-honda-uy",
+    "name": "Playa Honda",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Playa-Honda",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Playa-Honda/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.9,
+    "lon": -56.09,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T15:14:10.591Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "club-del-la-playa-uy",
+    "name": "Club del la Playa",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Clubdella-Playa",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Clubdella-Playa/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.89,
+    "lon": -54.78,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:14.280Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-barre-de-jose-ignacio-uy",
+    "name": "La Barre de Jose Ignacio",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "La-Barrede-Jose-Ignacio",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Barrede-Jose-Ignacio/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.83,
+    "lon": -54.62,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:17.881Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "punta-del-chileno-uy",
+    "name": "Punta del Chileno",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Puntadel-Chileno",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Puntadel-Chileno/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.92,
+    "lon": -54.98,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:21.478Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "corralito-uy",
+    "name": "Corralito",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Corralito",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Corralito/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.77,
+    "lon": -55.73,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:24.935Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-boya-uy",
+    "name": "La Boya",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "La-Boya_1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Boya_1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.91,
+    "lon": -54.84,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:28.855Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "punta-negra-uy",
+    "name": "Punta Negra",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Punta-Negra-1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Punta-Negra-1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.9,
+    "lon": -55.24,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T15:14:32.617Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "desembocadura-de-garzon-uy",
+    "name": "Desembocadura de Garzon",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Desembocadurade-Garzon",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Desembocadurade-Garzon/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.8,
+    "lon": -54.56,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:36.619Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-olla-uy",
+    "name": "La Olla",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "La-Olla",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Olla/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.95,
+    "lon": -54.92,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:40.277Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-francisco-uy",
+    "name": "San Francisco",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "San-Francisco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/San-Francisco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.91,
+    "lon": -55.25,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:43.864Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-barco-uy",
+    "name": "El Barco",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "El-Barco",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Barco/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.96,
+    "lon": -54.93,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:47.544Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-posta-uy",
+    "name": "La Posta",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "La-Posta",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Posta/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.92,
+    "lon": -54.85,
+    "waveType": [
+      "beach-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:51.117Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "santa-lucia-del-este-uy",
+    "name": "Santa Lucia del Este",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Santa-Luciadel-Este",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Santa-Luciadel-Este/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.79,
+    "lon": -55.47,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:54.822Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-chorro-uy",
+    "name": "El Chorro",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "El-Chorro",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Chorro/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.87,
+    "lon": -54.75,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:14:58.605Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-virgen-uy",
+    "name": "La Virgen",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "La-Virgen",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Virgen/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.97,
+    "lon": -54.95,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:02.672Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "tiki-uy",
+    "name": "Tiki",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Tiki",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Tiki/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.91,
+    "lon": -54.81,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:06.510Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-emir-uy",
+    "name": "El Emir",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "El-Emir",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Emir/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.96,
+    "lon": -54.94,
+    "waveType": [
+      "beach-break",
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:10.169Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "montoya-uy",
+    "name": "Montoya",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Montoya",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Montoya/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.91,
+    "lon": -54.82,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:13.784Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "zorba-uy",
+    "name": "Zorba",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Zorba",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Zorba/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.95,
+    "lon": -54.92,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:17.579Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-martillo-uy",
+    "name": "El Martillo",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "El-Martillo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Martillo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.97,
+    "lon": -54.95,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:21.435Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "parque-del-plata-uy",
+    "name": "Parque del Plata",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Parquedel-Plata",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Parquedel-Plata/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.78,
+    "lon": -55.74,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:25.330Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "jose-ignacio-uy",
+    "name": "Jose Ignacio",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Jose-Ignacio",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Jose-Ignacio/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.83,
+    "lon": -54.61,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:29.127Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "pendorcho-uy",
+    "name": "Pendorcho",
+    "country": "Uruguay",
+    "region": "Uruguay - South",
+    "forecastSlug": "Pendorcho",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pendorcho/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -34.93,
+    "lon": -54.88,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:33.130Z",
+    "source": "surf-forecast.com"
+  }
+]

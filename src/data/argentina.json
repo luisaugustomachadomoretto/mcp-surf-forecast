@@ -1,0 +1,1721 @@
+[
+  {
+    "id": "espigon-ar",
+    "name": "Espigon",
+    "country": "Argentina",
+    "region": "Provincia Río Negro",
+    "forecastSlug": "Espigon",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Espigon/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -41.14,
+    "lon": -63.04,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:12:00.355Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "picoto-ar",
+    "name": "Picoto",
+    "country": "Argentina",
+    "region": "Provincia Río Negro",
+    "forecastSlug": "Picoto",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Picoto/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -41.06,
+    "lon": -62.85,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:38.817Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "alfar-ar",
+    "name": "Alfar",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Alfar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Alfar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.1,
+    "lon": -57.56,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T15:15:42.798Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "horizonte-mar-del-plata-ar",
+    "name": "Horizonte (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Horizonte",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Horizonte/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.1,
+    "lon": -57.54,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:46.945Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "pinamar-ar",
+    "name": "Pinamar",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Pinamar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Pinamar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.13,
+    "lon": -56.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "E",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:51.033Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "alfonsina-mar-del-plata-ar",
+    "name": "Alfonsina (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Alfonsina",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Alfonsina/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.99,
+    "lon": -57.54,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "E",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:54.752Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-paloma-mar-del-plata-ar",
+    "name": "La Paloma (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "La-Paloma",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Paloma/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.17,
+    "lon": -57.63,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:15:58.802Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-acantilados-ar",
+    "name": "Playa Acantilados",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Playa-Acantilados",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Playa-Acantilados/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.12,
+    "lon": -57.59,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir"
+    ],
+    "enrichedAt": "2026-10-26T15:16:02.646Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "biologia-mar-del-plata-ar",
+    "name": "Biologia (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Biologia",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Biologia/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.03,
+    "lon": -57.53,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:06.340Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-pepita-mar-del-plata-ar",
+    "name": "La Pepita (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "La-Pepita",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Pepita/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.99,
+    "lon": -57.55,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:10.037Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-mariano-mar-del-plata-ar",
+    "name": "Playa Mariano (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Mariano",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Mariano/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.09,
+    "lon": -57.54,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:13.960Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cabo-corrientes-ar",
+    "name": "Cabo Corrientes",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Cabo-Corrientes",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cabo-Corrientes/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.02,
+    "lon": -57.52,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:18.272Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-perla-mar-del-plata-ar",
+    "name": "La Perla (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "La-Perla-1-Mar-del-Plata",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Perla-1-Mar-del-Plata/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.99,
+    "lon": -57.54,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:22.053Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-varesse-ar",
+    "name": "Playa Varesse",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Varese",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Varese/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.01,
+    "lon": -57.53,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:25.952Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cardiel-mar-del-plata-ar",
+    "name": "Cardiel (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Cardiel",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cardiel/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.98,
+    "lon": -57.54,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:30.146Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-popular-mar-del-plata-ar",
+    "name": "La Popular (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "La-Popular",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Popular/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.01,
+    "lon": -57.54,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "E",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:33.752Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "punta-medanos-ar",
+    "name": "Punta Medanos",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Punta-Medanos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Punta-Medanos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -36.94,
+    "lon": -56.71,
+    "waveType": [],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:37.516Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "chapadmalal-ar",
+    "name": "Chapadmalal",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Chapadmalal",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Chapadmalal/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.21,
+    "lon": -57.69,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:41.321Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-rambla-ar",
+    "name": "La Rambla",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "La-Rambla",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Rambla/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.13,
+    "lon": -56.86,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-26T15:16:44.994Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "quequen-ar",
+    "name": "Quequen",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Quequen",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Quequen/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.58,
+    "lon": -58.69,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:48.792Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "constitucion-mar-del-plata-ar",
+    "name": "Constitucion (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Constitucion",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Constitucion/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.97,
+    "lon": -57.54,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:52.470Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "la-virazon-ar",
+    "name": "La Virazon",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "La-Virazon",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/La-Virazon/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.58,
+    "lon": -58.69,
+    "waveType": [
+      "reef-break",
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "S",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:16:55.961Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "san-clemente-del-tuyu-ar",
+    "name": "San Clemente del Tuyu",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "San-Clemente-del-Tuyu",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/San-Clemente-del-Tuyu/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -36.39,
+    "lon": -56.69,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T15:16:59.746Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cruz-del-sur-ar",
+    "name": "Cruz del Sur",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Cruz-del-Sur",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cruz-del-Sur/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.99,
+    "lon": -57.54,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": "E",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir"
+    ],
+    "enrichedAt": "2026-10-26T15:17:03.736Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "las-cuevas-ar",
+    "name": "Las Cuevas",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Las-Cuevas",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Las-Cuevas/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.21,
+    "lon": -57.7,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:07.625Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "santa-clara-del-mar-ar",
+    "name": "Santa Clara del Mar",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Santa-Clara-del-Mar",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Santa-Clara-del-Mar/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.85,
+    "lon": -57.5,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:11.508Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cueva-del-tigre-ar",
+    "name": "Cueva del Tigre",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Cueva-del-Tigre",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cueva-del-Tigre/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.68,
+    "lon": -59.01,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-26T15:17:15.319Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "luna-roja-ar",
+    "name": "Luna Roja",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Luna-Roja",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Luna-Roja/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.18,
+    "lon": -57.64,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:19.196Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "santa-teresita-ar",
+    "name": "Santa Teresita",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Santa-Teresita",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Santa-Teresita/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -36.54,
+    "lon": -56.69,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType"
+    ],
+    "enrichedAt": "2026-10-26T15:17:23.086Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "diva-mar-del-plata-ar",
+    "name": "Diva (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Diva",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Diva/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.1,
+    "lon": -57.55,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:26.831Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "maquinita-ar",
+    "name": "Maquinita",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Maquinita",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Maquinita/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.11,
+    "lon": -57.55,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:30.666Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "sun-rider-mar-del-plata-ar",
+    "name": "Sun Rider (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Sun-Rider",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Sun-Rider/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.96,
+    "lon": -57.54,
+    "waveType": [
+      "point-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:34.593Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-muelle-ar",
+    "name": "El Muelle",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "El-Muelle_1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Muelle_1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.3,
+    "lon": -57.86,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:38.556Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "mar-de-ajo-ar",
+    "name": "Mar de Ajó",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Mar-de-Ajo",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Mar-de-Ajo/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -36.71,
+    "lon": -56.67,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:42.548Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "tamarindo-playa-serena-mar-del-plata-ar",
+    "name": "Tamarindo Playa Serena (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Tamarindo-Playa-Serena",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Tamarindo-Playa-Serena/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.11,
+    "lon": -57.57,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:46.204Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-pomol-ar",
+    "name": "El Pomol",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "El-Pomol",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Pomol/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.29,
+    "lon": -57.83,
+    "waveType": [
+      "reef-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:50.339Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "miramar-ar",
+    "name": "Miramar",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Miramar_2",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Miramar_2/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.28,
+    "lon": -57.84,
+    "waveType": [
+      "beach-break",
+      "jetty"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:54.210Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "villa-gesell-ar",
+    "name": "Villa Gesell",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Villa-Gesell",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Villa-Gesell/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -37.26,
+    "lon": -56.96,
+    "waveType": [],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:17:58.238Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "el-remanso-ar",
+    "name": "El Remanso",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "El-Remanso",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/El-Remanso/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.34,
+    "lon": -57.97,
+    "waveType": [
+      "jetty"
+    ],
+    "skillLevel": [],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir"
+    ],
+    "enrichedAt": "2026-10-26T15:18:02.115Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "monte-hermoso-ar",
+    "name": "Monte Hermoso",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Monte-Hermoso-1",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Monte-Hermoso-1/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.99,
+    "lon": -61.3,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:06.107Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "waikiki-ar",
+    "name": "Waikiki",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Waikiki",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Waikiki/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.08,
+    "lon": -57.54,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:10.000Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "escollera-necochea-ar",
+    "name": "Escollera Necochea",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Escollera-Necochea",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Escollera-Necochea/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.58,
+    "lon": -58.7,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "N",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:13.787Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "off-the-wall-ar",
+    "name": "Off the wall",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Offthewall",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Offthewall/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.17,
+    "lon": -57.63,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "NW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:17.805Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "yacht-ar",
+    "name": "Yacht",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Yacht",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Yacht/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.03,
+    "lon": -57.53,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "NE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:21.779Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "escollera-sur-mar-del-plata-ar",
+    "name": "Escollera Sur (Mar del Plata)",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Escollera-Sur",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Escollera-Sur/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.04,
+    "lon": -57.52,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "SE",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:25.672Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "paradise-ar",
+    "name": "Paradise",
+    "country": "Argentina",
+    "region": "Provincia de Buenos Aires",
+    "forecastSlug": "Paradise",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Paradise/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -38.18,
+    "lon": -57.64,
+    "waveType": [
+      "point-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:29.448Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "rio-grande-ar",
+    "name": "Río Grande",
+    "country": "Argentina",
+    "region": "Provincia de Tierra del Fuego",
+    "forecastSlug": "Rio-Grande-Tierra-del-Fuego",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Rio-Grande-Tierra-del-Fuego/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -53.77,
+    "lon": -67.7,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": null,
+    "bestWindDir": "SW",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:33.371Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "bajada-de-los-palitos-ar",
+    "name": "Bajada de los Palitos",
+    "country": "Argentina",
+    "region": "Provincia del Chubut",
+    "forecastSlug": "Bajada-de-los-Palitos",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Bajada-de-los-Palitos/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -45.97,
+    "lon": -67.57,
+    "waveType": [
+      "beach-break",
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "E",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:37.133Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "playa-union-ar",
+    "name": "Playa Union",
+    "country": "Argentina",
+    "region": "Provincia del Chubut",
+    "forecastSlug": "Playa-Union",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Playa-Union/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -43.33,
+    "lon": -65.05,
+    "waveType": [],
+    "skillLevel": [
+      "beginner",
+      "expert"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "S",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:41.132Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "cabo-raso-ar",
+    "name": "Cabo Raso",
+    "country": "Argentina",
+    "region": "Provincia del Chubut",
+    "forecastSlug": "Cabo-Raso",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Cabo-Raso/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -44.33,
+    "lon": -65.23,
+    "waveType": [
+      "reef-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "N",
+    "bestWindDir": null,
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:44.909Z",
+    "source": "surf-forecast.com"
+  },
+  {
+    "id": "rada-tilly-ar",
+    "name": "Rada Tilly",
+    "country": "Argentina",
+    "region": "Provincia del Chubut",
+    "forecastSlug": "Rada-Tilly",
+    "forecastUrl": "https://www.surf-forecast.com/breaks/Rada-Tilly/forecasts/latest/six_day",
+    "providers": [
+      "surf-forecast",
+      "open-meteo"
+    ],
+    "lat": -45.93,
+    "lon": -67.55,
+    "waveType": [
+      "beach-break"
+    ],
+    "skillLevel": [
+      "beginner"
+    ],
+    "bestTide": null,
+    "bestSwellDir": "E",
+    "bestWindDir": "W",
+    "camUrl": null,
+    "enriched": true,
+    "enrichedFields": [
+      "lat",
+      "lon",
+      "waveType",
+      "bestSwellDir",
+      "bestWindDir",
+      "skillLevel"
+    ],
+    "enrichedAt": "2026-10-26T15:18:48.722Z",
+    "source": "surf-forecast.com"
+  }
+]
