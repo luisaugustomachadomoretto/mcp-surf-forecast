@@ -31,11 +31,9 @@
   "license": "MIT",
   "dependencies": {
     "fastmcp": "^4.12.7",
-    "haversine": "^1.1.1",
     "zod": "^3.23.0"
   },
   "devDependencies": {
-    "@types/haversine": "^1.1.6",
     "@types/node": "^22.0.0",
     "@vitest/coverage-v8": "^2.0.0",
     "typescript": "^5.5.0",
