@@ -7260,7 +7260,7 @@
     "source": "surf-forecast.com"
   },
   {
-    "id": "la-arena-es",
+    "id": "la-arena-pais-vasco-es",
     "name": "La Arena",
     "country": "Spain",
     "region": "Pais Vasco",
@@ -9431,7 +9431,7 @@
     "source": "surf-forecast.com"
   },
   {
-    "id": "calita-es",
+    "id": "calita-valencia-es",
     "name": "Calita",
     "country": "Spain",
     "region": "Valencia",
@@ -9945,7 +9945,7 @@
     "source": "surf-forecast.com"
   },
   {
-    "id": "playa-de-levante-es",
+    "id": "playa-de-levante-valencia-es",
     "name": "Playa de Levante",
     "country": "Spain",
     "region": "Valencia",
@@ -9976,7 +9976,7 @@
     "source": "surf-forecast.com"
   },
   {
-    "id": "playa-de-san-juan-es",
+    "id": "playa-de-san-juan-valencia-es",
     "name": "Playa de San Juan",
     "country": "Spain",
     "region": "Valencia",
